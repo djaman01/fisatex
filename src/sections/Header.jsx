@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { cross, hamburger } from "../assets/icons";
 import { fisatexLogo } from "../assets/images";
+import SideHeader from "../components/SideHeader";
 
 const Header = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -34,7 +35,7 @@ const Header = () => {
           <p className="cursor-pointer hover:text-green-600">À propos</p>
           <p className="cursor-pointer hover:text-green-600">Contact</p>
         </div>
-        <div className="lg:hidden">
+        <div className="hidden max-lg:block">
           {openSidebar === false ? (
             <img
               className="cursor-pointer"
@@ -56,7 +57,10 @@ const Header = () => {
           )}
         </div>
       </nav>
-
+      
+      <div className="hidden max-lg:block">
+        {openSidebar && <SideHeader className="lg:hidden" />}
+      </div>
     </header>
   );
 };
