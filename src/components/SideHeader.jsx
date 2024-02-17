@@ -23,9 +23,13 @@ const SideHeader = () => {
           breakPoint="all"
         >
           <Menu transitionDuration={300}>
-            <Link to="/" className="no-underline">
-              <MenuItem icon={<IoHomeOutline size={18} />}> Accueil </MenuItem>
-            </Link>
+            <MenuItem
+              component={<Link to="/" />}
+              icon={<IoHomeOutline size={18} />}
+            >
+              Accueil
+            </MenuItem>
+
             <SubMenu icon={<RiProductHuntLine size={20} />} label="Produits">
               <MenuItem> Gants</MenuItem>
               <MenuItem> Tissus Gants</MenuItem>
