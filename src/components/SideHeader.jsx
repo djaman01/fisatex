@@ -6,6 +6,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { RiProductHuntLine } from "react-icons/ri";
 import { BsInfoSquare } from "react-icons/bs";
 import { MdOutlineContactPhone } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const SideHeader = () => {
   const { openSidebar, setOpenSidebar } = useMyContext();
@@ -17,19 +18,22 @@ const SideHeader = () => {
         style={{ display: "flex", height: "100%", minHeight: "400px" }}
       >
         <Sidebar
-          onBackdropClic={() => setOpenSidebar(false)}
           toggled={openSidebar}
           backgroundColor="#9BB7D4"
           breakPoint="all"
         >
           <Menu transitionDuration={300}>
-            <MenuItem icon={<IoHomeOutline size={18} />}> Accueil </MenuItem>
+            <Link to="/" className="no-underline">
+              <MenuItem icon={<IoHomeOutline size={18} />}> Accueil </MenuItem>
+            </Link>
             <SubMenu icon={<RiProductHuntLine size={20} />} label="Produits">
               <MenuItem> Gants</MenuItem>
               <MenuItem> Tissus Gants</MenuItem>
             </SubMenu>
             <MenuItem icon={<BsInfoSquare />}> À propos </MenuItem>
-            <MenuItem icon={<MdOutlineContactPhone size={18} />}> Contact </MenuItem>
+            <MenuItem icon={<MdOutlineContactPhone size={18} />}>
+              Contact
+            </MenuItem>
           </Menu>
           <div className="mt-10 flex cursor-pointer justify-center">
             <button

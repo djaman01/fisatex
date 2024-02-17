@@ -1,12 +1,13 @@
-import Header from "./sections/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AllSite from "./AllSite";
 
 const App = () => {
   return (
-    <main>
-      <section>
-        <Header />
-      </section>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AllSite />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
