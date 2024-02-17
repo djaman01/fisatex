@@ -3,8 +3,14 @@ import { cross, hamburger } from "../assets/icons";
 import { fisatexLogo } from "../assets/images";
 import SideHeader from "../components/SideHeader";
 
+import { useMyContext } from "../ContextComp";
+
 const Header = () => {
-  const [openSidebar, setOpenSidebar] = useState(false);
+  const { openSidebar, setOpenSidebar } = useMyContext();
+
+  useEffect(()=>{
+    console.log(openSidebar)
+  },[openSidebar])
 
   return (
     <header className="padding-x absolute z-10 w-full py-8">
@@ -36,7 +42,7 @@ const Header = () => {
           <p className="cursor-pointer hover:text-green-600">Contact</p>
         </div>
         <div className="hidden max-lg:block">
-          {openSidebar === false ? (
+          {openSidebar === false && (
             <img
               className="cursor-pointer"
               src={hamburger}
@@ -45,19 +51,10 @@ const Header = () => {
               height={25}
               onClick={() => setOpenSidebar(true)}
             />
-          ) : (
-            <img
-              className="cursor-pointer"
-              src={cross}
-              alt="cross-menu"
-              width={25}
-              height={25}
-              onClick={() => setOpenSidebar(false)}
-            />
-          )}
+          ) }
         </div>
       </nav>
-      
+
       <div className="hidden max-lg:block">
         {openSidebar && <SideHeader className="lg:hidden" />}
       </div>
