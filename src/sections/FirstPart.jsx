@@ -8,26 +8,26 @@ import {
 
 const FirstPart = () => {
   return (
-    <section className=" m-10 grid grid-cols-[1.7fr,1fr] gap-5">
+    <section className="flex flex-col gap-5 my-10 xl:grid xl:grid-cols-[1.7fr,1fr] xl:gap-5 xl:my-10 xl:mx-7">
       <div className="row-span-2">
         <img
           src={femmeBain}
           alt="femme bain"
-          className=" h-full rounded-md object-cover cursor-pointer"
+          className=" h-full rounded-lg object-cover cursor-pointer"
         />
       </div>
       <div>
         <img
           src={creme}
           alt="crème"
-          className="rounded-md object-cover cursor-pointer "
+          className="rounded-lg object-cover cursor-pointer "
         />
       </div>
       <div>
         <img
           src={massage}
           alt="massage"
-          className=" rounded-md object-cover cursor-pointer"
+          className=" rounded-lg object-cover cursor-pointer"
         />
       </div>
     </section>

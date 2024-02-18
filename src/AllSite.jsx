@@ -8,7 +8,7 @@ const AllSite = () => {
         <Header />
       </section>
 
-      <section className="padding-b xl:padding-r xl:padding-l">
+      <section className="padding-b">
         <FirstPart />
       </section>
 
