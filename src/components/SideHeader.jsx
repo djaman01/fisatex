@@ -21,6 +21,7 @@ const SideHeader = () => {
           toggled={openSidebar}
           backgroundColor="#9BB7D4"
           breakPoint="all"
+          
         >
           <Menu transitionDuration={300}>
             <MenuItem
@@ -51,9 +52,6 @@ const SideHeader = () => {
             </button>
           </div>
         </Sidebar>
-        <main style={{ display: "flex", padding: 10 }}>
-          <div></div>
-        </main>
       </div>
     </>
   );

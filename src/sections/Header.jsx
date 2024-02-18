@@ -14,7 +14,7 @@ const Header = () => {
   }, [openSidebar]);
 
   return (
-    <header className="padding-x absolute z-10 w-full py-8">
+    <header className="padding-x w-full py-1">
       {/* items-center et max-container à supprimer */}
       <nav className="max-container flex items-center justify-between">
         <Link to="/">
@@ -35,7 +35,7 @@ const Header = () => {
                 Gants de Gommage
               </p>
               <p className="py-2 text-center hover:text-green-500">
-                Tissus de gants
+                Tissus de Gants
               </p>
             </div>
           </div>
