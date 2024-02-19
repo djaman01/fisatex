@@ -15,7 +15,7 @@ const SideHeader = () => {
     <>
       <div
         className="prose"
-        style={{ display: "flex", height: "100%", minHeight: "400px" }}
+        style={{ display: "flex", height: "100%" }}
       >
         <Sidebar
           backgroundColor="#ededed"
