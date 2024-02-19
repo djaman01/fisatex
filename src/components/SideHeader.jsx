@@ -20,10 +20,10 @@ const SideHeader = () => {
         <Sidebar
           backgroundColor="#ededed"
           breakPoint="all" 
-          transitionDuration={500} 
           toggled={openSidebar}
+          
         >
-          <Menu transitionDuration={300}>
+          <Menu>
             <MenuItem
               component={<Link to="/" />}
               icon={<IoHomeOutline size={18} />}
