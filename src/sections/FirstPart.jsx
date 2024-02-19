@@ -8,7 +8,7 @@ import {
 
 const FirstPart = () => {
   return (
-    <section className="flex flex-col gap-5 my-10 xl:grid xl:grid-cols-[1.7fr,1fr] xl:gap-5 xl:my-10 xl:mx-7">
+    <section className="flex flex-col gap-5 my-10 lg:grid lg:grid-cols-[1.7fr,1fr] lg:gap-5 lg:my-10 lg:mx-7">
       <div className="row-span-2">
         <img
           src={femmeBain}
