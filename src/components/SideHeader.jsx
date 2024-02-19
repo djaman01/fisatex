@@ -20,7 +20,9 @@ const SideHeader = () => {
         <Sidebar
           backgroundColor="#ededed"
           breakPoint="all" 
+          onBackdropClick={() => setOpenSidebar(false)} //permet de mettre faux quand on clique hors de la sidebar
           toggled={openSidebar}
+          transitionDuration={5000}
           
         >
           <Menu>
