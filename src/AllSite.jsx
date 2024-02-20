@@ -1,6 +1,9 @@
 import Bienfaits from "./sections/Bienfaits";
 import FirstPart from "./sections/FirstPart";
 import Header from "./sections/Header";
+import VotreGant from "./sections/VotreGant";
+
+
 
 const AllSite = () => {
   return (
@@ -14,6 +17,9 @@ const AllSite = () => {
       </section>
       <section className="padding">
         <Bienfaits />
+      </section>
+      <section className="padding">
+        <VotreGant />
       </section>
 
     
