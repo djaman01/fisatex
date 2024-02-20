@@ -13,21 +13,21 @@ const FirstPart = () => {
         <img
           src={femmeBain}
           alt="femme bain"
-          className=" h-full cursor-pointer rounded-lg object-cover"
+          className=" h-full w-full cursor-pointer rounded-lg object-cover"
         />
       </div>
       <div>
         <img
           src={creme}
           alt="crème"
-          className="cursor-pointer rounded-lg object-cover "
+          className="h-full w-full cursor-pointer rounded-lg object-cover "
         />
       </div>
       <div>
         <img
           src={massage}
           alt="massage"
-          className=" cursor-pointer rounded-lg object-cover"
+          className="h-full w-full cursor-pointer rounded-lg object-cover"
         />
       </div>
     </section>
