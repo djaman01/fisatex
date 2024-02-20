@@ -1,5 +1,7 @@
+import { arrowRight } from "../assets/icons";
 import { gantVisage, mainCreme, peauMorte } from "../assets/images";
-import { FaCheck } from "react-icons/fa";
+
+import MyButton from "../components/MyButton";
 
 const Bienfaits = () => {
   return (
@@ -22,7 +24,8 @@ const Bienfaits = () => {
 
         <div className="prose mt-12 rounded-lg shadow-2xl">
           <h2 className="text-center font-palanquin text-2xl font-bold">
-            Refaite vous une <span className="text-coral-red">Nouvelle</span> peau !
+            Refaite vous une <span className="text-coral-red">Nouvelle</span>{" "}
+            peau !
           </h2>
           <ul className="font-palanquin text-xl">
             <li> Nettoie la peau en profondeur </li>
@@ -34,10 +37,13 @@ const Bienfaits = () => {
               Confort
             </li>
           </ul>
+
+          <div className="mt-[-30px] flex flex-col items-center justify-center">
+            <h2 className="font-palanquin text-2xl font-bold">Intéressés ?</h2>
+            <MyButton label="Contactez-nous" iconURL={arrowRight} />
+          </div>
         </div>
       </div>
-
-      <div></div>
     </section>
   );
 };
