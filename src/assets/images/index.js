@@ -7,7 +7,7 @@ import femmeBain from './femme-rase.jpg'
 import hammam from './hammam.webp'
 import mainCreme from './main-creme.jpg'
 import peauMorte from './peau-morte.png'
-import gantVisage from './gant-visage.webp'
+import gantVisage from './gant-femme2.webp'
 
 
 export {

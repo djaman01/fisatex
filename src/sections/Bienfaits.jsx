@@ -10,19 +10,19 @@ const Bienfaits = () => {
         Les <span className="text-coral-red">Bienfaits</span> de notre{" "}
         <span className="text-coral-red">Gant</span> de gommage
       </h2>
-      <div className="grid grid-cols-[300px,300px,500px] grid-rows-[500px] gap-16 sm:mt-[50px]">
+      <div className="lg:grid grid-cols-[300px,300px,500px] grid-rows-[500px] lg:gap-16 sm:mt-[50px]">
         <img
-          className="mt-[25px] h-full w-full object-cover "
+          className="mt-[25px] h-[300px] lg:h-full w-full object-cover "
           src={peauMorte}
           alt="hammam"
         />
         <img
-          className=" mt-[25px] h-full w-full object-cover "
+          className=" mt-[25px] h-[300px] lg:h-full w-full object-cover "
           src={gantVisage}
           alt="hammam"
         />
 
-        <div className="prose mt-12 rounded-lg shadow-2xl">
+        <div className="py-5 prose mt-12 rounded-lg shadow-2xl">
           <h2 className="text-center font-palanquin text-2xl font-bold">
             Refaite vous une <span className="text-coral-red">Nouvelle</span>{" "}
             peau !
@@ -38,7 +38,7 @@ const Bienfaits = () => {
             </li>
           </ul>
 
-          <div className="mt-[-30px] flex flex-col items-center justify-center">
+          <div className=" mt-[-30px] flex flex-col items-center justify-center">
             <h2 className="font-palanquin text-2xl font-bold">Intéressés ?</h2>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </div>
