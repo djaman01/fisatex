@@ -34,8 +34,10 @@ const SideHeader = () => {
             </MenuItem>
 
             <SubMenu icon={<RiProductHuntLine size={20} />} label="Produits">
-              <MenuItem> Gants</MenuItem>
-              <MenuItem> Tissus Gants</MenuItem>
+              <MenuItem> Gants de gommage</MenuItem>
+              <MenuItem> Kit Visage </MenuItem>
+              <MenuItem> Frotte-Dos</MenuItem>
+              <MenuItem> Sandales Hammam </MenuItem>
             </SubMenu>
             <MenuItem icon={<BsInfoSquare />}> À propos </MenuItem>
             <MenuItem icon={<MdOutlineContactPhone size={18} />}>

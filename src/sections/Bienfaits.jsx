@@ -51,7 +51,7 @@ const Bienfaits = () => {
             </li>
           </ul>
 
-          <div className="mt-[-20px] flex flex-col items-center justify-center">
+          <div className="mt-[-40px] flex flex-col items-center justify-center">
             <h2 className="font-palanquin text-2xl font-bold">Intéressés ?</h2>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </div>
