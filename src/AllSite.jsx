@@ -15,10 +15,10 @@ const AllSite = () => {
       <section className="padding-b">
         <FirstPart />
       </section>
-      <section className="padding">
+      <section className="padding padding-b">
         <Bienfaits />
       </section>
-      <section className="padding">
+      <section className="padding-b">
         <VotreGant />
       </section>
 
