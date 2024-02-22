@@ -10,7 +10,7 @@ const VotreGant = () => {
           <span className="text-coral-red">Personnalisez</span> Votre Gant !
         </h2>
         {/* max-w-lg:Limite la largeur du texte pour qu'il ne prenne pas trop de place */}
-        <p className="mt-4 font-montserrat text-2xl leading-10 lg:max-w-lg">
+        <p className="mt-4 font-montserrat text-xl leading-9 lg:max-w-lg">
           Choisissez parmi une <b>vaste sélection de couleurs</b> et ajoutez{" "}
           <b>votre logo</b> sur l'élastique, afin de créer un produit{" "}
           <b>unique</b> qui correspond à votre marque

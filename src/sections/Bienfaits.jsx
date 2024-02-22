@@ -36,7 +36,7 @@ const Bienfaits = () => {
           className="prose min-w-full col-span-2 lg:col-span-1 lg:mb-5 lg:mt-5 rounded-lg py-5 shadow-2xl"
           ref={bienfaitSection}
         >
-          <h2 className="text-center font-palanquin text-2xl font-bold">
+          <h2 className="text-center font-palanquin text-3xl font-bold">
             Refaite vous une <span className="text-coral-red">Nouvelle</span>{" "}
             peau !
           </h2>
