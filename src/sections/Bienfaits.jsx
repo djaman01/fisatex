@@ -36,7 +36,7 @@ const Bienfaits = () => {
           className="prose col-span-2 rounded-lg shadow-2xl max-lg:min-w-full lg:col-span-1"
           ref={bienfaitSection}
         >
-          <h2 className="pt-4 text-center font-palanquin font-bold lg:pt-1 lg:text-3xl">
+          <h2 className="pt-4 text-center font-palanquin font-bold lg:pt-5 lg:text-3xl">
             Refaite vous une <span className="text-coral-red">Nouvelle</span>{" "}
             peau !
           </h2>
@@ -51,7 +51,7 @@ const Bienfaits = () => {
             </li>
           </ul>
 
-          <div className="flex flex-col items-center justify-center max-lg:mb-[15px] max-lg:mt-[-50px] lg:mt-[-60px]">
+          <div className="flex flex-col items-center justify-center max-lg:mb-[15px] max-lg:mt-[-50px] lg:mt-[-40px]">
             <h2 className="font-palanquin font-bold max-lg:mb-[15px] lg:text-2xl">
               Intéressés ?
             </h2>
