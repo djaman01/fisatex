@@ -49,7 +49,7 @@ const Header = () => {
           <p className="cursor-pointer hover:text-green-500">Contact</p>
         </div>
         <div className="hidden max-lg:block">
-          {openSidebar === false && (
+          {openSidebar === false ? (
             <img
               className="cursor-pointer"
               src={hamburger}
@@ -58,13 +58,12 @@ const Header = () => {
               height={25}
               onClick={() => setOpenSidebar(true)}
             />
-          )}
+          ) 
+          :
+          <SideHeader className="lg:hidden" />
+          }
         </div>
       </nav>
-
-      <div className="hidden max-lg:block">
-        {openSidebar && <SideHeader className="lg:hidden" />}
-      </div>
     </header>
   );
 };
