@@ -22,7 +22,7 @@ const Footer = () => {
             <b>T</b>extiles
           </p>
           <div className="mt-8 flex items-center justify-center gap-5">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white">
+            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white">
               <img
                 src={facebook}
                 alt="Facebook Logo"
@@ -31,7 +31,7 @@ const Footer = () => {
                 className="" //je fais ça pour que prettier le formate verticalement
               />
             </div>
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white">
+            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white">
               <img
                 src={instagram}
                 alt="Instagram Logo"
@@ -55,7 +55,6 @@ const Footer = () => {
                     className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray"
                   >
                     <a>{e.name}</a>
-                    
                   </li>
                 ))}
               </ul>

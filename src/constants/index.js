@@ -1,30 +1,25 @@
 export const footerLinks = [
   {
-      title: "Products",
-      links: [
-          { name: "Air Force 1", link: "/" },
-          { name: "Air Max 1", link: "/" },
-          { name: "Air Jordan 1", link: "/" },
-          { name: "Air Force 2", link: "/" },
-          { name: "Nike Waffle Racer", link: "/" },
-          { name: "Nike Cortez", link: "/" },
-      ],
+    title: "Produits",
+    links: [
+      { name: "Gants de Gommage", link: "/" },
+      { name: "Kit Visage", link: "/" },
+      { name: "Frotte-Dos", link: "/" },
+      { name: "Sandales Hammam", link: "/" },
+    ],
   },
   {
-      title: "Help",
-      links: [
-          { name: "About us", link: "/" },
-          { name: "FAQs", link: "/" },
-          { name: "How it works", link: "/" },
-          { name: "Privacy policy", link: "/" },
-          { name: "Payment policy", link: "/" },
-      ],
+    title: "Infos",
+    links: [
+      { name: "À propos", link: "/" },
+      { name: "Privacy policy", link: "/" },
+    ],
   },
   {
-      title: "Get in touch",
-      links: [
-          { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-          { name: "+92554862354", link: "tel:+92554862354" },
-      ],
+    title: "Contact",
+    links: [
+      { name: "fisatex@fisatex.com", link: "mailto:customer@nike.com" },
+      { name: "+212-5-22-30-33-67", link: "tel:+92554862354" },
+    ],
   },
 ];
