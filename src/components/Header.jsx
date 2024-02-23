@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { cross, hamburger } from "../assets/icons";
 import { fisatexLogo } from "../assets/images";
-import SideHeader from "../components/SideHeader";
+import SideHeader from "./SideHeader";
 
 import { useMyContext } from "../ContextComp";
 import { Link } from "react-router-dom";
@@ -31,15 +31,9 @@ const Header = () => {
           <div className="group relative">
             <p className="cursor-pointer hover:text-green-500">Produits</p>
             <div className="absolute left-[-50px] hidden w-[180px] cursor-pointer rounded-lg bg-white px-2 py-5 font-serif text-gray-500 shadow-xl ring-1 ring-slate-900/5 group-hover:block">
-              <p className="text-left hover:text-green-500">
-                Gants de Gommage
-              </p>
-              <p className="py-2 text-left hover:text-green-500">
-                Kit Visage
-              </p>
-              <p className="py-2 text-left hover:text-green-500">
-                Frotte-Dos
-              </p>
+              <p className="text-left hover:text-green-500">Gants de Gommage</p>
+              <p className="py-2 text-left hover:text-green-500">Kit Visage</p>
+              <p className="py-2 text-left hover:text-green-500">Frotte-Dos</p>
               <p className="py-2 text-left hover:text-green-500">
                 Sandales Hammam
               </p>
@@ -58,10 +52,9 @@ const Header = () => {
               height={25}
               onClick={() => setOpenSidebar(true)}
             />
-          ) 
-          :
-          <SideHeader className="lg:hidden" />
-          }
+          ) : (
+            <SideHeader className="lg:hidden" />
+          )}
         </div>
       </nav>
     </header>

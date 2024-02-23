@@ -1,16 +1,15 @@
 import Bienfaits from "./sections/Bienfaits";
 import FirstPart from "./sections/FirstPart";
-import Header from "./sections/Header";
+import Header from "./components/Header";
 import VotreGant from "./sections/VotreGant";
-
-
+import Footer from "./components/Footer";
 
 const AllSite = () => {
   return (
     <main>
-      <section>
+      <header>
         <Header />
-      </section>
+      </header>
 
       <section className="padding-b">
         <FirstPart />
@@ -22,9 +21,9 @@ const AllSite = () => {
         <VotreGant />
       </section>
 
-    
-
-  
+      <footer className="padding-x pt-8 bg-gray-800 pb-8">
+        <Footer />
+      </footer>
     </main>
   );
 };
