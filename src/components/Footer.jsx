@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { fisatexLogo, fisatexNoBg } from "../assets/images";
 import { facebook, instagram } from "../assets/icons";
+import { footerLinks } from "../constants";
 
 const Footer = () => {
   return (
@@ -40,10 +41,27 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className='flex flex-1 justify-between gap-20 flex-wrap lg:gap-10' >
-
+        <div className="flex flex-1 flex-wrap justify-between gap-20 lg:gap-10">
+          {footerLinks.map((e) => (
+            <div key={e}>
+              <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+                {e.title}
+              </h4>
+              {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
+              <ul>
+                {e.links.map((e) => (
+                  <li
+                    key={e.name}
+                    className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray"
+                  >
+                    <a>{e.name}</a>
+                    
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </footer>
   );
