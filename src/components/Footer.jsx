@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { fisatexLogo, fisatexNoBg } from "../assets/images";
-import { facebook, instagram } from "../assets/icons";
+import { copyrightSign, facebook, instagram } from "../assets/icons";
 import { footerLinks } from "../constants";
 
 const Footer = () => {
@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-1 flex-wrap justify-between gap-20 lg:gap-10">
+        <div className="flex flex-1 flex-wrap justify-between gap-20 mt-[-40px] lg:mt-10 lg:gap-10">
           {footerLinks.map((e) => (
             <div key={e}>
               <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
@@ -61,6 +61,20 @@ const Footer = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="mt-10 flex justify-between text-white-400 max-sm:flex-col max-sm:items-center">
+        <div className="flex flex-1 items-center justify-start gap-2 font-montserrat">
+          <img
+            src={copyrightSign}
+            alt="copyright sign"
+            width={20}
+            height={20}
+            className="m-0 rounded-full"
+          />
+          <p>Copyright. All rights reserved.</p>
+        </div>
+        <p className="cursor-pointer font-montserrat"> Terms & Conditions</p>
       </div>
     </footer>
   );
