@@ -4,13 +4,13 @@ import MyButton from "../components/MyButton";
 
 const VotreGant = () => {
   return (
-    <section className=" flex items-center border bg-red-100 py-12 max-lg:py-20 max-lg:flex-col max-lg:items-center">
-      <div className="mt-[-50px] px-24 max-lg:pb-14 ">
-        <h2 className="font-palanquin text-4xl font-bold ">
+    <section className=" flex items-center justify-center border bg-red-100 py-12 max-lg:flex-col max-lg:py-20 max-lg:px-5">
+      <div className="max-lg:flex max-lg:flex-col max-lg:items-center mt-[-50px] max-lg:px-5 max-lg:pb-14 lg:px-24 ">
+        <h2 className="font-palanquin text-[40px] font-bold max-lg:text-center ">
           <span className="text-coral-red">Personnalisez</span> Votre Gant !
         </h2>
         {/* max-w-lg:Limite la largeur du texte pour qu'il ne prenne pas trop de place */}
-        <p className="mt-4 font-montserrat text-xl leading-9 lg:max-w-lg">
+        <p className="mt-4 font-montserrat text-[19px] leading-9 lg:max-w-lg">
           Choisissez parmi une <b>vaste sélection de couleurs</b> et ajoutez{" "}
           <b>votre logo</b> sur l'élastique, afin de créer un produit{" "}
           <b>unique</b> qui correspond à votre marque
