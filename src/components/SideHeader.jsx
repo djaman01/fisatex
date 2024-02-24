@@ -13,17 +13,13 @@ const SideHeader = () => {
 
   return (
     <>
-      <div
-        className="prose"
-        style={{ display: "flex", height: "100%" }}
-      >
+      <div className="prose" style={{ display: "flex", height: "100%" }}>
         <Sidebar
           backgroundColor="#ededed"
-          breakPoint="all" 
+          breakPoint="all"
           onBackdropClick={() => setOpenSidebar(false)} //permet de mettre faux quand on clique hors de la sidebar
           toggled={openSidebar}
           transitionDuration={5000}
-          
         >
           <Menu>
             <MenuItem
@@ -34,7 +30,9 @@ const SideHeader = () => {
             </MenuItem>
 
             <SubMenu icon={<RiProductHuntLine size={20} />} label="Produits">
-              <MenuItem> Gants de gommage</MenuItem>
+              <MenuItem component={<Link to="/gants" />}>
+                Gants de gommage
+              </MenuItem>
               <MenuItem> Kit Visage </MenuItem>
               <MenuItem> Frotte-Dos</MenuItem>
               <MenuItem> Sandales Hammam </MenuItem>
