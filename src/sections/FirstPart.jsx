@@ -16,7 +16,7 @@ const FirstPart = () => {
   return (
     <section className="mx-5 my-10 flex flex-col gap-5 lg:mx-16 lg:my-10 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[250px,250px] lg:gap-5">
       
-      <div className="max-lg:h-[428px] lg:row-span-2 ">
+      <div className="lg:row-span-2 ">
         <Link to='/gants'>
         <img
           src={gantRen}
@@ -25,14 +25,14 @@ const FirstPart = () => {
         />
         </Link>
       </div>
-      <div className="max-lg:h-[428px]">
+      <div className="">
         <img
           src={rituKit}
           alt="crème"
           className="h-full w-full cursor-pointer rounded-lg object-cover "
         />
       </div>
-      <div className="max-lg:h-[428px]">
+      <div className="">
         <img
           src={sandalesJet}
           alt="massage"
