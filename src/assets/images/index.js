@@ -9,6 +9,9 @@ import mainCreme from './main-creme.jpg'
 import peauMorte from './peau-morte.png'
 import gantVisage from './gant-femme2.webp'
 import fisatexNoBg from './fisatex-no-bg.png'
+import gantRen from './gant-ren.webp'
+import rituKit from './rituel-kit.jpg'
+import sandalesJet from './sandale-jetable.jpg'
 
 
 export {
@@ -22,6 +25,9 @@ export {
   hammam,
   mainCreme,
   peauMorte,
-  gantVisage
+  gantVisage,
+  gantRen,
+  rituKit,
+  sandalesJet
 
 }

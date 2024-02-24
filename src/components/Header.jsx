@@ -27,7 +27,9 @@ const Header = () => {
           />
         </Link>
         <div className="flex flex-1 items-center justify-center gap-16 font-montserrat text-lg leading-normal text-slate-gray max-lg:hidden">
-          <p className="cursor-pointer hover:text-green-500">Accueil</p>
+          <Link to="/">
+            <p className="cursor-pointer hover:text-green-500">Accueil</p>
+          </Link>
           <div className="group relative">
             <p className="cursor-pointer hover:text-green-500">Produits</p>
             <div className="absolute left-[-50px] hidden w-[180px] cursor-pointer rounded-lg bg-white px-2 py-5 font-serif text-gray-500 shadow-xl ring-1 ring-slate-900/5 group-hover:block">
