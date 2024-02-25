@@ -12,7 +12,9 @@ import fisatexNoBg from './fisatex-no-bg.png'
 import gantRen from './gant-ren.webp'
 import rituKit from './rituel-kit.jpg'
 import sandalesJet from './sandale-jetable.jpg'
-
+import gantSensible from './gant-sensible.webp'
+import gantTradi from './gant-tradi.webp'
+import gantSup from './gant-sup.webp'
 
 export {
   fisatexLogo,
@@ -28,6 +30,10 @@ export {
   gantVisage,
   gantRen,
   rituKit,
-  sandalesJet
+  sandalesJet,
+  gantSensible,
+  gantTradi,
+  gantSup
+
 
 }
