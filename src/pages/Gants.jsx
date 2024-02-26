@@ -4,23 +4,24 @@ import Header from "../components/Header";
 
 const Gants = () => {
   return (
-    <>
+    <div>
       <header>
         <Header />
       </header>
-      <main className="mx-16 mt-10">
-        <div className="ml-10 grid grid-cols-[500px,1fr] grid-rows-[500px,500px,500px] ">
+
+      <main>
+        <div className=" grid grid-cols-[500px,1fr] grid-rows-[500px,500px,500px] items-center gap-8 ml-40">
           <img
             src={gantAroma}
             alt="gant peaux sensibles"
             className="h-5/6 w-5/6 rounded-l-full"
           />
 
-          <div className="prose ml-14 h-3/6 rounded-r-full bg-slate-300 shadow-3xl">
-            <h2 className="pt-2 text-center text-blue-600">
+          <div className="prose h-5/6 w-5/6 rounded-r-full bg-slate-300 shadow-3xl">
+            <h2 className="pt-2 pl-24 text-blue-600">
               Gant Peaux Sensibles
             </h2>
-            <ul className="pt-2 font-bold">
+            <ul className="pt-2 font-bold ">
               <li>Notre gant de gommage pour les peaux sensibles</li>
               <li>
                 Associe un gommage performant tout en étant respectueux des
@@ -34,8 +35,8 @@ const Gants = () => {
             alt="gant Traditionel"
             className="h-5/6 w-5/6 rounded-l-full"
           />
-          <div className="prose ml-14 h-3/6 rounded-r-full bg-slate-300 shadow-3xl">
-            <h2 className="pt-2 text-center text-blue-600">
+          <div className="prose h-5/6 w-5/6 rounded-r-full bg-slate-300 shadow-3xl">
+            <h2 className="pt-2 pl-24 text-blue-600">
               Gant Traditionnel
             </h2>
             <ul className="pt-2 font-bold">
@@ -50,8 +51,8 @@ const Gants = () => {
             className="h-5/6 w-5/6 rounded-l-full"
           />
 
-          <div className="prose ml-14 h-3/6 rounded-r-full bg-slate-300 shadow-3xl">
-            <h2 className="pt-2 text-center text-blue-600">
+          <div className="prose h-5/6 w-5/6 rounded-r-full bg-slate-300 shadow-3xl">
+            <h2 className="pt-2 pl-24 text-blue-600">
               Gant Qualité Supérieure
             </h2>
             <ul className="pt-2 font-bold">
@@ -64,7 +65,7 @@ const Gants = () => {
       <footer className="padding-x bg-gray-800 pb-8 pt-8">
         <Footer />
       </footer>
-    </>
+    </div>
   );
 };
 
