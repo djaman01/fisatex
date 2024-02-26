@@ -36,14 +36,11 @@ const Gants = () => {
           />
           <div className="prose h-3/6 border border-black">
             <h2 className="pt-2 text-center text-blue-600">
-              Gant Peaux Sensibles
+              Gant Traditionnel
             </h2>
             <ul className="pt-2">
-              <li>Notre gant de gommage pour les peaux sensibles</li>
-              <li>
-                Associe un gommage performant tout en étant respectueux des
-                peaux fragiles et sujettes aux irritations.
-              </li>
+              <li>Le gant de gommage Classique</li>
+              <li>Convient aux peaux résistantes</li>
             </ul>
           </div>
 
@@ -55,14 +52,11 @@ const Gants = () => {
 
           <div className="prose h-3/6 border border-black">
             <h2 className="pt-2 text-center text-blue-600">
-              Gant Peaux Sensibles
+              Gant Qualité Supérieure
             </h2>
             <ul className="pt-2">
-              <li>Notre gant de gommage pour les peaux sensibles</li>
-              <li>
-                Associe un gommage performant tout en étant respectueux des
-                peaux fragiles et sujettes aux irritations.
-              </li>
+              <li>Notre gant de gommage avec la technologie la plus aboutie</li>
+              <li>Convient à tout type de peaux et offre un gommage optimal</li>
             </ul>
           </div>
         </div>
