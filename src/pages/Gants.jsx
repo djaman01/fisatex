@@ -21,7 +21,7 @@ const Gants = () => {
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Peaux Sensibles
             </h2>
-            <div className="pt-2 font-bold max-lg:pl-5 ">
+            <div className="lg:pl-5 pt-2 font-bold max-lg:pl-5 ">
               <li> Notre gant de gommage pour les peaux sensibles</li>
               <li>
                 Associe un gommage performant tout en étant respectueux des
@@ -40,7 +40,7 @@ const Gants = () => {
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Traditionnel
             </h2>
-            <div className="pt-2 font-bold max-lg:pl-5 ">
+            <div className=" lg:pl-5 pt-2 font-bold max-lg:pl-5 ">
               <li> Le gant de gommage originel </li>
               <li>Adapté aux peaux Résistantes, pour un gommage profond</li>
             </div>
@@ -56,7 +56,7 @@ const Gants = () => {
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Qualité Supérieure
             </h2>
-            <div className="pt-2 font-bold max-lg:pl-5 ">
+            <div className=" lg:pl-5 pt-2 font-bold max-lg:pl-5 ">
               <li>
                 Notre gant de gommage avec la technologie la plus aboutie
               </li>
