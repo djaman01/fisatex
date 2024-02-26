@@ -1,4 +1,4 @@
-import { gantSensible, gantSup, gantTradi } from "../assets/images";
+import { gantAroma, gantSensible, gantSup, gantTradi } from "../assets/images";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -8,35 +8,62 @@ const Gants = () => {
       <header>
         <Header />
       </header>
-      <main>
-        <div className="grid grid-cols-[500px,1fr] grid-rows-[500px,500px,500px] border border-black">
+      <main className="mx-16 mt-5">
+        <div className="grid grid-cols-[500px,1fr] grid-rows-[500px,500px,500px] ">
           <img
-            src={gantSensible}
+            src={gantAroma}
             alt="gant peaux sensibles"
-            className="m-auto h-[450px] w-[450px]"
+            className="h-5/6 w-5/6 rounded-l-full"
           />
 
-          <div className="border border-black">
-            <p>ezdze</p>
+          <div className="m prose h-3/6 border border-black">
+            <h2 className="pt-2 text-center text-blue-600">
+              Gant Peaux Sensibles
+            </h2>
+            <ul className="pt-2">
+              <li>Notre gant de gommage pour les peaux sensibles</li>
+              <li>
+                Associe un gommage performant tout en étant respectueux des
+                peaux fragiles et sujettes aux irritations.
+              </li>
+            </ul>
           </div>
 
           <img
-            src={gantTradi}
+            src={gantAroma}
             alt="gant Traditionel"
-            className=" m-auto h-[450px] w-[450px] px-2 py-2"
+            className="h-5/6 w-5/6 rounded-l-full"
           />
-          <div className="border border-black">
-            <p>ezdze</p>
+          <div className="prose h-3/6 border border-black">
+            <h2 className="pt-2 text-center text-blue-600">
+              Gant Peaux Sensibles
+            </h2>
+            <ul className="pt-2">
+              <li>Notre gant de gommage pour les peaux sensibles</li>
+              <li>
+                Associe un gommage performant tout en étant respectueux des
+                peaux fragiles et sujettes aux irritations.
+              </li>
+            </ul>
           </div>
 
           <img
-            src={gantSup}
+            src={gantAroma}
             alt="gant qualité Supérieure"
-            className="m-auto h-[450px] w-[450px]"
+            className="h-5/6 w-5/6 rounded-l-full"
           />
 
-          <div className="border border-black">
-            <p>ezdze</p>
+          <div className="prose h-3/6 border border-black">
+            <h2 className="pt-2 text-center text-blue-600">
+              Gant Peaux Sensibles
+            </h2>
+            <ul className="pt-2">
+              <li>Notre gant de gommage pour les peaux sensibles</li>
+              <li>
+                Associe un gommage performant tout en étant respectueux des
+                peaux fragiles et sujettes aux irritations.
+              </li>
+            </ul>
           </div>
         </div>
       </main>

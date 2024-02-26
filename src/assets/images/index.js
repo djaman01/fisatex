@@ -15,6 +15,7 @@ import sandalesJet from './sandale-jetable.jpg'
 import gantSensible from './gant-sensible.webp'
 import gantTradi from './gant-tradi.webp'
 import gantSup from './gant-sup.webp'
+import gantAroma from './gant-aroma.avif'
 
 export {
   fisatexLogo,
@@ -33,7 +34,8 @@ export {
   sandalesJet,
   gantSensible,
   gantTradi,
-  gantSup
+  gantSup,
+  gantAroma
 
 
 }
