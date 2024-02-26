@@ -32,7 +32,7 @@ const Gants = () => {
 
           <img
             src={gantAroma}
-            alt="gant peaux sensibles"
+            alt="gant Traditionnel"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-5/6 lg:rounded-l-full"
           />
 
@@ -48,7 +48,7 @@ const Gants = () => {
 
           <img
             src={gantAroma}
-            alt="gant peaux sensibles"
+            alt="gant Qualité Supérieure"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-5/6 lg:rounded-l-full"
           />
 
