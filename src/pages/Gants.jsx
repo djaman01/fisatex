@@ -10,52 +10,58 @@ const Gants = () => {
       </header>
 
       <main>
-        <div className=" max-lg:grid-cols-[500px] mb-20 ml-52 grid grid-cols-[500px,1fr] grid-rows-[500px,500px,500px] items-center gap-8">
+        <div className=" max-lg:mb-16 max-lg:mt-10 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-8 lg:mb-20 lg:ml-52 lg:grid lg:grid-cols-[500px,1fr] lg:grid-rows-[500px,500px,500px] lg:items-center lg:gap-8">
           <img
             src={gantAroma}
             alt="gant peaux sensibles"
-            className="h-5/6 w-5/6 rounded-l-full"
+            className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-5/6 lg:rounded-l-full"
           />
 
-          <div className="max-lg:h-[350px] prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
-            <h2 className="pl-24 pt-2 text-blue-600">Gant Peaux Sensibles</h2>
-            <ol className="pt-2 font-bold ">
-              <li>Notre gant de gommage pour les peaux sensibles</li>
+          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[400px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-20">
+            <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
+              Gant Peaux Sensibles
+            </h2>
+            <div className="pt-2 font-bold max-lg:pl-5 ">
+              <li> Notre gant de gommage pour les peaux sensibles</li>
               <li>
                 Associe un gommage performant tout en étant respectueux des
                 peaux fragiles et sujettes aux irritations.
               </li>
-            </ol>
+            </div>
           </div>
 
           <img
             src={gantAroma}
-            alt="gant Traditionel"
-            className="h-5/6 w-5/6 rounded-l-full"
+            alt="gant peaux sensibles"
+            className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-5/6 lg:rounded-l-full"
           />
-          
-          <div className="max-lg:h-[350px]  prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
-            <h2 className="pl-24 pt-2 text-blue-600">Gant Traditionnel</h2>
-            <ol className="pt-2 font-bold">
-              <li>Le gant de gommage Classique</li>
-              <li>Convient aux peaux résistantes</li>
-            </ol>
+
+          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[400px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-20">
+            <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
+              Gant Traditionnel
+            </h2>
+            <div className="pt-2 font-bold max-lg:pl-5 ">
+              <li> Le gant de gommage originel </li>
+              <li>Adapté aux peaux Résistantes, pour un gommage profond</li>
+            </div>
           </div>
 
           <img
             src={gantAroma}
-            alt="gant qualité Supérieure"
-            className="h-5/6 w-5/6 rounded-l-full"
+            alt="gant peaux sensibles"
+            className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-5/6 lg:rounded-l-full"
           />
 
-          <div className="max-lg:h-[350px] prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
-            <h2 className="pl-24 pt-2 text-blue-600">
+          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[400px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-20">
+            <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Qualité Supérieure
             </h2>
-            <ol className="pt-2 font-bold">
-              <li>Notre gant de gommage avec la technologie la plus aboutie</li>
+            <div className="pt-2 font-bold max-lg:pl-5 ">
+              <li>
+                Notre gant de gommage avec la technologie la plus aboutie
+              </li>
               <li>Convient à tout type de peaux et offre un gommage optimal</li>
-            </ol>
+            </div>
           </div>
         </div>
       </main>
