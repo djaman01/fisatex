@@ -10,14 +10,14 @@ const Gants = () => {
       </header>
 
       <main>
-        <div className=" mb-20 ml-52 grid grid-cols-[500px,1fr] grid-rows-[500px,500px,500px] items-center gap-8">
+        <div className=" max-lg:grid-cols-[500px] mb-20 ml-52 grid grid-cols-[500px,1fr] grid-rows-[500px,500px,500px] items-center gap-8">
           <img
             src={gantAroma}
             alt="gant peaux sensibles"
             className="h-5/6 w-5/6 rounded-l-full"
           />
 
-          <div className="prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
+          <div className="max-lg:h-[350px] prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
             <h2 className="pl-24 pt-2 text-blue-600">Gant Peaux Sensibles</h2>
             <ol className="pt-2 font-bold ">
               <li>Notre gant de gommage pour les peaux sensibles</li>
@@ -33,7 +33,8 @@ const Gants = () => {
             alt="gant Traditionel"
             className="h-5/6 w-5/6 rounded-l-full"
           />
-          <div className="prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
+          
+          <div className="max-lg:h-[350px]  prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
             <h2 className="pl-24 pt-2 text-blue-600">Gant Traditionnel</h2>
             <ol className="pt-2 font-bold">
               <li>Le gant de gommage Classique</li>
@@ -47,7 +48,7 @@ const Gants = () => {
             className="h-5/6 w-5/6 rounded-l-full"
           />
 
-          <div className="prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
+          <div className="max-lg:h-[350px] prose h-5/6 w-5/6 rounded-r-full bg-slate-300 pt-20 shadow-3xl">
             <h2 className="pl-24 pt-2 text-blue-600">
               Gant Qualité Supérieure
             </h2>
