@@ -17,11 +17,11 @@ const Gants = () => {
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
           />
 
-          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-20">
-            <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
+          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10">
+            <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24">
               Gant Peaux Sensibles
             </h2>
-            <div className="pt-2 font-bold max-lg:pl-5 lg:pl-5 max-lg:pt-0 ">
+            <div className="pt-2 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
               <li> Notre gant de gommage pour les peaux sensibles</li>
               <li>
                 Associe un gommage performant tout en étant respectueux des
@@ -42,11 +42,11 @@ const Gants = () => {
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
           />
 
-          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-20">
+          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10">
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Traditionnel
             </h2>
-            <div className=" pt-2 font-bold max-lg:pl-5 lg:pl-5 max-lg:pt-0">
+            <div className=" pt-2 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5">
               <li> Le gant de gommage originel </li>
               <li>Adapté aux peaux Résistantes, pour un gommage profond</li>
               <li style={{ color: "#ff0921" }}>
@@ -64,11 +64,11 @@ const Gants = () => {
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
           />
 
-          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-20">
+          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10">
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Qualité Supérieure
             </h2>
-            <div className=" pt-2 font-bold max-lg:pl-5 lg:pl-5 max-lg:pt-0 ">
+            <div className=" pt-2 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
               <li>Notre gant de gommage avec la technologie la plus aboutie</li>
               <li>Convient à tout type de peaux et offre un gommage optimal</li>
               <li style={{ color: "#ff0921" }}>
