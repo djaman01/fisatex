@@ -41,25 +41,67 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-1 flex-wrap justify-between gap-20 mt-[-40px] lg:mt-10 lg:gap-10">
-          {footerLinks.map((e) => (
-            <div key={e}>
-              <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
-                {e.title}
-              </h4>
-              {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
-              <ul>
-                {e.links.map((e) => (
-                  <li
-                    key={e.name}
-                    className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray"
-                  >
-                    <a>{e.name}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+
+        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
+          <div>
+            <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+              Produits
+            </h4>
+
+            {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
+            <ul>
+              <Link to="/gants">
+                <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                  Gant de Gommage
+                </li>
+              </Link>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Kit Visage
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Frotte Dos
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Sandales Hammam
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
+          <div>
+            <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+              Contact
+            </h4>
+
+            {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
+            <ul>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Mail: fisatex@fisatex.com
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Tel: 05-22-30-33-67
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
+          <div>
+            <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+              Infos
+            </h4>
+
+            {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
+            <ul>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                À propos
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Charte de Confidentialité
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
