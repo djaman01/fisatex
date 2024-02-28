@@ -12,7 +12,7 @@ const Gants = () => {
       <main>
         <div className=" max-lg:mb-16 max-lg:mt-10 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-8 lg:mb-20 lg:ml-40 lg:grid lg:grid-cols-[500px,1fr] lg:grid-rows-[500px,500px,500px] lg:items-center lg:gap-8">
           <img
-            src={gantAroma}
+            src={gantSensible} //les images ont des bordures blanches c'est pourquoi elles sont différentes de la partie droite
             alt="gant peaux sensibles"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
           />
@@ -37,7 +37,7 @@ const Gants = () => {
           </div>
 
           <img
-            src={gantAroma}
+            src={gantTradi} //Seule photo bien faite et sans bordures blanches
             alt="gant Traditionnel"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
           />
@@ -59,7 +59,7 @@ const Gants = () => {
           </div>
 
           <img
-            src={gantAroma}
+            src={gantSup} //les images ont des bordures blanches c'est pourquoi elles sont différentes de la partie droite
             alt="gant Qualité Supérieure"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
           />
