@@ -66,9 +66,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
 
-        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
           <div>
             <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
               Contact
@@ -84,9 +82,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
 
-        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
           <div>
             <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
               Infos
