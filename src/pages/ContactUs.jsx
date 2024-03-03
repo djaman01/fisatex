@@ -1,9 +1,15 @@
 import Footer from "../components/Footer";
+import FormContact from "../components/FormContact";
 import Header from "../components/Header";
 
 import { IoMailOutline } from "react-icons/io5";
 
+
+
+
 const ContactUs = () => {
+ 
+
   return (
     <>
       <header>
@@ -70,8 +76,11 @@ const ContactUs = () => {
               ></iframe>
             </div>
 
-            <div></div>
           </div>
+
+          <div>
+              <FormContact />
+            </div>
         </div>
       </main>
 
