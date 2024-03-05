@@ -3,6 +3,10 @@ import FormContact from "../components/FormContact";
 import Header from "../components/Header";
 
 import { IoMailOutline } from "react-icons/io5";
+import { CiPhone } from "react-icons/ci";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { FaFacebook } from "react-icons/fa";
+import { BiLogoInstagramAlt } from "react-icons/bi";
 
 const ContactUs = () => {
   return (
@@ -38,23 +42,24 @@ const ContactUs = () => {
             </div>
             <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 hover:shadow-2xl">
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
-                <IoMailOutline color="white" size={20} />
+                <CiPhone color="white" size={20} />
               </div>
               <h2 className=" mb-3 text-2xl font-semibold text-gray-700">
-                E-mail
+                Téléphone
               </h2>
               <p className="font-palanquin text-xl text-gray-500">
-                fisatex@fisatex.com
+              +212-5-22-30-33-67
               </p>
             </div>
             <div className=" flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 text-gray-700 hover:shadow-2xl">
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
-                <IoMailOutline color="white" size={20} />
+                <IoShareSocialOutline color="white" size={20} /> 
               </div>
-              <h2 className="mb-3 text-2xl font-semibold">E-mail</h2>
-              <p className="font-palanquin text-xl text-gray-500">
-                fisatex@fisatex.com
-              </p>
+              <h2 className="mb-3 text-2xl font-semibold">Réseaux Sociaux</h2>
+             <div className=" flex w-28 justify-around items-center">
+             <FaFacebook size={28} className="cursor-pointer" />
+             <BiLogoInstagramAlt size={31} className="cursor-pointer" />
+             </div>
             </div>
           </div>
 
