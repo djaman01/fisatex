@@ -68,7 +68,7 @@ const ContactUs = () => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full"
+                className="w-full h-full"
               ></iframe>
             </div>
 
