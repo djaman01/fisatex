@@ -1,6 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Formik, Form, useField } from "formik";
+import { Formik, Form, useField, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
@@ -9,13 +7,13 @@ import * as Yup from "yup";
 const MyTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <>
+    <div className="mb-2">
       <label htmlFor={props.id || props.name}>{label}</label>
       <input className="text-input" {...field} {...props} />
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className="error text-sm text-red-500 ">{meta.error}</div>
       ) : null}
-    </>
+    </div>
   );
 };
 
@@ -31,29 +29,25 @@ const FormContact = () => {
             companyName: "",
             email: "",
             phone: "",
+            message: "",
           }}
           validationSchema={Yup.object({
             lastName: Yup.string()
-              .max(20, "Must be 20 characters or less")
-              .required("Required"),
+              .max(30, "Doit comporter 30 caractères maximum")
+              .required("Requis"),
             firstName: Yup.string()
-              .max(15, "Must be 15 characters or less")
-              .required("Required"),
+              .max(20, "Doit comporter 20 caractères maximum")
+              .required("Requis"),
             companyName: Yup.string()
-              .max(15, "Must be 15 characters or less")
-              .required("Required"),
+              .max(25, "Doit comporter 25 caractères maximum")
+              .required("Requis"),
             email: Yup.string()
               .email("Invalid email address")
-              .required("Required"),
-            acceptedTerms: Yup.boolean()
-              .required("Required")
-              .oneOf([true], "You must accept the terms and conditions."),
-            jobType: Yup.string()
-              .oneOf(
-                ["designer", "development", "product", "other"],
-                "Invalid Job Type",
-              )
-              .required("Required"),
+              .required("Requis"),
+            phone: Yup.string().required("Requis"),
+            message: Yup.string()
+              .min(70, "Doit comporter 70 caractères minimum")
+              .required("Requis"),
           })}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
@@ -105,18 +99,24 @@ const FormContact = () => {
 
             <div>
               <label htmlFor="message">Message</label>
-              <textarea
+              <Field
                 id="message"
                 name="message"
+                as="textarea"
                 placeholder="Votre message"
                 rows="5"
                 className="block w-full appearance-none rounded border px-3 py-2 leading-tight focus:outline-none focus:ring-blue-500"
+              />
+              <ErrorMessage
+                name="message"
+                component="div"
+                className="error text-sm text-red-500"
               />
             </div>
 
             <button
               type="submit"
-              className="rounded  bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:ring-blue-500"
+              className="mt-5 rounded  bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:ring-blue-500"
             >
               Submit
             </button>
