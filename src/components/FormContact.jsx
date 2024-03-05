@@ -51,7 +51,7 @@ const FormContact = () => {
           })}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
+              alert("Formulaire envoyé:\nNous vous répondrons dès que possible");
               setSubmitting(false);
             }, 400);
           }}

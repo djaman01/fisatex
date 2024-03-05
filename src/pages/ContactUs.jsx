@@ -58,7 +58,7 @@ const ContactUs = () => {
               <h2 className="mb-3 text-2xl font-semibold">Réseaux Sociaux</h2>
              <div className=" flex w-28 justify-around items-center">
              <FaFacebook size={28} className="cursor-pointer" />
-             <BiLogoInstagramAlt size={31} className="cursor-pointer" />
+             <BiLogoInstagramAlt size={32} className="cursor-pointer" />
              </div>
             </div>
           </div>
