@@ -45,11 +45,11 @@ const Header = () => {
               </p>
             </div>
           </div>
-          <Link to="/contactUs">
+
           <p className="cursor-pointer hover:text-green-500">À propos</p>
-          </Link>
-          <Link to="/contact">
-          <p className="cursor-pointer hover:text-green-500">Contact</p>
+
+          <Link to="/contactUs">
+            <p className="cursor-pointer hover:text-green-500">Contact</p>
           </Link>
         </div>
         <div className="hidden max-lg:block">

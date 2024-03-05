@@ -21,7 +21,7 @@ const MyTextInput = ({ label, ...props }) => {
 const FormContact = () => {
   return (
     <>
-      <div className="mx-auto mb-4 max-w-md rounded bg-white px-8 pb-8 pt-6 shadow-md">
+      <div className="mx-auto mb-4 max-w-md rounded bg-gray-50 px-8 pb-8 pt-6 shadow-2xl">
         <Formik
           initialValues={{
             lastName: "",
@@ -105,8 +105,8 @@ const FormContact = () => {
                 as="textarea"
                 placeholder="Votre message"
                 rows="5"
-                className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none" 
-                />
+                className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+              />
               <ErrorMessage
                 name="message"
                 component="div"
