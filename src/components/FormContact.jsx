@@ -62,7 +62,7 @@ const FormContact = () => {
               name="lastName"
               type="text"
               placeholder="Votre Nom de famille"
-              className=" block  w-full appearance-none rounded border px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none" //focus:outline-none est obligé pour enlever le border par défaut quand on clique sur l'input et que le border bleu qu'on veut s'applique quand on clique
             />
 
             <MyTextInput
@@ -70,7 +70,7 @@ const FormContact = () => {
               name="firstName"
               type="text"
               placeholder="Votre Prénom"
-              className="block w-full appearance-none rounded border px-3 py-2 leading-tight focus:outline-none focus:ring-blue-500"
+              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
             />
 
             <MyTextInput
@@ -78,7 +78,7 @@ const FormContact = () => {
               name="companyName"
               type="text"
               placeholder="Nom de votre société"
-              className="block w-full appearance-none rounded border px-3 py-2 leading-tight focus:outline-none focus:ring-blue-500"
+              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
             />
 
             <MyTextInput
@@ -86,7 +86,7 @@ const FormContact = () => {
               name="email"
               type="email"
               placeholder="Votre e-mail"
-              className="block w-full appearance-none rounded border px-3 py-2 leading-tight focus:outline-none focus:ring-blue-500"
+              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
             />
 
             <MyTextInput
@@ -94,7 +94,7 @@ const FormContact = () => {
               name="phone"
               type="tel"
               placeholder="Votre numéro"
-              className="block w-full appearance-none rounded border px-3 py-2 leading-tight focus:outline-none focus:ring-blue-500"
+              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
             />
 
             <div>
@@ -105,8 +105,8 @@ const FormContact = () => {
                 as="textarea"
                 placeholder="Votre message"
                 rows="5"
-                className="block w-full appearance-none rounded border px-3 py-2 leading-tight focus:outline-none focus:ring-blue-500"
-              />
+                className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none" 
+                />
               <ErrorMessage
                 name="message"
                 component="div"
