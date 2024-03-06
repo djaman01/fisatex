@@ -9,6 +9,9 @@ import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 
 const ContactUs = () => {
+
+
+
   return (
     <>
       <header>
@@ -29,7 +32,7 @@ const ContactUs = () => {
             <div className=" flex-1 bg-orange-600"></div>
           </div>
           <div className="my-16 flex justify-center gap-20">
-            <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 hover:shadow-2xl">
+            <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 border border-gray-400">
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <IoMailOutline color="white" size={20} />
               </div>
@@ -40,7 +43,7 @@ const ContactUs = () => {
                 fisatex@fisatex.com
               </p>
             </div>
-            <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 hover:shadow-2xl">
+            <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 border border-gray-400">
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <CiPhone color="white" size={20} />
               </div>
@@ -51,7 +54,7 @@ const ContactUs = () => {
               +212-5-22-30-33-67
               </p>
             </div>
-            <div className=" flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 text-gray-700 hover:shadow-2xl">
+            <div className=" flex h-60 w-72 flex-col items-center justify-center rounded-lg bg-gray-100 text-gray-700 border border-gray-400">
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <IoShareSocialOutline color="white" size={20} /> 
               </div>
