@@ -22,17 +22,18 @@ const MyTextInput = ({ label, ...props }) => {
   );
 };
 
-// And now we can use these templates to create different inpiuts easily
+// And now we can use these templates to create different inputs easily
 const FormContact = () => {
+
   const form = useRef();
 
   const sendEmail = () => {
     return emailjs.sendForm(
-      "service_pjw8ixl",
-      "template_4371vsw",
+      "service_pjw8ixl", //service_id => A trouver dans Section Email services
+      "template_4371vsw", //template_id => A trouver dans section Email templates => Settings
       form.current,
       {
-        publicKey: "jbn6FFUwLocXKxqvT",
+        publicKey: "jbn6FFUwLocXKxqvT", //publicKey: A trouver dans account => API Keys
       },
     );
   };
