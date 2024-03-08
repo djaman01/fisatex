@@ -1,11 +1,16 @@
 import { Formik, Form, useField, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
 // which we can spread on <input>. We can use field meta to show an error
 // message if the field is invalid and it has been touched (i.e. visited)
+
 const MyTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
+
   return (
     <div className="mb-2">
       <label htmlFor={props.id || props.name}>{label}</label>
@@ -19,6 +24,19 @@ const MyTextInput = ({ label, ...props }) => {
 
 // And now we can use these templates to create different inpiuts easily
 const FormContact = () => {
+  const form = useRef();
+
+  const sendEmail = () => {
+    return emailjs.sendForm(
+      "service_pjw8ixl",
+      "template_4371vsw",
+      form.current,
+      {
+        publicKey: "jbn6FFUwLocXKxqvT",
+      },
+    );
+  };
+
   return (
     <>
       <div className="mx-auto mb-4 max-w-md rounded bg-gray-50 px-8 pb-8 pt-6 shadow-2xl">
@@ -49,14 +67,20 @@ const FormContact = () => {
               .min(40, "Doit comporter 40 caractères minimum")
               .required("Requis"),
           })}
-          onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert("Formulaire envoyé:\nNous vous répondrons dès que possible");
-              setSubmitting(false);
-            }, 400);
+          onSubmit={(values, { setSubmitting, resetForm }) => {
+            alert("Formulaire envoyé:\nNous vous répondrons dès que possible");
+            sendEmail();
+            resetForm()
+              .then(() => {
+                setSubmitting(false);
+              })
+              .catch((error) => {
+                console.error("FAILED...", error);
+                setSubmitting(false);
+              });
           }}
         >
-          <Form>
+          <Form ref={form}>
             <MyTextInput
               label="Nom"
               name="lastName"
