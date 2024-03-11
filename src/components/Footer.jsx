@@ -6,7 +6,7 @@ import { footerLinks } from "../constants";
 const Footer = () => {
   return (
     <footer className="max-container">
-      <div className="flex flex-wrap items-start justify-between gap-20 max-lg:flex-col">
+      <div className="flex flex-wrap items-start justify-between gap-20 ">
         <div className="flex flex-col items-start">
           <Link to="/">
             <img
@@ -21,7 +21,7 @@ const Footer = () => {
             <b>F</b>abric <b>I</b>ndustrielle de <b>S</b>oie <b>A</b>cétate{" "}
             <b>T</b>extiles
           </p>
-          <div className="mt-8 flex items-center justify-center gap-5">
+          <div className=" mt-8 flex items-center justify-center gap-5">
             <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white">
               <img
                 src={facebook}
@@ -42,8 +42,40 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
-          <div>
+        <div className="max-sm:justify-center mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
+          <div className="max-sm:w-48">
+            <h4 className=" mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+              Contact
+            </h4>
+
+            {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
+            <ul>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Mail: fisatex@fisatex.com
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Tel: +212-5-22-30-33-67
+              </li>
+            </ul>
+          </div>
+
+          <div className="max-sm:w-48">
+            <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+              Infos
+            </h4>
+
+            {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
+            <ul>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                À propos
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Charte de Confidentialité
+              </li>
+            </ul>
+          </div>
+
+          <div className=" max-sm:w-48">
             <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
               Produits
             </h4>
@@ -63,38 +95,6 @@ const Footer = () => {
               </li>
               <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
                 Sandales Hammam
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
-              Contact
-            </h4>
-
-            {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
-            <ul>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Mail: fisatex@fisatex.com
-              </li>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Tel: +212-5-22-30-33-67
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
-              Infos
-            </h4>
-
-            {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
-            <ul>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                À propos
-              </li>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Charte de Confidentialité
               </li>
             </ul>
           </div>

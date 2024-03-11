@@ -40,7 +40,7 @@ const FormContact = () => {
 
   return (
     <>
-      <div className="mx-auto mb-4 max-w-md rounded bg-gray-50 px-8 pb-8 pt-6 shadow-2xl">
+      <div className=" max-lg:border max-lg:border-slate-400 mx-auto mb-4 max-w-md rounded bg-gray-50 px-8 pb-8 pt-6 shadow-2xl">
         <Formik
           initialValues={{
             lastName: "",
