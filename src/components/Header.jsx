@@ -38,11 +38,21 @@ const Header = () => {
                   Gants de Gommage
                 </p>
               </Link>
-              <p className="py-2 text-left hover:text-green-500">Kit Visage</p>
-              <p className="py-2 text-left hover:text-green-500">Frotte-Dos</p>
-              <p className="py-2 text-left hover:text-green-500">
-                Sandales Hammam
-              </p>
+              <Link to="/kitVisage">
+                <p className="py-2 text-left hover:text-green-500">
+                  Kit Visage
+                </p>
+              </Link>
+              <Link to="/frotteDos">
+                <p className="py-2 text-left hover:text-green-500">
+                  Frotte-Dos
+                </p>
+              </Link>
+              <Link to="/sandales">
+                <p className="py-2 text-left hover:text-green-500">
+                  Sandales Hammam
+                </p>
+              </Link>
             </div>
           </div>
 

@@ -14,14 +14,14 @@ const Footer = () => {
               alt="fisatex logo"
               width={150}
               height={46}
-              className="cursor-pointer rounded-lg bg-white px-2 py-2"
+              className="cursor-pointer rounded-lg bg-white px-2 py-2 max-sm:ml-20"
             />
           </Link>
           <p className="mt-6 font-mono text-base leading-7 text-white-400 sm:max-w-sm">
             <b>F</b>abric <b>I</b>ndustrielle de <b>S</b>oie <b>A</b>cétate{" "}
             <b>T</b>extiles
           </p>
-          <div className=" mt-8 flex items-center justify-center gap-5">
+          <div className=" mt-8 flex items-center justify-center gap-5 max-sm:flex max-sm:w-full max-sm:justify-around">
             <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white">
               <img
                 src={facebook}
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="max-sm:justify-center mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 lg:mt-10 lg:gap-10">
+        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 max-sm:justify-center lg:mt-10 lg:gap-10">
           <div className="max-sm:w-48">
             <h4 className=" mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
               Contact
@@ -87,15 +87,22 @@ const Footer = () => {
                   Gant de Gommage
                 </li>
               </Link>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Kit Visage
-              </li>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Frotte Dos
-              </li>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Sandales Hammam
-              </li>
+
+              <Link to="/kitVisage">
+                <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                  Kit Visage
+                </li>
+              </Link>
+              <Link to="/frotteDos">
+                <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                  Frotte Dos
+                </li>
+              </Link>
+              <Link to="/sandales">
+                <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                  Sandales Hammam
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
