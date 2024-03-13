@@ -8,13 +8,15 @@ import {
   gantRen,
   rituKit,
   sandalesJet,
+  newSandales,
+  frotteKit45
 } from "../assets/images";
 
 
 
 const FirstPart = () => {
   return (
-    <section className="mx-5 my-10 flex flex-col gap-5 lg:mx-16 lg:my-5 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[250px,250px] lg:gap-5">
+    <section className="mx-5 my-10 flex flex-col gap-5 lg:mx-16 lg:my-5 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[300px,200px] lg:gap-3">
       
       <div className="lg:row-span-2 ">
         <Link to='/gants'>
@@ -29,14 +31,14 @@ const FirstPart = () => {
         <img
           src={rituKit}
           alt="crème"
-          className="h-full w-full cursor-pointer rounded-lg object-cover "
+          className="max-lg:h-[250px] h-full w-full cursor-pointer rounded-lg object-cover "
         />
       </div>
       <div className="">
         <img
-          src={sandalesJet}
+          src={newSandales}
           alt="massage"
-          className="h-full w-full cursor-pointer rounded-lg object-cover"
+          className="h-[200px] w-full cursor-pointer rounded-lg object-cover"
         />
       </div>
     </section>
