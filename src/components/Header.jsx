@@ -40,16 +40,11 @@ const Header = () => {
               </Link>
               <Link to="/kitVisage">
                 <p className="py-2 text-left hover:text-green-500">
-                  Kit Visage
-                </p>
-              </Link>
-              <Link to="/frotteDos">
-                <p className="py-2 text-left hover:text-green-500">
-                  Frotte-Dos
-                </p>
+                  Kit Visage <br/> Et <br/> Frotte-Dos
+                  </p>
               </Link>
               <Link to="/sandales">
-                <p className="py-2 text-left hover:text-green-500">
+                <p className="text-left hover:text-green-500">
                   Sandales Hammam
                 </p>
               </Link>
