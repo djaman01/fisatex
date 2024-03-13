@@ -18,6 +18,10 @@ import gantSup from './gant-sup.webp'
 import gantAroma from './gant-aroma.avif'
 import newSandales from './new-sandales.jpg'
 import frotteKit45 from './frotteKit45.png'
+import kit1 from './kit-aura-1.webp'
+import kit2 from './kit-aura2.webp'
+import frotteDos from './frotte-dos.webp'
+import frotteDosLogo from './frotte-dos-logo.webp'
 
 export {
   fisatexLogo,
@@ -39,6 +43,10 @@ export {
   gantSup,
   gantAroma,
   newSandales,
-  frotteKit45
+  frotteKit45,
+  kit1,
+  kit2,
+  frotteDos,
+  frotteDosLogo
 
 }
