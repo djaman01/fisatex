@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-[-40px] flex flex-1 flex-wrap justify-between gap-20 max-sm:justify-center lg:mt-10 lg:gap-10">
+        <div className=" flex flex-1 flex-wrap justify-between gap-20 max-sm:justify-center lg:gap-10">
           <div className="max-sm:w-48">
             <h4 className=" mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
               Contact
