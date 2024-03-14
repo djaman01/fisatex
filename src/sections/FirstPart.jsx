@@ -19,7 +19,7 @@ const FirstPart = () => {
         <Link to="/gants">
           <img
             src={gantRen}
-            alt="femme bain"
+            alt="Gants gommage"
             className=" h-full w-full cursor-pointer rounded-lg object-cover object-bottom"
           />
         </Link>
@@ -29,8 +29,8 @@ const FirstPart = () => {
         <Link to="/KitEtFrotte">
           <img
             src={rituKit}
-            alt="crème"
-            className="h-full w-full cursor-pointer rounded-lg object-cover max-lg:h-[250px] "
+            alt="Kit Visage et Frotte-dos"
+            className="h-full w-full cursor-pointer rounded-lg object-cover "
           />
         </Link>
       </div>
@@ -38,8 +38,8 @@ const FirstPart = () => {
       <div className="">
         <img
           src={newSandales}
-          alt="massage"
-          className="h-[200px] w-full cursor-pointer rounded-lg object-cover"
+          alt="sandales Hammam"
+          className="max-md:h-[200px] md:h-[500px] lg:h-full w-full cursor-pointer rounded-lg object-cover"
         />
       </div>
     </section>
