@@ -20,12 +20,11 @@ const KitEtFrotte = () => {
 
       <main>
         <div className="max-lg: my-10 rounded-lg bg-[#f0f0f0] p-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
-
           <div>
             <img
               src={kit1}
               alt="kit-visage-face"
-              className="w-[600px] rounded-lg"
+              className="w-[600px] h-[300px] rounded-lg"
             />
           </div>
 
@@ -57,20 +56,17 @@ const KitEtFrotte = () => {
             <img
               src={kit2}
               alt="kit-visage-dos"
-              className="w-[600px] rounded-lg"
+              className="w-[600px] h-[300px] rounded-lg"
             />
           </div>
-
         </div>
 
-
         <div className="max-lg: my-10 rounded-lg bg-[#f0f0f0] p-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
-
           <div>
             <img
-              src={kit1}
-              alt="kit-visage-face"
-              className="w-[600px] rounded-lg"
+              src={frotteDos}
+              alt="frotte-dos"
+              className="w-[600px] h-[300px] rounded-lg"
             />
           </div>
 
@@ -99,14 +95,12 @@ const KitEtFrotte = () => {
 
           <div>
             <img
-              src={kit2}
-              alt="kit-visage-dos"
-              className="w-[600px] rounded-lg"
+              src={frotteDosLogo}
+              alt="frotte-dos-logo"
+              className="w-[600px] h-[300px] rounded-lg -rotate-90"
             />
           </div>
-
         </div>
-
       </main>
 
       <footer className="padding-x bg-gray-800 pb-8 pt-8">
