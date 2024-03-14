@@ -19,7 +19,7 @@ const KitEtFrotte = () => {
       </header>
 
       <main>
-        <div className="mx-40 my-10 grid grid-cols-2 gap-y-5">
+        <div className="bg-[#f0f0f0] rounded-lg p-5 mx-40 my-10 grid grid-cols-2 gap-y-5">
           <div>
             <img
               src={kit1}
@@ -62,7 +62,7 @@ const KitEtFrotte = () => {
           </div>
         </div>
 
-        <div className="mx-40 my-10 grid grid-cols-2 gap-y-5">
+        <div className="bg-[#f0f0f0] rounded-lg p-5 mx-40 my-10 grid grid-cols-2 gap-y-5">
           <div>
             <img
               src={frotteDos}
