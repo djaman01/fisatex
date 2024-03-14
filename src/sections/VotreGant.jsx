@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import { arrowRight } from "../assets/icons";
 import { gantsFond } from "../assets/images";
 import MyButton from "../components/MyButton";
 
 const VotreGant = () => {
   return (
-    <section className=" flex items-center justify-center border bg-red-100 py-12 max-lg:flex-col max-lg:py-20 max-lg:px-5">
-      <div className="max-lg:flex max-lg:flex-col max-lg:items-center mt-[-50px] max-lg:px-5 max-lg:pb-14 lg:px-24 ">
+    <section className=" flex items-center justify-center border bg-red-100 py-12 max-lg:flex-col max-lg:px-5 max-lg:py-20">
+      <div className="mt-[-50px] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:px-5 max-lg:pb-14 lg:px-24 ">
         <h2 className="font-palanquin text-[40px] font-bold max-lg:text-center ">
           <span className="text-coral-red">Personnalisez</span> Votre Gant !
         </h2>
@@ -16,7 +17,9 @@ const VotreGant = () => {
           <b>unique</b> qui correspond à votre marque
         </p>
         <div className="mt-6">
-          <MyButton label="Contactez-nous" iconURL={arrowRight} />
+          <Link to="/contactUs" className="no-underline">
+            <MyButton label="Contactez-nous" iconURL={arrowRight} />
+          </Link>
         </div>
       </div>
 

@@ -3,6 +3,7 @@ import { arrowRight } from "../assets/icons";
 import { gantVisage, mainCreme, peauMorte } from "../assets/images";
 
 import MyButton from "../components/MyButton";
+import { Link } from "react-router-dom";
 
 const Bienfaits = () => {
   const bienfaitSection = useRef(null);
@@ -14,7 +15,7 @@ const Bienfaits = () => {
 
   return (
     <section>
-      <h2 className="mt-[-80px] text-center font-palanquin font-bold text-3xl lg:text-[40px] ">
+      <h2 className="mt-[-80px] text-center font-palanquin text-3xl font-bold lg:text-[40px] ">
         Les <span className="text-coral-red">Bienfaits</span> de notre{" "}
         <span className="text-coral-red">Gant</span> de gommage
       </h2>
@@ -55,7 +56,9 @@ const Bienfaits = () => {
             <h2 className="font-palanquin font-bold max-lg:mb-[15px] lg:text-2xl">
               Intéressés ?
             </h2>
-            <MyButton label="Contactez-nous" iconURL={arrowRight} />
+            <Link to="/contactUs" className="no-underline">
+              <MyButton label="Contactez-nous" iconURL={arrowRight} />
+            </Link>
           </div>
         </div>
       </div>
