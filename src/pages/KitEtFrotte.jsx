@@ -93,11 +93,11 @@ const KitEtFrotte = () => {
             </div>
           </div>
 
-          <div>
+          <div className="lg:pl-32 max-lg:pl-14">
             <img
               src={frotteDosLogo}
               alt="frotte-dos-logo"
-              className="w-[600px] h-[300px] rounded-lg -rotate-90"
+              className="h-[300px] w-[250px] -rotate-90 rounded-lg"
             />
           </div>
         </div>
