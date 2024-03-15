@@ -12,12 +12,11 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const KitEtFrotte = () => {
-
   window.scrollTo({
-    top:0,
-    behavior:"instant",
-  })
-  
+    top: 0,
+    behavior: "instant",
+  });
+
   return (
     <div>
       <header>
@@ -25,18 +24,20 @@ const KitEtFrotte = () => {
       </header>
 
       <main>
-        <div className="max-lg:items-center my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
+        <div className="my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
               src={kit1}
               alt="kit-visage-face"
-              className="w-[600px] h-[300px] rounded-3xl"
+              className="h-[300px] w-[600px] rounded-3xl shadow-2xl"
             />
           </div>
 
-          <div className="prose row-span-2 max-lg:order-last lg:ml-9">
-            <h2 className="text-center text-blue-600">Kit Visage</h2>
-            <div className="pt-2 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
+          <div className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:py-5 lg:ml-9 lg:rounded-r-full ">
+            <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
+              Kit Visage
+            </h2>
+            <div className=" pt-12 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
               <li> Notre gant de gommage spécial Visage</li>
               <li>
                 Fait avec le tissus du gant de gommage pour{" "}
@@ -62,17 +63,17 @@ const KitEtFrotte = () => {
             <img
               src={kit2}
               alt="kit-visage-dos"
-              className="w-[600px] h-[300px] rounded-3xl"
+              className="h-[300px] w-[600px] rounded-3xl shadow-2xl"
             />
           </div>
         </div>
 
-        <div className=" max-lg:items-center max-lg: my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
+        <div className=" max-lg: my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
               src={frotteDos}
               alt="frotte-dos"
-              className="w-[600px] h-[300px] rounded-3xl"
+              className="h-[300px] w-[600px] rounded-3xl"
             />
           </div>
 
@@ -99,7 +100,7 @@ const KitEtFrotte = () => {
             </div>
           </div>
 
-          <div className="lg:pl-32 max-lg:pl-14">
+          <div className="max-lg:pl-14 lg:pl-32">
             <img
               src={frotteDosLogo}
               alt="frotte-dos-logo"
