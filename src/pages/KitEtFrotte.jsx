@@ -25,12 +25,12 @@ const KitEtFrotte = () => {
       </header>
 
       <main>
-        <div className="max-lg:items-center my-10 rounded-lg bg-[#f0f0f0] p-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
+        <div className="max-lg:items-center my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
               src={kit1}
               alt="kit-visage-face"
-              className="w-[600px] h-[300px] rounded-lg"
+              className="w-[600px] h-[300px] rounded-3xl"
             />
           </div>
 
@@ -62,17 +62,17 @@ const KitEtFrotte = () => {
             <img
               src={kit2}
               alt="kit-visage-dos"
-              className="w-[600px] h-[300px] rounded-lg"
+              className="w-[600px] h-[300px] rounded-3xl"
             />
           </div>
         </div>
 
-        <div className=" max-lg:items-center max-lg: my-10 rounded-lg bg-[#f0f0f0] p-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
+        <div className=" max-lg:items-center max-lg: my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
               src={frotteDos}
               alt="frotte-dos"
-              className="w-[600px] h-[300px] rounded-lg"
+              className="w-[600px] h-[300px] rounded-3xl"
             />
           </div>
 
@@ -103,7 +103,7 @@ const KitEtFrotte = () => {
             <img
               src={frotteDosLogo}
               alt="frotte-dos-logo"
-              className="h-[300px] w-[250px] -rotate-90 rounded-lg"
+              className="h-[300px] w-[250px] -rotate-90 rounded-3xl"
             />
           </div>
         </div>
