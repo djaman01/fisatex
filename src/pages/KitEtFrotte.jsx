@@ -28,7 +28,7 @@ const KitEtFrotte = () => {
             />
           </div>
 
-          <div className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 max-lg:border max-lg:border-slate-400 ">
+          <div className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Kit Visage
             </h2>
@@ -72,7 +72,7 @@ const KitEtFrotte = () => {
             />
           </div>
 
-          <div className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 max-lg:border max-lg:border-slate-400 ">
+          <div className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Frotte-Dos
             </h2>
@@ -105,8 +105,6 @@ const KitEtFrotte = () => {
             />
           </div>
         </div>
-
-        
       </main>
 
       <footer className="padding-x bg-gray-800 pb-8 pt-8">
