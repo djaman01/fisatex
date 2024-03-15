@@ -28,7 +28,7 @@ const KitEtFrotte = () => {
             />
           </div>
 
-          <div className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
+          <div className="lg:w-auto sm:w-[600px] prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Kit Visage
             </h2>
@@ -72,7 +72,7 @@ const KitEtFrotte = () => {
             />
           </div>
 
-          <div className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
+          <div className=" lg:w-auto sm:w-[600px] prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Frotte-Dos
             </h2>
@@ -97,7 +97,7 @@ const KitEtFrotte = () => {
             </div>
           </div>
 
-          <div className="max-lg:pl-14 lg:pl-32">
+          <div className="lg:pl-32">
             <img
               src={frotteDosLogo}
               alt="frotte-dos-logo"

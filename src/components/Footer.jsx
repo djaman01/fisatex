@@ -4,6 +4,16 @@ import { copyrightSign, facebook, instagram } from "../assets/icons";
 import { footerLinks } from "../constants";
 
 const Footer = () => {
+
+    //To go instantly to the top of the page, when redirecting to it
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    };
+
+    
   return (
     <footer className="max-container">
       <div className="flex flex-wrap items-start justify-between gap-20 ">
@@ -28,7 +38,7 @@ const Footer = () => {
                 alt="Facebook Logo"
                 width={24}
                 height={24}
-                className="" //je fais ça pour que prettier le formate verticalement
+                className="" //je fais ça, même si vide, pour que prettier le formate verticalement
               />
             </div>
             <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white">
@@ -82,19 +92,19 @@ const Footer = () => {
 
             {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
             <ul>
-              <Link to="/gants">
+              <Link to="/gants" onClick={scrollToTop}>
                 <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
                   Gant de Gommage
                 </li>
               </Link>
 
-              <Link to="/KitEtFrotte">
+              <Link to="/KitEtFrotte" onClick={scrollToTop}>
                 <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
                   Kit Visage et Frotte-Dos
                 </li>
               </Link>
               
-              <Link to="/sandales">
+              <Link to="/sandales" onClick={scrollToTop}>
                 <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
                   Sandales Hammam
                 </li>
