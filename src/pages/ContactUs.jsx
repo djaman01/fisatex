@@ -10,11 +10,6 @@ import { BiLogoInstagramAlt } from "react-icons/bi";
 
 const ContactUs = () => {
 
-  //To go instantly to the top of the page, when redirecting to it
-  window.scrollTo({
-    top: 0,
-    behavior: "instant",
-  });
 
   return (
     <>

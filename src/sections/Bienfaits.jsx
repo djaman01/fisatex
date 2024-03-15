@@ -13,6 +13,14 @@ const Bienfaits = () => {
       bienfaitSection.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  //To go instantly to the top of the page, when redirecting to it
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
+
   return (
     <section>
       <h2 className="mt-[-80px] text-center font-palanquin text-3xl font-bold lg:text-[40px] ">
@@ -56,7 +64,11 @@ const Bienfaits = () => {
             <h2 className="font-palanquin font-bold max-lg:mb-[15px] lg:text-2xl">
               Intéressés ?
             </h2>
-            <Link to="/contactUs" className="no-underline">
+            <Link
+              to="/contactUs"
+              className="no-underline"
+              onClick={scrollToTop}
+            >
               <MyButton label="Contactez-nous" iconURL={arrowRight} />
             </Link>
           </div>

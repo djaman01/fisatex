@@ -4,6 +4,13 @@ import { gantsFond } from "../assets/images";
 import MyButton from "../components/MyButton";
 
 const VotreGant = () => {
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "instant",
+  });
+};
   return (
     <section className=" flex items-center justify-center border bg-red-100 py-12 max-lg:flex-col max-lg:px-5 max-lg:py-20">
       <div className="mt-[-50px] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:px-5 max-lg:pb-14 lg:px-24 ">
@@ -17,7 +24,7 @@ const VotreGant = () => {
           <b>unique</b> qui correspond à votre marque
         </p>
         <div className="mt-6">
-          <Link to="/contactUs" className="no-underline">
+          <Link to="/contactUs" className="no-underline" onClick={scrollToTop}>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </Link>
         </div>
