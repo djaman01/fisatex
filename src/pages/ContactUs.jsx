@@ -9,6 +9,13 @@ import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 
 const ContactUs = () => {
+
+  //To go instantly to the top of the page, when redirecting to it
+  window.scrollTo({
+    top: 0,
+    behavior: "instant",
+  });
+
   return (
     <>
       <header>
@@ -17,7 +24,7 @@ const ContactUs = () => {
       <main>
         <div>
           <div className="mx-auto ">
-            <h1 className="max-lg:mt-4 text-center font-montserrat text-[45px] text-coral-red">
+            <h1 className="text-center font-montserrat text-[45px] text-coral-red max-lg:mt-4">
               Contactez-nous
             </h1>
           </div>
@@ -29,7 +36,7 @@ const ContactUs = () => {
             <div className=" flex-1 bg-orange-600"></div>
           </div>
 
-          <div className="max-lg:flex-col max-lg:items-center my-16 flex justify-center gap-20">
+          <div className="my-16 flex justify-center gap-20 max-lg:flex-col max-lg:items-center">
             <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100">
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <IoMailOutline color="white" size={20} />
@@ -64,7 +71,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="max-lg:flex max-lg:flex-col max-lg:mx-8 max-lg:gap-10 padding-b ml-16 grid grid-cols-2 ">
+          <div className="padding-b ml-16 grid grid-cols-2 max-lg:mx-8 max-lg:flex max-lg:flex-col max-lg:gap-10 ">
             <div className="">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5190186332275!2d-7.612445924970957!3d33.59183544190202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd62408f3ef9%3A0xf0df71d96535da97!2s7%20Rue%20Bouchaib%20El%20Machrouhi%2C%20Casablanca%2020250!5e0!3m2!1sfr!2sma!4v1709150151948!5m2!1sfr!2sma"

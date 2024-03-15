@@ -33,8 +33,7 @@ const SideHeader = () => {
               <MenuItem component={<Link to="/gants" />}>
                 Gants de gommage
               </MenuItem>
-              <MenuItem component={<Link to="/KitVisage" />}> Kit Visage </MenuItem>
-              <MenuItem component={<Link to="/FrotteDos" />}> Frotte-Dos</MenuItem>
+              <MenuItem component={<Link to="/KitEtFrotte" />}> Kit Visage Et Frotte-Dos </MenuItem>
               <MenuItem component={<Link to="/Sandales" />}> Sandales Hammam </MenuItem>
             </SubMenu>
             <MenuItem icon={<BsInfoSquare />}> À propos </MenuItem>

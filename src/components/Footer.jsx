@@ -88,16 +88,12 @@ const Footer = () => {
                 </li>
               </Link>
 
-              <Link to="/kitVisage">
+              <Link to="/KitEtFrotte">
                 <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                  Kit Visage
+                  Kit Visage et Frotte-Dos
                 </li>
               </Link>
-              <Link to="/frotteDos">
-                <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                  Frotte Dos
-                </li>
-              </Link>
+              
               <Link to="/sandales">
                 <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
                   Sandales Hammam

@@ -3,6 +3,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Gants = () => {
+
+  window.scrollTo({
+    top:0,
+    behavior:"instant",
+  })
+
   return (
     <div>
       <header>

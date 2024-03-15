@@ -12,6 +12,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const KitEtFrotte = () => {
+
+  window.scrollTo({
+    top:0,
+    behavior:"instant",
+  })
+  
   return (
     <div>
       <header>
