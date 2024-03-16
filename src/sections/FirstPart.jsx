@@ -36,11 +36,13 @@ const FirstPart = () => {
       </div>
 
       <div className="">
-        <img
-          src={newSandales}
-          alt="sandales Hammam"
-          className="max-md:h-[200px] md:h-[500px] lg:h-full w-full cursor-pointer rounded-lg object-cover"
-        />
+        <Link to="/sandales">
+          <img
+            src={newSandales}
+            alt="sandales Hammam"
+            className="w-full cursor-pointer rounded-lg object-cover max-md:h-[200px] md:h-[500px] lg:h-full"
+          />
+        </Link>
       </div>
     </section>
   );

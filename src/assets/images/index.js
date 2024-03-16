@@ -47,6 +47,5 @@ export {
   kit1,
   kit2,
   frotteDos,
-  frotteDosLogo
-
+  frotteDosLogo,
 }
