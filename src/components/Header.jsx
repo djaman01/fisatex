@@ -6,7 +6,6 @@ import SideHeader from "./SideHeader";
 import { useMyContext } from "../ContextComp";
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
   const { openSidebar, setOpenSidebar } = useMyContext();
 
@@ -41,8 +40,8 @@ const Header = () => {
               </Link>
               <Link to="/KitEtFrotte">
                 <p className="py-2 text-left hover:text-green-500">
-                  Kit Visage <br/> Et <br/> Frotte-Dos
-                  </p>
+                  Kit Visage <br /> Et <br /> Frotte-Dos
+                </p>
               </Link>
               <Link to="/sandales">
                 <p className="text-left hover:text-green-500">
@@ -51,9 +50,9 @@ const Header = () => {
               </Link>
             </div>
           </div>
-
-          <p className="cursor-pointer hover:text-green-500">À propos</p>
-
+          <Link to="/about">
+            <p className="cursor-pointer hover:text-green-500">À propos</p>
+          </Link>
           <Link to="/contactUs">
             <p className="cursor-pointer hover:text-green-500">Contact</p>
           </Link>

@@ -4,6 +4,8 @@ import Gants from "./pages/Gants";
 import ContactUs from "./pages/ContactUs";
 import Sandales from "./pages/Sandales";
 import KitEtFrotte from "./pages/KitEtFrotte";
+import AboutUs from "./pages/AboutUs";
+
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
         <Route path="gants" element={<Gants />} />
         <Route path="KitEtFrotte" element={<KitEtFrotte />} />
         <Route path="sandales" element={<Sandales />} />
+        <Route path="about" element={<AboutUs />} />
         <Route path="contactUs" element={<ContactUs />} />
         
       </Routes>
