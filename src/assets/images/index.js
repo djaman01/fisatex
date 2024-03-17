@@ -22,6 +22,10 @@ import kit1 from './kit-aura-1.webp'
 import kit2 from './kit-aura2.webp'
 import frotteDos from './frotte-dos.webp'
 import frotteDosLogo from './frotte-logo.png'
+import carte4 from './carte4.jpg'
+import bureau1 from './bureau1.jpg'
+import usine1 from './usine1.jpg'
+
 
 export {
   fisatexLogo,
@@ -48,4 +52,7 @@ export {
   kit2,
   frotteDos,
   frotteDosLogo,
+  usine1,
+  bureau1,
+  carte4,
 }
