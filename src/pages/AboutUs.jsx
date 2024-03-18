@@ -19,52 +19,47 @@ const AboutUs = () => {
       <Header />
 
       <main>
-        <div className="mx-16 my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] gap-x-10 gap-y-20 ">
+        <div className="mx-16 my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] gap-x-14 gap-y-20 ">
           <div className="">
-            <h1 className="text-blue-600 mb-4 font-bold text-center font-montserrat text-3xl">
+            <h1 className="mb-4 text-center font-montserrat text-3xl font-bold text-blue-600">
               Qui sommes-nous ?
             </h1>
-            <p className="text-lg leading-7">
-              Fondée au Maroc, Fisatex est une entreprise leader en
-              Afrique dans la fabrication de gants de gommage pour le Hammam.
-              Depuis notre création, nous nous sommes engagés à fournir des
-              produits de qualité supérieure qui incarnent l'authenticité et la
-              tradition du rituel du Hammam.
+            <p className="font-roboto text-lg leading-7">
+              Basée au Maroc, Fisatex est une entreprise leader en Afrique dans
+              la fabrication de gants de gommage de haute qualité, incarnant
+              l'authenticité et la tradition du rituel du Hammam.
             </p>
             <br />
-            <p className="text-lg leading-7">
-              Au sein de notre usine de production moderne, située au Maroc,
-              nous combinons habilement l'artisanat traditionnel avec des
-              techniques de fabrication de pointe. Notre équipe hautement
-              qualifiée et dévouée s'efforce constamment d'assurer la qualité et
-              la précision à chaque étape du processus de production,
-              garantissant ainsi des produits de premier ordre à nos clients.
+            <p className="font-roboto text-lg leading-7">
+              Au sein de notre usine de production à la pointe de la
+              technologie, notre équipe qualifiée assure une qualité et une
+              précision constantes à chaque étape de production, garantissant
+              ainsi des produits de premier ordre à nos clients.
             </p>
           </div>
 
           <div className="">
-            <img className="h-full w-full" src={usine1} alt="usine" />
+            <img className="h-full w-full rounded-lg" src={usine1} alt="usine" />
           </div>
 
           <div className="">
-            <img className="h-full w-full" src={bureau1} alt="bureau" />
+            <img className="h-full w-full rounded-lg" src={bureau1} alt="bureau" />
           </div>
 
           <div className="">
-            <h1 className="text-blue-600 font-bold mb-5 text-center font-montserrat text-3xl">
+            <h1 className="mb-5 text-center font-montserrat text-3xl font-bold text-blue-600">
               Notre Bureau
             </h1>
-            <p className="text-lg leading-7">
+            <p className="font-roboto text-lg leading-7">
               Nous sommes heureux d'accueillir nos clients sur rendez-vous dans
               notre bureau situé à Casablanca, au Maroc
             </p>
             <br />
-            <p className="text-lg leading-7">
+            <p className=" font-roboto text-lg leading-7">
               Notre équipe professionnelle est disponible pour répondre à toutes
               vos questions, discuter de vos besoins spécifiques en matière de
               gants de gommage pour le Hammam et vous fournir des conseils
-              personnalisés. Pour prendre rendez-vous, veuillez nous contacter
-              par téléphone ou par e-mail.
+              personnalisés.
             </p>
             <div className=" mx-auto mt-9 w-max">
               <Link
@@ -78,20 +73,16 @@ const AboutUs = () => {
           </div>
 
           <div className="">
-            <h1 className="text-blue-600 font-bold mb-5 text-center font-montserrat text-3xl">
+            <h1 className="mb-5 text-center font-montserrat text-3xl font-bold text-blue-600">
               International
             </h1>
-            <p className="text-lg leading-7">
-              Fisatex est fière de servir une clientèle internationale. Nos
-              gants de gommage pour le Hammam sont appréciés par des clients du
-              monde entier, qui recherchent des produits de qualité pour
-              enrichir leur expérience de bien-être.
+            <p className="font-roboto text-lg leading-7">
+              Nous collaborons avec une clientèle à l'internationale:
             </p>
             <br />
-            <p className="text-lg leading-7">
+            <p className=" font-roboto text-lg leading-7">
               Nous expédions nos produits dans de nombreux pays, offrant ainsi à
-              nos clients internationaux un accès facile à nos produits de haute
-              qualité.
+              nos clients internationaux un accès facile à nos produits.
             </p>
 
             <div className=" mx-auto mt-9 w-max">
@@ -106,7 +97,7 @@ const AboutUs = () => {
           </div>
 
           <div className="">
-            <img className="h-full w-full" src={carte4} alt="carte" />
+            <img className="h-full w-full rounded-lg" src={carte4} alt="carte" />
           </div>
         </div>
       </main>
