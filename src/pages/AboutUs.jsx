@@ -19,8 +19,8 @@ const AboutUs = () => {
       <Header />
 
       <main>
-        <div className=" max-lg:flex max-lg:flex-col mx-16 my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] gap-x-14 gap-y-20 ">
-          <div className="max-lg:order-1">
+        <div className=" my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] max-lg:mx-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-16 lg:gap-x-14 lg:gap-y-20 ">
+          <div className="max-lg:order-1 max-lg:rounded-lg max-lg:border max-lg:border-slate-400 max-lg:px-5 max-lg:py-2 max-lg:shadow-xl ">
             <h1 className="mb-4 text-center font-montserrat text-3xl font-bold text-blue-600">
               Qui sommes-nous ?
             </h1>
@@ -39,14 +39,22 @@ const AboutUs = () => {
           </div>
 
           <div className="max-lg:order-2">
-            <img className="h-full w-full rounded-lg" src={usine1} alt="usine" />
+            <img
+              className="h-full w-full rounded-lg"
+              src={usine1}
+              alt="usine"
+            />
           </div>
 
           <div className="max-lg:order-4">
-            <img className="h-full w-full rounded-lg" src={bureau1} alt="bureau" />
+            <img
+              className="h-full w-full rounded-lg"
+              src={bureau1}
+              alt="bureau"
+            />
           </div>
 
-          <div className="max-lg:order-3">
+          <div className="max-lg:order-3 max-lg:rounded-lg max-lg:border max-lg:border-slate-400 max-lg:px-5 max-lg:py-2 max-lg:pb-5 max-lg:shadow-xl">
             <h1 className="mb-5 text-center font-montserrat text-3xl font-bold text-blue-600">
               Notre Bureau
             </h1>
@@ -72,7 +80,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="max-lg:order-5">
+          <div className="max-lg:order-5 max-lg:rounded-lg max-lg:border max-lg:border-slate-400 max-lg:px-5 max-lg:py-2 max-lg:pb-5 max-lg:shadow-xl">
             <h1 className="mb-5 text-center font-montserrat text-3xl font-bold text-blue-600">
               International
             </h1>
@@ -97,7 +105,11 @@ const AboutUs = () => {
           </div>
 
           <div className="max-lg:order-6">
-            <img className="h-full w-full rounded-lg" src={carte4} alt="carte" />
+            <img
+              className="h-full w-full rounded-lg"
+              src={carte4}
+              alt="carte"
+            />
           </div>
         </div>
       </main>
