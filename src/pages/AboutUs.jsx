@@ -19,7 +19,7 @@ const AboutUs = () => {
       <Header />
 
       <main>
-        <div className="mx-16 my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] gap-x-14 gap-y-20 ">
+        <div className="max-lg:flex max-lg:flex-col mx-16 my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] gap-x-14 gap-y-20 ">
           <div className="">
             <h1 className="mb-4 text-center font-montserrat text-3xl font-bold text-blue-600">
               Qui sommes-nous ?
