@@ -4,16 +4,14 @@ import { copyrightSign, facebook, instagram } from "../assets/icons";
 import { footerLinks } from "../constants";
 
 const Footer = () => {
+  //To go instantly to the top of the page, when redirecting to it
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
 
-    //To go instantly to the top of the page, when redirecting to it
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "instant",
-      });
-    };
-
-    
   return (
     <footer className="max-container">
       <div className="flex flex-wrap items-start justify-between gap-20 ">
@@ -76,9 +74,11 @@ const Footer = () => {
 
             {/* Comme il y y a un array links, dans l'array footerLinks: on va mapper dessus */}
             <ul>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                À propos
-              </li>
+              <Link to="/about" onClick={scrollToTop}>
+                <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                  À propos
+                </li>
+              </Link>
               <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
                 Charte de Confidentialité
               </li>
@@ -103,7 +103,7 @@ const Footer = () => {
                   Kit Visage et Frotte-Dos
                 </li>
               </Link>
-              
+
               <Link to="/sandales" onClick={scrollToTop}>
                 <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
                   Sandales Hammam
