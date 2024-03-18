@@ -36,7 +36,7 @@ const SideHeader = () => {
               <MenuItem component={<Link to="/KitEtFrotte" />}> Kit Visage Et Frotte-Dos </MenuItem>
               <MenuItem component={<Link to="/Sandales" />}> Sandales Hammam </MenuItem>
             </SubMenu>
-            <MenuItem icon={<BsInfoSquare />}> À propos </MenuItem>
+            <MenuItem icon={<BsInfoSquare />} component={<Link to="/about" />}> À propos </MenuItem>
             <MenuItem icon={<MdOutlineContactPhone size={18} />} component={<Link to="/contactUs" />}>
               Contact
             </MenuItem>
