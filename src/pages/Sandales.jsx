@@ -24,7 +24,7 @@ const Sandales = () => {
               Sandales Hammam
             </h2>
             <div className=" pt-12 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
-              <li> Nos sandales <span className="text-blue-600"> étanches</span>, spécialement conçues<br/> pour une utilisation dans les hammams </li>
+              <li> Nos sandales <span className="text-blue-600"> étanches</span>, spécialement conçues<br className="max-lg:hidden"/> pour une utilisation dans les hammams </li>
             
       
             </div>
