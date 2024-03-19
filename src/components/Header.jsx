@@ -32,7 +32,7 @@ const Header = () => {
           </Link>
           <div className="group relative">
             <p className="cursor-pointer hover:text-green-500">Produits</p>
-            <div className="absolute left-[-50px] hidden w-[180px] cursor-pointer rounded-lg bg-white px-2 py-5 font-serif text-gray-500 shadow-xl ring-1 ring-slate-900/5 group-hover:block">
+            <div className="absolute z-10 left-[-50px] hidden w-[180px] cursor-pointer rounded-lg bg-white px-2 py-5 font-serif text-gray-500 shadow-xl ring-1 ring-slate-900/5 group-hover:block">
               <Link to="/gants">
                 <p className="text-left hover:text-green-500">
                   Gants de Gommage
