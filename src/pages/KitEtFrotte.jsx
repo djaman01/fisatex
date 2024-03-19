@@ -8,10 +8,26 @@ import {
   frotteDos,
   frotteDosLogo,
 } from "../assets/images";
+
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const KitEtFrotte = () => {
+  
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      offset: 100,
+      duration: 1000,
+      easing: "ease-in-out",
+      // delay: 100,
+    });
+  });
+
   return (
     <div>
       <header>
@@ -25,10 +41,14 @@ const KitEtFrotte = () => {
               src={kit1}
               alt="kit-visage-face"
               className="h-[300px] w-[600px] rounded-3xl shadow-2xl"
+              data-aos="fade-down"
             />
           </div>
 
-          <div className="lg:w-auto sm:w-[600px] prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
+          <div
+            data-aos="fade-left"
+            className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 sm:w-[600px] lg:ml-9 lg:w-auto lg:rounded-r-full lg:border lg:border-slate-300 "
+          >
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Kit Visage
             </h2>
@@ -59,6 +79,7 @@ const KitEtFrotte = () => {
               src={kit2}
               alt="kit-visage-dos"
               className="h-[300px] w-[600px] rounded-3xl shadow-2xl"
+              data-aos="fade-up"
             />
           </div>
         </div>
@@ -69,10 +90,14 @@ const KitEtFrotte = () => {
               src={frotteDos}
               alt="frotte-dos"
               className="h-[300px] w-[600px] rounded-3xl shadow-2xl"
+              data-aos="fade-down"
             />
           </div>
 
-          <div className=" lg:w-auto sm:w-[600px] prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:rounded-r-full lg:border lg:border-slate-300 ">
+          <div
+            data-aos="fade-left"
+            className=" prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 sm:w-[600px] lg:ml-9 lg:w-auto lg:rounded-r-full lg:border lg:border-slate-300 "
+          >
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Frotte-Dos
             </h2>
@@ -101,7 +126,8 @@ const KitEtFrotte = () => {
             <img
               src={frotteDosLogo}
               alt="frotte-dos-logo"
-              className="h-[300px] w-[250px] -rotate-90 rounded-3xl shadow-2xl"
+              className="h-[300px] w-[250px] rounded-3xl shadow-2xl"
+              data-aos="fade-up"
             />
           </div>
         </div>

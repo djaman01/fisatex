@@ -5,7 +5,13 @@ import { gantVisage, mainCreme, peauMorte } from "../assets/images";
 import MyButton from "../components/MyButton";
 import { Link } from "react-router-dom";
 
+
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Bienfaits = () => {
+
   const bienfaitSection = useRef(null);
 
   const scrollToBienfait = () => {
@@ -21,6 +27,16 @@ const Bienfaits = () => {
     });
   };
 
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      offset: 100,
+      duration: 1000,
+      easing: "ease-in-out",
+      // delay: 100,
+    });
+  });
+
   return (
     <section>
       <h2 className="mt-[-80px] text-center font-palanquin text-3xl font-bold lg:text-[40px] ">
@@ -33,12 +49,14 @@ const Bienfaits = () => {
           src={peauMorte}
           alt="hammam"
           onClick={scrollToBienfait}
+          data-aos="fade-up"
         />
         <img
           className=" h-full w-full cursor-pointer border object-cover lg:h-full "
           src={gantVisage}
           alt="hammam"
           onClick={scrollToBienfait}
+          data-aos="fade-down"
         />
 
         <div

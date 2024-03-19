@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const AboutUs = () => {
+  
   useEffect(() => {
     Aos.init({
       once: true,

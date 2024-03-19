@@ -2,7 +2,20 @@ import { gantAroma, gantSensible, gantSup, gantTradi } from "../assets/images";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Gants = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      offset: 100,
+      duration: 1000,
+      easing: "ease-in-out",
+      // delay: 100,
+    });
+  });
 
   return (
     <div>
@@ -16,9 +29,13 @@ const Gants = () => {
             src={gantSensible} //les images ont des bordures blanches c'est pourquoi elles sont différentes de la partie droite
             alt="gant peaux sensibles"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
+            data-aos="fade-right"
           />
 
-          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10">
+          <div
+            data-aos="fade-left"
+            className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10"
+          >
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24">
               Gant Peaux Sensibles
             </h2>
@@ -41,9 +58,13 @@ const Gants = () => {
             src={gantTradi} //Seule photo bien faite et sans bordures blanches
             alt="gant Traditionnel"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
+            data-aos="fade-right"
           />
 
-          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10">
+          <div
+            data-aos="fade-left"
+            className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10"
+          >
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Traditionnel
             </h2>
@@ -63,9 +84,13 @@ const Gants = () => {
             src={gantSup} //les images ont des bordures blanches c'est pourquoi elles sont différentes de la partie droite
             alt="gant Qualité Supérieure"
             className="rounded max-lg:h-4/6 max-lg:w-[330px] max-lg:rounded-t-full lg:h-5/6 lg:w-full lg:rounded-l-full"
+            data-aos="fade-right"
           />
 
-          <div className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10">
+          <div
+            data-aos="fade-left"
+            className="prose bg-slate-300 shadow-3xl max-lg:h-[430px] max-lg:w-[330px] max-lg:rounded-b-full lg:h-5/6 lg:w-5/6 lg:rounded-r-full lg:pt-10"
+          >
             <h2 className="text-blue-600 max-lg:pt-4 max-lg:text-center lg:pl-24 lg:pt-2">
               Gant Qualité Supérieure
             </h2>

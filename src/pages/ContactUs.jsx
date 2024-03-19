@@ -8,9 +8,11 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const ContactUs = () => {
-
-
   return (
     <>
       <header>
@@ -32,7 +34,10 @@ const ContactUs = () => {
           </div>
 
           <div className="my-16 flex justify-center gap-20 max-lg:flex-col max-lg:items-center">
-            <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100">
+            <div
+              data-aos="flip-left"
+              className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100"
+            >
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <IoMailOutline color="white" size={20} />
               </div>
@@ -43,7 +48,11 @@ const ContactUs = () => {
                 fisatex@fisatex.com
               </p>
             </div>
-            <div className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100">
+
+            <div
+              data-aos="flip-up"
+              className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100"
+            >
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <CiPhone color="white" size={20} />
               </div>
@@ -54,7 +63,11 @@ const ContactUs = () => {
                 +212-5-22-30-33-67
               </p>
             </div>
-            <div className=" flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100 text-gray-700">
+
+            <div
+              data-aos="flip-right"
+              className=" flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100 text-gray-700"
+            >
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <IoShareSocialOutline color="white" size={20} />
               </div>
