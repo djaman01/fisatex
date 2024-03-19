@@ -23,6 +23,7 @@ const Footer = () => {
               width={150}
               height={46}
               className="cursor-pointer rounded-lg bg-white px-2 py-2 max-sm:ml-20"
+              onClick={scrollToTop}
             />
           </Link>
           <p className="mt-6 font-mono text-base leading-7 text-white-400 sm:max-w-sm">
