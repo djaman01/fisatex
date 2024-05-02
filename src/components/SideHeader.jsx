@@ -44,9 +44,6 @@ const SideHeader = () => {
           <div className="mt-10 flex cursor-pointer justify-center">
             <button
               className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 active:bg-blue-700"
-              src={cross}
-              alt="close sidebar"
-              width={30}
               onClick={() => setOpenSidebar(!openSidebar)}
             >
               Sortie

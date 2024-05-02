@@ -18,4 +18,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  globals: {
+    require: 'readonly', // Reconnaître 'require' comme une variable globale en lecture seule
+  },
 }

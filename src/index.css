@@ -9,9 +9,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /*Pour que quand on met un height ou width à un element, ça inclu son padding et ses borders naturelles  */
   scroll-behavior: smooth;
 }
+
 
 @layer components {
   .max-container {
