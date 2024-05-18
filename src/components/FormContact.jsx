@@ -4,9 +4,9 @@ import * as Yup from "yup";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-// useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-// which we can spread on <input>. We can use field meta to show an error
-// message if the field is invalid and it has been touched (i.e. visited)
+//MyTextInput= custom component that is a schema model for inputs and labels in Formik so that we don't have to re-write them:
+//Destructuring label allows us to use the label prop to change the name of the label.
+//Destructuring the rest of the props with the spread operator (...props) enables us to use any valid props in the input like: name, type, or placeholder.
 
 const MyTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
@@ -24,7 +24,6 @@ const MyTextInput = ({ label, ...props }) => {
 
 // And now we can use these templates to create different inputs easily
 const FormContact = () => {
-
   const form = useRef();
 
   const sendEmail = () => {
@@ -40,7 +39,8 @@ const FormContact = () => {
 
   return (
     <>
-      <div className=" max-lg:border max-lg:border-slate-400 mx-auto mb-4 max-w-md rounded bg-gray-50 px-8 pb-8 pt-6 shadow-2xl">
+      <div className=" mx-auto mb-4 max-w-md rounded bg-gray-50 px-8 pb-8 pt-6 shadow-2xl max-lg:border max-lg:border-slate-400">
+        {/* The initialValues in Formik are used to define the default values for the form fields */}
         <Formik
           initialValues={{
             lastName: "",
@@ -81,6 +81,7 @@ const FormContact = () => {
               });
           }}
         >
+          {/* !!! The name property in the MyTextInput component is crucial for Formik to link the input field to its corresponding value in initialValues. Without it it'd not work correctly  */}
           <Form ref={form}>
             <MyTextInput
               label="Nom"

@@ -13,6 +13,17 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const ContactUs = () => {
+
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      offset: 100,
+      duration: 1000,
+      easing: 'ease-in-out',
+      // delay: 100,
+    });
+  })
+  
   return (
     <>
       <header>
