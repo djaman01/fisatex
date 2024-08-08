@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { arrowRight } from "../assets/icons";
-import { gantVisage, mainCreme, peauMorte } from "../assets/images";
+import { gantVisage, peauMorte } from "../assets/images";
 
 import MyButton from "../components/MyButton";
 import { Link } from "react-router-dom";

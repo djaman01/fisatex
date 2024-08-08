@@ -1,4 +1,4 @@
-import { gantAroma, gantSensible, gantSup, gantTradi } from "../assets/images";
+import {gantSensible, gantSup, gantTradi } from "../assets/images";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
