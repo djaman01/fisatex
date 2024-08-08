@@ -1,16 +1,10 @@
 import { Link } from "react-router-dom";
 import {
-  creme,
-  femmeBain,
-  gantsFond,
-  massage,
-  troisgants,
-  gantRen,
-  rituKit,
-  sandalesJet,
   newSandales,
-  frotteKit45,
+  gantsCadré,
+  kitsCadré
 } from "../assets/images";
+
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -33,7 +27,7 @@ const FirstPart = () => {
       <div className="lg:row-span-2 ">
         <Link to="/gants">
           <img
-            src={gantRen}
+            src={gantsCadré}
             alt="Gants gommage"
             className=" h-full w-full cursor-pointer rounded-lg object-cover object-bottom"
             data-aos="zoom-in"
@@ -44,9 +38,10 @@ const FirstPart = () => {
       <div className="">
         <Link to="/KitEtFrotte">
           <img
-            src={rituKit}
+            src={kitsCadré}
             alt="Kit Visage et Frotte-dos"
             className="h-full w-full cursor-pointer rounded-lg object-cover "
+            style={{ objectPosition: "center -150px" }}
             data-aos="zoom-in"
           />
         </Link>

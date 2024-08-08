@@ -1,8 +1,4 @@
 import {
-  gantAroma,
-  gantSensible,
-  gantSup,
-  gantTradi,
   kit1,
   kit2,
   frotteDos,

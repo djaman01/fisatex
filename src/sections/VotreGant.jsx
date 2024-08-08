@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { arrowRight } from "../assets/icons";
-import { gantsFond } from "../assets/images";
+import { gantsKitsCadrés } from "../assets/images";
 import MyButton from "../components/MyButton";
 
 
@@ -49,8 +49,8 @@ useEffect(() => {
       <div>
         <img
           className="rounded-2xl "
-          src={gantsFond}
-          alt={gantsFond}
+          src={gantsKitsCadrés}
+          alt={gantsKitsCadrés}
           width={570}
           height={522}
           data-aos="flip-right"
