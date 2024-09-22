@@ -24,7 +24,7 @@ const FirstPart = () => {
 
   return (
     <section className="mx-5 my-10 flex flex-col gap-5 lg:mx-16 lg:my-5 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[300px,200px] lg:gap-3">
-      <div className="lg:row-span-2 ">
+      <div className="lg:row-span-2 max-lg:h-[340px] ">
         <Link to="/gants">
           <img
             src={gantsCadré}
@@ -35,19 +35,19 @@ const FirstPart = () => {
         </Link>
       </div>
 
-      <div className="">
+      <div className="max-lg:h-[290px]">
         <Link to="/KitEtFrotte">
           <img
             src={kitsCadré}
             alt="Kit Visage et Frotte-dos"
             className="h-full w-full cursor-pointer rounded-lg object-cover "
-            style={{ objectPosition: "center -150px" }}
+            style={{ objectPosition: "center bottom" }}
             data-aos="zoom-in"
           />
         </Link>
       </div>
 
-      <div className="">
+      <div className="max-lg:h-[200px]">
         <Link to="/sandales">
           <img
             src={newSandales}
