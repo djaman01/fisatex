@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { cross, hamburger } from "../assets/icons";
 import { fisatexLogo } from "../assets/images";
 import SideHeader from "./SideHeader";
@@ -8,10 +7,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const { openSidebar, setOpenSidebar } = useMyContext();
-
-  useEffect(() => {
-    console.log(openSidebar);
-  }, [openSidebar]);
 
   return (
     <header className="padding-x w-full py-1">
@@ -32,7 +27,7 @@ const Header = () => {
           </Link>
           <div className="group relative">
             <p className="cursor-pointer hover:text-green-500">Produits</p>
-            <div className="absolute z-10 left-[-50px] hidden w-[180px] cursor-pointer rounded-lg bg-white px-2 py-5 font-serif text-gray-500 shadow-xl ring-1 ring-slate-900/5 group-hover:block">
+            <div className="absolute left-[-50px] z-10 hidden w-[180px] cursor-pointer rounded-lg bg-white px-2 py-5 font-serif text-gray-500 shadow-xl ring-1 ring-slate-900/5 group-hover:block">
               <Link to="/gants">
                 <p className="text-left hover:text-green-500">
                   Gants de Gommage
@@ -58,18 +53,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="hidden max-lg:block">
-          {openSidebar === false ? (
-            <img
-              className="cursor-pointer"
-              src={hamburger}
-              alt="menu-hamburger"
-              width={25}
-              height={25}
-              onClick={() => setOpenSidebar(true)}
-            />
-          ) : (
-            <SideHeader className="lg:hidden" />
-          )}
+          <SideHeader className="lg:hidden" />
         </div>
       </nav>
     </header>

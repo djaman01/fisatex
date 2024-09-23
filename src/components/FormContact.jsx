@@ -1,39 +1,16 @@
-import { Formik, Form, useField, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-//MyTextInput= custom component that is a schema model for inputs and labels in Formik so that we don't have to re-write them:
-//Destructuring label allows us to use the label prop to change the name of the label.
-//Destructuring the rest of the props with the spread operator (...props) enables us to use any valid props in the input like: name, type, or placeholder.
-
-const MyTextInput = ({ label, ...props }) => {
-  const [field, meta] = useField(props);
-
-  return (
-    <div className="mb-2">
-      <label htmlFor={props.id || props.name}>{label}</label>
-      <input className="text-input" {...field} {...props} />
-      {meta.touched && meta.error ? (
-        <div className="error text-sm text-red-500 ">{meta.error}</div>
-      ) : null}
-    </div>
-  );
-};
-
-// And now we can use these templates to create different inputs easily
 const FormContact = () => {
-  const form = useRef();
 
-  const sendEmail = () => {
-    return emailjs.sendForm(
+
+  const sendEmail = (data) => {
+    return emailjs.send(
       "service_pjw8ixl", //service_id => A trouver dans Section Email services
       "template_4371vsw", //template_id => A trouver dans section Email templates => Settings
-      form.current,
-      {
-        publicKey: "jbn6FFUwLocXKxqvT", //publicKey: A trouver dans account => API Keys
-      },
+      data,
+      "jbn6FFUwLocXKxqvT", //publicKey: A trouver dans account => API Keys
     );
   };
 
@@ -68,70 +45,110 @@ const FormContact = () => {
               .min(40, "Doit comporter 40 caractères minimum")
               .required("Requis"),
           })}
-          onSubmit={(values, { setSubmitting, resetForm }) => {
+          onSubmit={async (values, { resetForm }) => {
+            // En 1er: le paramètre "values" capture les valeurs écrites dans le formulaire, donc même si on reset le form avant envoie, values stockera toujours les valeurs
             alert("Formulaire envoyé:\nNous vous répondrons dès que possible");
-            sendEmail();
-            resetForm()
-              .then(() => {
-                setSubmitting(false);
-              })
-              .catch((error) => {
-                console.error("FAILED...", error);
-                setSubmitting(false);
-              });
+            console.log("Form submitted with values: ", values); //Permet de voir dans la console ce qui a été rempli dans le formulaire après avoir cliquer sur envoyer
+            resetForm(); //Reset l'affichage des valeurs sur la page, mais values store toujours les valeurs écrites dans le formulaire
+
+            try {
+              const result = await sendEmail(values); //Appel de la function sendEmail avec pour argument 'values' => valeurs du formulaire capturés par Formik
+              console.log("Email sent successfully", result);
+            } catch (error) {
+              console.error("Error sending Email:", error);
+            }
           }}
         >
-          {/* !!! The name property in the MyTextInput component is crucial for Formik to link the input field to its corresponding value in initialValues. Without it it'd not work correctly  */}
-          <Form ref={form}>
-            <MyTextInput
-              label="Nom"
-              name="lastName"
-              type="text"
-              placeholder="Votre Nom de famille"
-              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none" //focus:outline-none est obligé pour enlever le border par défaut quand on clique sur l'input et que le border bleu qu'on veut s'applique quand on clique
-            />
+          <Form>
+            <div className="mb-2">
+              <label htmlFor="lastName">Nom</label>
+              <Field
+                id="lastName"
+                name="lastName"
+                type="text"
+                placeholder="Last Name"
+                className="block w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+              />
+              {/* ErrorMessage est ce qui permet de voir "Requis", si on appuie sur le champ mais qu'on ne le remplit pas et qu'on passe à un autre champ */}
+              <ErrorMessage
+                name="lastName"
+                component="div"
+                className="error text-sm text-red-500"
+              />
+            </div>
 
-            <MyTextInput
-              label="Prénom"
-              name="firstName"
-              type="text"
-              placeholder="Votre Prénom"
-              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
-            />
+            <div className="mb-2">
+              <label htmlFor="firstName">Prénom</label>
+              <Field
+                id="firstName"
+                name="firstName"
+                type="text"
+                placeholder="First Name"
+                className="block w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+              />
+              <ErrorMessage
+                name="firstName"
+                component="div"
+                className="error text-sm text-red-500"
+              />
+            </div>
+            <div className="mb-2">
+              <label htmlFor="companyName">Société</label>
+              <Field
+                id="companyName"
+                name="companyName"
+                type="text"
+                placeholder="Company Name"
+                className="block w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+              />
+              <ErrorMessage
+                name="companyName"
+                component="div"
+                className="error text-sm text-red-500"
+              />
+            </div>
 
-            <MyTextInput
-              label="Société"
-              name="companyName"
-              type="text"
-              placeholder="Nom de votre société"
-              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
-            />
+            <div className="mb-2">
+              <label htmlFor="email">E-mail</label>
+              <Field
+                id="email"
+                name="email"
+                type="email"
+                placeholder="E-mail"
+                className="block w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+              />
+              <ErrorMessage
+                name="email"
+                component="div"
+                className="error text-sm text-red-500"
+              />
+            </div>
 
-            <MyTextInput
-              label="E-mail"
-              name="email"
-              type="email"
-              placeholder="Votre e-mail"
-              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
-            />
+            <div className="mb-2">
+              <label htmlFor="phone">Téléphone</label>
+              <Field
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Phone number"
+                className="block w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+              />
+              <ErrorMessage
+                name="phone"
+                component="div"
+                className="error text-sm text-red-500"
+              />
+            </div>
 
-            <MyTextInput
-              label="Téléphone"
-              name="phone"
-              type="tel"
-              placeholder="Votre numéro"
-              className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
-            />
-
-            <div>
+            <div className="mb-2">
               <label htmlFor="message">Message</label>
               <Field
                 id="message"
                 name="message"
                 as="textarea"
-                placeholder="Votre message"
+                placeholder="Your message"
                 rows="5"
-                className=" block  w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
+                className="block w-full rounded border-2 px-3 py-2 leading-tight focus:border-blue-500 focus:outline-none"
               />
               <ErrorMessage
                 name="message"
@@ -141,10 +158,10 @@ const FormContact = () => {
             </div>
 
             <button
-              type="submit"
-              className="mt-5 rounded  bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:ring-blue-500"
+              type="submit" //Dans un Formulaire Formik, lorsqu'on clique sur un bouton de type="submit", il appelle automatquement la fonction onSubmit définie dans le composant Formik
+              className="mt-5 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:ring-blue-500"
             >
-              Submit
+              Envoyer
             </button>
           </Form>
         </Formik>
