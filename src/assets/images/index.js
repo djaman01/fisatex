@@ -7,7 +7,6 @@ import gantSensible from './gant-sensible2.webp'
 import gantTradi from './gant-tradi.webp'
 import gantSup from './gant-sup.webp'
 import newSandales from './new-sandales.jpg'
-import frotteKit45 from './frotteKit45.png'
 import kit1 from './kit-aura-1.webp'
 import kit2 from './kit-aura2.webp'
 import frotteDos from './frotte-dos.webp'
@@ -18,7 +17,8 @@ import usine1 from './usine1.jpg'
 import gantsCadré from './gants-cadrés.jpg'
 import kitsCadré from './kits-cadrés.jpg'
 import gantsKitsCadrés from './gants-kits-cadrés.jpg'
-
+import gants2cadrés from './Gants2recadrés.jpg'
+import gantsLargeur from './gants-largeur.jpg'
 
 
 export {
@@ -30,8 +30,8 @@ export {
   gantSensible,
   gantTradi,
   gantSup,
+  gantsLargeur,
   newSandales,
-  frotteKit45,
   kit1,
   kit2,
   frotteDos,
@@ -41,5 +41,6 @@ export {
   carte4,
   gantsCadré,
   kitsCadré,
-  gantsKitsCadrés
+  gantsKitsCadrés,
+  gants2cadrés
 }

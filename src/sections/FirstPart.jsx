@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import {
   newSandales,
   gantsCadré,
-  kitsCadré
+  kitsCadré,
+  gants2cadrés
 } from "../assets/images";
+
 
 
 import Aos from "aos";
@@ -27,7 +29,7 @@ const FirstPart = () => {
       <div className="lg:row-span-2 max-lg:h-[340px] ">
         <Link to="/gants">
           <img
-            src={gantsCadré}
+            src={gants2cadrés}
             alt="Gants gommage"
             className=" h-full w-full cursor-pointer rounded-lg object-cover object-bottom"
             data-aos="zoom-in"
