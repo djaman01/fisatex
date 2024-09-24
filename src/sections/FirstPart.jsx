@@ -29,9 +29,9 @@ const FirstPart = () => {
       <div className="lg:row-span-2 max-lg:h-[340px] ">
         <Link to="/gants">
           <img
-            src={gants2cadrés}
+            src={gantsCadré}
             alt="Gants gommage"
-            className=" h-full w-full cursor-pointer rounded-lg object-cover object-bottom"
+            className=" h-full w-full cursor-pointer rounded-[20px] object-cover object-bottom"
             data-aos="zoom-in"
           />
         </Link>
@@ -42,7 +42,7 @@ const FirstPart = () => {
           <img
             src={kitsCadré}
             alt="Kit Visage et Frotte-dos"
-            className="h-full w-full cursor-pointer rounded-lg object-cover "
+            className="h-full w-full cursor-pointer rounded-[20px] object-cover "
             style={{ objectPosition: "center bottom" }}
             data-aos="zoom-in"
           />
@@ -54,7 +54,7 @@ const FirstPart = () => {
           <img
             src={newSandales}
             alt="sandales Hammam"
-            className="w-full cursor-pointer rounded-lg object-cover max-md:h-[200px] md:h-[500px] lg:h-full"
+            className="w-full cursor-pointer rounded-[20px] object-cover max-md:h-[200px] md:h-[500px] lg:h-full"
             data-aos="zoom-in"
           />
         </Link>

@@ -19,6 +19,7 @@ import kitsCadré from './kits-cadrés.jpg'
 import gantsKitsCadrés from './gants-kits-cadrés.jpg'
 import gants2cadrés from './Gants2recadrés.jpg'
 import gantsLargeur from './gants-largeur.jpg'
+import gants2Largeur from './gants2largeur.jpg'
 
 
 export {
@@ -42,5 +43,6 @@ export {
   gantsCadré,
   kitsCadré,
   gantsKitsCadrés,
-  gants2cadrés
+  gants2cadrés,
+  gants2Largeur
 }
