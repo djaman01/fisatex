@@ -21,7 +21,8 @@ const Header = () => {
             height={29}
           />
         </Link>
-        <div className="flex flex-1 items-center justify-center gap-16 font-montserrat text-lg leading-normal text-slate-gray max-lg:hidden">
+
+        <div className="mr-28 flex flex-1 items-center justify-center gap-16 font-montserrat text-lg leading-normal text-slate-gray max-lg:hidden">
           <Link to="/">
             <p className="cursor-pointer hover:text-green-500">Accueil</p>
           </Link>
