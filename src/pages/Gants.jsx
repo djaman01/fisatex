@@ -40,12 +40,12 @@ const Gants = () => {
         <Header />
       </header>
 
-      <main>
-        <div className="prose mx-auto text-center w-max">
-          <h1 className="font-roboto text-4xl text-[#4A4A4A]">Nos Gants de Gommage Personnalisables</h1>
+      <main className="overflow-hidden">
+        <div className="prose mx-auto text-center w-max max-lg:w-full max-lg:mt-5">
+          <h1 className="font-roboto text-4xl text-[#4A4A4A] max-lg:text-3xl">Nos Gants de Gommage Personnalisables</h1>
         </div>
-        {/* Faire animation AOS flip */}
-        <div data-aos="zoom-in" className=" mx-32 mb-20 mt-10 h-[600px] ">
+    {/* h-[600px] mx-32 ou h-[600px] w-[1200px] mx-auto*/}
+        <div data-aos="zoom-in" className=" mb-20 mt-10 h-[550px] w-[1150px] mx-auto max-lg:h-[320px] max-lg:w-full max-lg:mx-auto ">
           <img
             src={gants2Largeur}
             alt="3 types de gants personnalisables"
@@ -53,21 +53,21 @@ const Gants = () => {
           />
         </div>
 
-        <div className=" mx-14 mb-20 grid h-96 grid-cols-3 gap-x-5 text-center">
+        <div className=" mx-14 mb-20 grid h-96 grid-cols-3 gap-x-5 text-center max-lg:flex max-lg:flex-col max-lg:gap-5 max-lg:w-[375px] max-lg:mx-auto max-lg:mb-[1000px]">
           <div
             data-aos="fade-right"
             className="prose rounded-3xl border-green-800 bg-[#E9F7EF] hover:border-2 hover:shadow-2xl"
           >
             <div>
-              <p className="text-center text-3xl font-bold text-[#007F56]">
+              <p className="text-center text-3xl font-bold text-[#007F56] max-lg:my-5">
                 Gant Miami
               </p>
 
-              <p className="font-medium text-gray-700 ">
+              <p className="font-bold text-gray-700 max-lg:w-80 max-lg:mx-auto">
                 Notre gant de gommage pour les peaux sensibles
               </p>
 
-              <ul className="mx-auto  w-[415px] text-left font-bold marker:text-black ">
+              <ul className="mx-auto w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
                 <li>
                   Associe un gommage performant tout en étant respectueux des
                   peaux fragiles et sujettes aux irritations.
@@ -79,6 +79,7 @@ const Gants = () => {
                   Possibilité d'ajouter votre logo sur l'élastique
                 </li>
               </ul>
+
             </div>
           </div>
 
@@ -87,16 +88,16 @@ const Gants = () => {
             className="prose rounded-3xl border-orange-800 bg-[#F5F5DC] hover:border-2 hover:shadow-2xl"
           >
             <div>
-              <p className="text-center text-3xl font-bold text-[#b27538]">
+              <p className="text-center text-3xl font-bold text-[#b27538] max-lg:my-5">
                 Gant 28
               </p>
 
-              <p className="font-medium text-gray-700 ">
+              <p className="font-bold text-gray-700 ">
                 Notre gant de gommage pour les peaux résistantes
               </p>
 
-              <ul className="mx-auto  w-[415px] text-left font-bold marker:text-black ">
-                <li>Le gant de gommage originel, pour un gommage profond</li>
+              <ul className="mx-auto  w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
+                <li>Un gant dur pour un gommage profond</li>
                 <li className="text-[#ff0921]">
                   Disponible dans une large variété de couleurs
                 </li>
@@ -112,15 +113,15 @@ const Gants = () => {
             className="prose rounded-3xl border-blue-800 bg-[#f1f2f3] hover:border-2 hover:shadow-2xl "
           >
             <div>
-              <p className="text-center text-3xl font-bold text-[#446e98]">
+              <p className="text-center text-3xl font-bold text-[#446e98] max-lg:my-5">
                 Gant Gamme Hôtel
               </p>
 
-              <p className="font-medium text-gray-700 ">
-                Notre gant de gommage avec une innovation textile avancée
+              <p className="font-bold text-gray-700 ">
+                Notre gant de gommage doté d'une innovation textile avancée
               </p>
 
-              <ul className="mx-auto  w-[415px] text-left font-bold marker:text-black ">
+              <ul className="mx-auto  w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px]">
                 <li>
                   Convient à tout type de peaux et offre un gommage optimal
                 </li>
@@ -135,7 +136,7 @@ const Gants = () => {
           </div>
         </div>
 
-        <div className="mx-auto mb-20 mt-[-30px] w-max">
+        <div className="mx-auto mb-20 mt-[-30px] w-max max-lg:mt-[-355px]">
           <Link to="/contactus" onClick={scrollToTop}>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </Link>

@@ -3,17 +3,14 @@ import {
   newSandales,
   gantsCadré,
   kitsCadré,
-  gants2cadrés
+  gants2cadrés,
 } from "../assets/images";
-
-
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const FirstPart = () => {
-
   useEffect(() => {
     Aos.init({
       once: true,
@@ -24,10 +21,20 @@ const FirstPart = () => {
     });
   });
 
+  //To go instantly to the top of the page, when redirecting to it
+   const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
+
+
+
   return (
     <section className="mx-5 my-10 flex flex-col gap-5 lg:mx-16 lg:my-5 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[300px,200px] lg:gap-3">
-      <div className="lg:row-span-2 max-lg:h-[340px] ">
-        <Link to="/gants">
+      <div className="max-lg:h-[340px] lg:row-span-2 ">
+        <Link to="/gants" onClick={scrollToTop}>
           <img
             src={gantsCadré}
             alt="Gants gommage"
@@ -38,7 +45,7 @@ const FirstPart = () => {
       </div>
 
       <div className="max-lg:h-[290px]">
-        <Link to="/KitEtFrotte">
+        <Link to="/KitEtFrotte" onClick={scrollToTop}>
           <img
             src={kitsCadré}
             alt="Kit Visage et Frotte-dos"
@@ -50,7 +57,7 @@ const FirstPart = () => {
       </div>
 
       <div className="max-lg:h-[200px]">
-        <Link to="/sandales">
+        <Link to="/sandales" onClick={scrollToTop}>
           <img
             src={newSandales}
             alt="sandales Hammam"
