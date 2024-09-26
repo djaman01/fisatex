@@ -59,11 +59,11 @@ const Gants = () => {
             className="prose rounded-3xl border-green-800 bg-[#E9F7EF] hover:border-2 hover:shadow-2xl"
           >
             <div>
-              <p className="text-center text-3xl font-bold text-[#007F56] max-lg:my-5">
+              <p className="text-center text-3xl font-bold text-[#007F56] mt-5">
                 Gant Miami
               </p>
 
-              <p className="font-bold text-gray-700 max-lg:w-80 max-lg:mx-auto">
+              <p className="font-bold text-gray-700 max-lg:w-80 max-lg:mx-auto mt-[-15px]">
                 Notre gant de gommage pour les peaux sensibles
               </p>
 
@@ -88,11 +88,11 @@ const Gants = () => {
             className="prose rounded-3xl border-orange-800 bg-[#F5F5DC] hover:border-2 hover:shadow-2xl"
           >
             <div>
-              <p className="text-center text-3xl font-bold text-[#b27538] max-lg:my-5">
+              <p className="text-center text-3xl font-bold text-[#b27538] mt-5">
                 Gant 28
               </p>
 
-              <p className="font-bold text-gray-700 ">
+              <p className="font-bold text-gray-700 mt-[-15px]">
                 Notre gant de gommage pour les peaux résistantes
               </p>
 
@@ -113,11 +113,11 @@ const Gants = () => {
             className="prose rounded-3xl border-blue-800 bg-[#f1f2f3] hover:border-2 hover:shadow-2xl "
           >
             <div>
-              <p className="text-center text-3xl font-bold text-[#446e98] max-lg:my-5">
+              <p className="text-center text-3xl font-bold text-[#446e98] mt-5">
                 Gant Gamme Hôtel
               </p>
 
-              <p className="font-bold text-gray-700 ">
+              <p className="font-bold text-gray-700 mt-[-15px] ">
                 Notre gant de gommage doté d'une innovation textile avancée
               </p>
 
@@ -136,7 +136,7 @@ const Gants = () => {
           </div>
         </div>
 
-        <div className="mx-auto mb-20 mt-[-30px] w-max max-lg:mt-[-355px]">
+        <div className="mx-auto mb-20 mt-[-30px] w-max max-lg:mt-[-350px]">
           <Link to="/contactus" onClick={scrollToTop}>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </Link>
