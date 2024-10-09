@@ -2,7 +2,7 @@ import {
   kit1,
   kit2,
   frotteDos,
-  frotteDosLogo,
+  frotteDosOpen,
 } from "../assets/images";
 
 import Footer from "../components/Footer";
@@ -118,11 +118,11 @@ const KitEtFrotte = () => {
             </div>
           </div>
 
-          <div className="lg:pl-32">
+          <div >
             <img
-              src={frotteDosLogo}
-              alt="frotte-dos-logo"
-              className="h-[300px] w-[250px] rounded-3xl shadow-2xl"
+              src={frotteDosOpen}
+              alt="frotte-dos-ouvert"
+              className="h-[300px] w-[600px] rounded-3xl shadow-2xl "
               data-aos="fade-up"
             />
           </div>

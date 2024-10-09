@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { arrowRight } from "../assets/icons";
-import { gantVisage, kitVisageFemme, peauMorte } from "../assets/images";
+import { kitVisage, peauMorte } from "../assets/images";
 
 import MyButton from "../components/MyButton";
 import { Link } from "react-router-dom";
@@ -43,7 +43,7 @@ const Bienfaits = () => {
         Les <span className="text-coral-red">Bienfaits</span> de notre{" "}
         <span className="text-coral-red">Gant</span> de gommage
       </h2>
-      <div className=" mt-[35px] grid grid-cols-[1fr,1fr] border border-slate-gray lg:grid lg:grid-cols-[350px,350px,500px] lg:grid-rows-[500px] lg:gap-10 lg:border-none ">
+      <div className=" mt-[35px] grid grid-cols-[1fr,1fr] border border-slate-gray lg:grid lg:grid-cols-[350px,250px,500px] lg:grid-rows-[500px] lg:gap-10 lg:border-none lg:justify-center">
         <img
           className="h-full w-full cursor-pointer object-cover lg:h-full "
           src={peauMorte}
@@ -52,8 +52,8 @@ const Bienfaits = () => {
           data-aos="fade-up"
         />
         <img
-          className=" h-full w-full cursor-pointer border object-cover lg:h-full "
-          src={kitVisageFemme}
+          className=" lg:object-contain h-full w-full cursor-pointer border object-cover lg:h-full "
+          src={kitVisage}
           alt="hammam"
           onClick={scrollToBienfait}
           data-aos="fade-down"

@@ -7,7 +7,7 @@ import newSandales from './new-sandales.jpg'
 import kit1 from './kit-aura-1.webp'
 import kit2 from './kit-aura2.webp'
 import frotteDos from './frotte-dos.webp'
-import frotteDosLogo from './frotte-logo.png'
+import frotteDosOpen from './frotte-dos-open.jpg'
 import carte4 from './carte4.jpg'
 import bureau1 from './bureau1.jpg'
 import usine1 from './usine1.jpg'
@@ -18,6 +18,7 @@ import gants2cadrés from './Gants2recadrés.jpg'
 import gantsLargeur from './gants-largeur.jpg'
 import gants2Largeur from './gants2largeur.jpg'
 import kitVisageFemme from './visagefemme.jpg'
+import kitVisage from './kit2visage.jpg'
 
 
 export {
@@ -31,7 +32,7 @@ export {
   kit1,
   kit2,
   frotteDos,
-  frotteDosLogo,
+  frotteDosOpen,
   usine1,
   bureau1,
   carte4,
@@ -40,5 +41,6 @@ export {
   gantsKitsCadrés,
   gants2cadrés,
   gants2Largeur,
-  kitVisageFemme
+  kitVisageFemme,
+  kitVisage
 }
