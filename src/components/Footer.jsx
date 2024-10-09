@@ -80,9 +80,6 @@ const Footer = () => {
                   À propos
                 </li>
               </Link>
-              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Charte de Confidentialité
-              </li>
             </ul>
           </div>
 

@@ -44,7 +44,7 @@ const AboutUs = () => {
             </h1>
             <p className="font-roboto text-lg leading-7">
               Basée au Maroc, Fisatex est une entreprise leader en Afrique dans
-              la fabrication de gants de gommage de haute qualité, incarnant
+              la fabrication de gants de gommage Marocain de haute qualité, incarnant
               l'authenticité et la tradition du rituel du Hammam.
             </p>
             <br />

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { arrowRight } from "../assets/icons";
-import { gantVisage, peauMorte } from "../assets/images";
+import { gantVisage, kitVisageFemme, peauMorte } from "../assets/images";
 
 import MyButton from "../components/MyButton";
 import { Link } from "react-router-dom";
@@ -53,7 +53,7 @@ const Bienfaits = () => {
         />
         <img
           className=" h-full w-full cursor-pointer border object-cover lg:h-full "
-          src={gantVisage}
+          src={kitVisageFemme}
           alt="hammam"
           onClick={scrollToBienfait}
           data-aos="fade-down"
