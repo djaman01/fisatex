@@ -71,7 +71,9 @@ const ContactUs = () => {
                 Téléphone
               </h2>
               <p className="font-palanquin text-xl text-gray-500">
-                +212-5-22-30-33-67
+                +212 5 22 30 33 67 <br/>
+                +212 5 22 31 70 07 <br/>
+                +212 5 22 44 51 96
               </p>
             </div>
 

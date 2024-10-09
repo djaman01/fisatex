@@ -98,7 +98,7 @@ const KitEtFrotte = () => {
               Frotte-Dos
             </h2>
             <div className=" pt-12 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
-              <li> Pur un gommage facile et efficace du Dos</li>
+              <li> Pour un gommage facile et efficace du Dos</li>
               <li>
                 Fait avec le tissus du gant de gommage pour{" "}
                 <span className="text-blue-600">peaux sensible </span>
