@@ -1,6 +1,5 @@
 import fisatexLogo from './logo-fisatex.jpg'
 import peauMorte from './peau-morte.png'
-import gantVisage from './gant-femme2.webp'
 import fisatexNoBg from './fisatex-no-bg.png'
 import sandalesJet from './sandale-jetable.jpg'
 import newSandales from './new-sandales.jpg'
@@ -17,7 +16,6 @@ import gantsLargeur from './gants-largeur.jpg'
 import gants2Largeur from './gants2largeur.jpg'
 import kitVisageFemme from './visagefemme.jpg'
 import kitVisage from './kit2visage.jpg'
-import allKit from './all-kit.jpg'
 import kitGommage from './kit-gommage.jpg'
 import kitSavonnage from './kit-savonnage.jpg'
 
@@ -26,7 +24,6 @@ export {
   fisatexLogo,
   fisatexNoBg,
   peauMorte,
-  gantVisage,
   sandalesJet,
   gantsLargeur,
   newSandales,
@@ -42,7 +39,6 @@ export {
   gants2Largeur,
   kitVisageFemme,
   kitVisage,
-  allKit,
   kitGommage,
   kitSavonnage
 }

@@ -1,12 +1,10 @@
 import {
-  kit1,
-  kit2,
   frotteDos,
   frotteDosOpen,
-  allKit,
   kitGommage,
   kitSavonnage,
 } from "../assets/images";
+
 
 
 import Footer from "../components/Footer";
