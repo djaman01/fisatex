@@ -3,7 +3,11 @@ import {
   kit2,
   frotteDos,
   frotteDosOpen,
+  allKit,
+  kitGommage,
+  kitSavonnage,
 } from "../assets/images";
+
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -34,7 +38,7 @@ const KitEtFrotte = () => {
         <div className="my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
-              src={kit1}
+              src={kitGommage}
               alt="kit-visage-face"
               className="h-[300px] w-[600px] rounded-3xl shadow-2xl"
               data-aos="fade-down"
@@ -72,7 +76,7 @@ const KitEtFrotte = () => {
 
           <div>
             <img
-              src={kit2}
+              src={kitSavonnage}
               alt="kit-visage-dos"
               className="h-[300px] w-[600px] rounded-3xl shadow-2xl"
               data-aos="fade-up"

@@ -4,8 +4,6 @@ import gantVisage from './gant-femme2.webp'
 import fisatexNoBg from './fisatex-no-bg.png'
 import sandalesJet from './sandale-jetable.jpg'
 import newSandales from './new-sandales.jpg'
-import kit1 from './kit-aura-1.webp'
-import kit2 from './kit-aura2.webp'
 import frotteDos from './frotte-dos.webp'
 import frotteDosOpen from './frotte-dos-open.jpg'
 import carte4 from './carte4.jpg'
@@ -19,6 +17,9 @@ import gantsLargeur from './gants-largeur.jpg'
 import gants2Largeur from './gants2largeur.jpg'
 import kitVisageFemme from './visagefemme.jpg'
 import kitVisage from './kit2visage.jpg'
+import allKit from './all-kit.jpg'
+import kitGommage from './kit-gommage.jpg'
+import kitSavonnage from './kit-savonnage.jpg'
 
 
 export {
@@ -29,8 +30,6 @@ export {
   sandalesJet,
   gantsLargeur,
   newSandales,
-  kit1,
-  kit2,
   frotteDos,
   frotteDosOpen,
   usine1,
@@ -42,5 +41,8 @@ export {
   gants2cadrés,
   gants2Largeur,
   kitVisageFemme,
-  kitVisage
+  kitVisage,
+  allKit,
+  kitGommage,
+  kitSavonnage
 }
