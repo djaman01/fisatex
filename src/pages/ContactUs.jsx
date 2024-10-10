@@ -13,17 +13,16 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const ContactUs = () => {
-
   useEffect(() => {
     Aos.init({
       once: true,
       offset: 100,
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       // delay: 100,
     });
-  })
-  
+  });
+
   return (
     <>
       <header>
@@ -71,8 +70,8 @@ const ContactUs = () => {
                 Téléphone
               </h2>
               <p className="font-palanquin text-xl text-gray-500">
-                +212 5 22 30 33 67 <br/>
-                +212 5 22 31 70 07 <br/>
+                +212 5 22 30 33 67 <br />
+                +212 5 22 31 70 07 <br />
                 +212 5 22 44 51 96
               </p>
             </div>
@@ -94,14 +93,15 @@ const ContactUs = () => {
 
           <div className="padding-b ml-16 grid grid-cols-2 max-lg:mx-8 max-lg:flex max-lg:flex-col max-lg:gap-10 ">
             <div className="">
+           {/* Aller sur google map, écrire adresse rue, puis si on veut changer la position, créer une nouvelle adresse et envoyer la demande à google */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5190186332275!2d-7.612445924970957!3d33.59183544190202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd62408f3ef9%3A0xf0df71d96535da97!2s7%20Rue%20Bouchaib%20El%20Machrouhi%2C%20Casablanca%2020250!5e0!3m2!1sfr!2sma!4v1709150151948!5m2!1sfr!2sma"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d415.43799497556006!2d-7.6105609!3d33.5922263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd0037ae0da1%3A0x46e27063613f50b!2sFisatex!5e0!3m2!1sfr!2sma!4v1728566235133!5m2!1sfr!2sma"
                 width="600"
                 height="450"
                 style={{ border: "0" }} // Notice the use of curly braces to pass a JavaScript object
-                allowFullScreen=""
+                allowfullscreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerpolicy="no-referrer-when-downgrade"
                 className="h-full w-full max-lg:h-96 "
               ></iframe>
             </div>
