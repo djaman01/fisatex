@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { carte4, usine1, bureau1 } from "../assets/images";
+import { carte4, gantsFond2, deal } from "../assets/images";
 import MyButton from "../components/MyButton";
 import { Link } from "react-router-dom";
 import { arrowRight } from "../assets/icons";
@@ -58,16 +58,16 @@ const AboutUs = () => {
 
           <div data-aos="fade-left" className="max-lg:order-2">
             <img
-              className="h-full w-full rounded-lg"
-              src={usine1}
+              className="h-full w-full rounded-xl"
+              src={gantsFond2}
               alt="usine"
             />
           </div>
 
           <div data-aos="fade-right" className="max-lg:order-4">
             <img
-              className="h-full w-full rounded-lg"
-              src={bureau1}
+              className="h-full w-full rounded-xl"
+              src={deal}
               alt="bureau"
             />
           </div>
@@ -130,7 +130,7 @@ const AboutUs = () => {
 
           <div data-aos="fade-left" className="max-lg:order-6">
             <img
-              className="h-full w-full rounded-lg"
+              className="h-full w-full rounded-xl"
               src={carte4}
               alt="carte"
             />

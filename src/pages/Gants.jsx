@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import {
-  gants2cadrés,
   gants2Largeur,
-  gantsCadré,
-  gantsLargeur,
 } from "../assets/images";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -60,7 +57,7 @@ const Gants = () => {
           >
             <div>
               <p className="text-center text-3xl font-bold text-[#007F56] mt-5">
-                Gant Miami
+                Gant Miami Haut de Gamme
               </p>
 
               <p className="font-bold text-gray-700 max-lg:w-80 max-lg:mx-auto mt-[-15px]">

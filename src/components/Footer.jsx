@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { fisatexLogo, fisatexNoBg } from "../assets/images";
 import { copyrightSign, facebook, instagram } from "../assets/icons";
 import { footerLinks } from "../constants";
+import CopyrightUpdate from "./CopyrightUpdate";
 
 const Footer = () => {
   //To go instantly to the top of the page, when redirecting to it
@@ -111,19 +112,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      <div className="mt-10 flex justify-between text-white-400 max-sm:flex-col max-sm:items-center">
-        <div className="flex flex-1 items-center justify-start gap-2 font-montserrat">
-          <img
-            src={copyrightSign}
-            alt="copyright sign"
-            width={20}
-            height={20}
-            className="m-0 rounded-full"
-          />
-          <p>Copyright. All rights reserved.</p>
-        </div>
-        <p className="cursor-pointer font-montserrat"> Terms & Conditions</p>
+      <div className="flex justify-center gap-2 font-montserrat text-sm text-white-400 max-lg:mt-8">
+        <p>
+          Copyright<CopyrightUpdate /> - Fisatex
+        </p>
       </div>
     </footer>
   );
