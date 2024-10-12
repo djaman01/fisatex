@@ -66,8 +66,11 @@ const Gants = () => {
 
               <ul className="mx-auto w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
                 <li>
-                  Associe un gommage performant tout en étant respectueux des
+                  Associe un gommage <span className="underline">performant</span> tout en étant respectueux des
                   peaux fragiles et sujettes aux irritations.
+                </li>
+                <li className="font-mono">
+                  Composition:
                 </li>
                 <li className="text-[#ff0921]">
                   Disponible dans une large variété de couleurs
@@ -94,7 +97,10 @@ const Gants = () => {
               </p>
 
               <ul className="mx-auto  w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
-                <li>Un gant dur pour un gommage profond</li>
+                <li>Un gant dur pour un gommage <span className="underline">profond</span></li>
+                <li className="font-mono">
+                  Composition:
+                </li>
                 <li className="text-[#ff0921]">
                   Disponible dans une large variété de couleurs
                 </li>
@@ -120,7 +126,10 @@ const Gants = () => {
 
               <ul className="mx-auto  w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px]">
                 <li>
-                  Convient à tout type de peaux et offre un gommage optimal
+                  Convient à <span className="underline">tout type de peaux</span> et offre un gommage optimal
+                </li>
+                <li className="font-mono">
+                  Composition:
                 </li>
                 <li className="text-[#ff0921]">
                   Disponible dans une large variété de couleurs

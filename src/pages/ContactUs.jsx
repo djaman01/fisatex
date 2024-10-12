@@ -7,6 +7,7 @@ import { CiPhone } from "react-icons/ci";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
+import { GiPositionMarker } from "react-icons/gi";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -63,7 +64,7 @@ const ContactUs = () => {
               data-aos="flip-up"
               className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100"
             >
-              <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
+              <div className=" mb-4 flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <CiPhone color="white" size={20} />
               </div>
               <h2 className=" mb-3 text-2xl font-semibold text-gray-700">
@@ -80,6 +81,20 @@ const ContactUs = () => {
               data-aos="flip-right"
               className=" flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100 text-gray-700"
             >
+              <div className=" mb-4 flex justify-center rounded-full bg-red-400 px-3 py-3">
+                <GiPositionMarker color="white" size={20} />
+              </div>
+              <h2 className="mb-3 text-2xl font-semibold">Adresse</h2>
+              <p className="text-center font-palanquin text-xl text-gray-500">
+                7 Rue Bouchaib El Machrouhi, Derb Omar, en face du magasin "Cash
+                Plus Safir Allal"
+              </p>
+            </div>
+
+            {/* <div
+              data-aos="flip-right"
+              className=" flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100 text-gray-700"
+            >
               <div className=" mb-4 mt-[-45px] flex justify-center rounded-full bg-red-400 px-3 py-3">
                 <IoShareSocialOutline color="white" size={20} />
               </div>
@@ -88,14 +103,14 @@ const ContactUs = () => {
                 <FaFacebook size={28} className="cursor-pointer" />
                 <BiLogoInstagramAlt size={32} className="cursor-pointer" />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="padding-b ml-16 grid grid-cols-2 max-lg:mx-8 max-lg:flex max-lg:flex-col max-lg:gap-10 ">
             <div className="">
-           {/* Aller sur google map, écrire adresse rue, puis si on veut changer la position, créer une nouvelle adresse et envoyer la demande à google */}
+              {/* Aller sur google map, écrire adresse rue, puis si on veut changer la position, créer une nouvelle adresse et envoyer la demande à google */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d415.43799497556006!2d-7.6105609!3d33.5922263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd0037ae0da1%3A0x46e27063613f50b!2sFisatex!5e0!3m2!1sfr!2sma!4v1728566235133!5m2!1sfr!2sma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.552428366631!2d-7.610663777547566!3d33.59229799397959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd0037ae0da1%3A0x46e27063613f50b!2sFisatex!5e0!3m2!1sfr!2sma!4v1728774903053!5m2!1sfr!2sma"
                 width="600"
                 height="450"
                 style={{ border: "0" }} // Notice the use of curly braces to pass a JavaScript object
