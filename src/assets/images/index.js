@@ -15,7 +15,7 @@ import gants2Largeur from './gants2largeur.jpg'
 import kitVisageFemme from './visagefemme.jpg'
 import kitVisage from './kit2visage.jpg'
 import kitGommage from './kit-gommage.jpg'
-import kitSavonnage from './kit-savonnage.jpg'
+import kitSavonnage from './kit-savonnage-1.jpg'
 import gantsFond2 from "./gants-fond2.jpg"
 import deal from "./deal-fisatex.jpg"
 
