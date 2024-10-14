@@ -5,6 +5,7 @@ import ContactUs from "./pages/ContactUs";
 import Sandales from "./pages/Sandales";
 import KitEtFrotte from "./pages/KitEtFrotte";
 import AboutUs from "./pages/AboutUs";
+import Couleurs from "./pages/Couleurs";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="sandales" element={<Sandales />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="contactUs" element={<ContactUs />} />
+        <Route path="couleurs" element={<Couleurs />} />
         
       </Routes>
     </BrowserRouter>
