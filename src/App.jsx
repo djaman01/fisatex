@@ -5,7 +5,7 @@ import ContactUs from "./pages/ContactUs";
 import Sandales from "./pages/Sandales";
 import KitEtFrotte from "./pages/KitEtFrotte";
 import AboutUs from "./pages/AboutUs";
-import Couleurs from "./pages/Couleurs";
+import CouleursMiami from "./pages/CouleursMiami";
 
 
 const App = () => {
@@ -19,7 +19,8 @@ const App = () => {
         <Route path="sandales" element={<Sandales />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="contactUs" element={<ContactUs />} />
-        <Route path="couleurs" element={<Couleurs />} />
+        <Route path="couleursMiami" element={<CouleursMiami />} />
+    
         
       </Routes>
     </BrowserRouter>

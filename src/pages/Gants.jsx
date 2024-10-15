@@ -41,7 +41,7 @@ const Gants = () => {
             Nos Gants de Gommage Personnalisables
           </h1>
         </div>
-        {/* h-[600px] mx-32 ou h-[600px] w-[1200px] mx-auto*/}
+
         <div
           data-aos="zoom-in"
           className=" mx-auto mb-20 mt-10 h-[550px] w-[1150px] max-lg:mx-auto max-lg:h-[320px] max-lg:w-full "
@@ -56,9 +56,9 @@ const Gants = () => {
         <div className=" mx-14 mb-20 grid h-96 grid-cols-3 gap-x-5 text-center max-lg:mx-auto max-lg:mb-[1000px] max-lg:flex max-lg:w-[375px] max-lg:flex-col max-lg:gap-5">
           <div
             data-aos="fade-right"
-            className="prose rounded-3xl border-green-800 bg-[#E9F7EF] hover:border-2 hover:shadow-2xl"
+            className="prose rounded-3xl border-green-800 bg-[#E9F7EF] hover:border-2"
           >
-            <div>
+            <div className="h-80 border border-transparent">
               <p className="mt-5 text-center text-3xl font-bold text-[#007F56]">
                 Gant Miami Haut de Gamme
               </p>
@@ -75,12 +75,17 @@ const Gants = () => {
                 </li>
                 <li className="font-mono">Composition: 100% Viscose</li>
                 <li className="text-[#ff0921]">
-                  Disponible dans une large variété de couleurs
-                </li>
-                <li className="text-[#ff0921]">
                   Possibilité d'ajouter votre logo sur l'élastique
                 </li>
               </ul>
+            </div>
+
+            <div className="">
+              <Link to="/couleursMiami" onClick={scrollToTop}>
+                <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
+                  Voir les Couleurs Disponibles
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -88,7 +93,7 @@ const Gants = () => {
             data-aos="fade-down"
             className="prose rounded-3xl border-orange-800 bg-[#F5F5DC] hover:border-2 hover:shadow-2xl"
           >
-            <div>
+            <div className="h-80 border border-transparent">
               <p className="mt-5 text-center text-3xl font-bold text-[#b27538]">
                 Gant 28
               </p>
@@ -104,16 +109,18 @@ const Gants = () => {
                 </li>
                 <li className="font-mono">Composition: 100% Viscose</li>
 
-                <Link to="/couleurs" onClick={scrollToTop}>
-                  <li className="text-[#ff0921]">
-                    Disponible dans une large variété de couleurs
-                  </li>
-                </Link>
-
                 <li className="text-[#ff0921]">
                   Possibilité d'ajouter votre logo sur l'élastique
                 </li>
               </ul>
+            </div>
+
+            <div className="">
+              <Link to="/couleursMiami" onClick={scrollToTop}>
+                <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#A67C52] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#8A5E3B]">
+                  Voir les Couleurs Disponibles
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -121,7 +128,7 @@ const Gants = () => {
             data-aos="fade-left"
             className="prose rounded-3xl border-blue-800 bg-[#f1f2f3] hover:border-2 hover:shadow-2xl "
           >
-            <div>
+            <div className="h-80 border border-transparent">
               <p className="mt-5 text-center text-3xl font-bold text-[#446e98]">
                 Gant Gamme Hôtel
               </p>
@@ -139,13 +146,19 @@ const Gants = () => {
                 <li className="font-mono">
                   Composition: 70% Viscose / 30% Acétate
                 </li>
-                <li className="text-[#ff0921]">
-                  Disponible dans une large variété de couleurs
-                </li>
+
                 <li className="text-[#ff0921]">
                   Possibilité d'ajouter votre logo sur l'élastique
                 </li>
               </ul>
+            </div>
+
+            <div className="">
+              <Link to="/couleursMiami" onClick={scrollToTop}>
+                <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
+                  Voir les Couleurs Disponibles
+                </button>
+              </Link>
             </div>
           </div>
         </div>

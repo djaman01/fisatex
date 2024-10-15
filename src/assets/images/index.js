@@ -20,7 +20,6 @@ import gantsFond2 from "./gants-fond2.jpg"
 import deal from "./deal-fisatex.jpg"
 
 
-
 export {
   fisatexLogo,
   fisatexNoBg,
