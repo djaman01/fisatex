@@ -43,9 +43,9 @@ const Bienfaits = () => {
         Les <span className="text-coral-red">Bienfaits</span> de notre{" "}
         <span className="text-coral-red">Gant</span> de gommage
       </h2>
-      <div className=" mt-[35px] grid grid-cols-[1fr,1fr] border border-slate-gray lg:grid lg:grid-cols-[350px,250px,500px] lg:grid-rows-[500px] lg:gap-10 lg:border-none lg:justify-center">
+      <div className=" mt-[35px] grid grid-cols-[1fr,1fr] lg:grid lg:grid-cols-[350px,250px,500px] lg:grid-rows-[500px] lg:gap-10 lg:border-none lg:justify-center">
         <img
-          className="h-full w-full cursor-pointer object-cover lg:h-full "
+          className="h-full w-full cursor-pointer lg:h-full "
           src={peauMorte}
           alt="hammam"
           onClick={scrollToBienfait}

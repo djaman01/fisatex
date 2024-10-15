@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import {
   newSandales,
   gantsCadré,
-  kitsCadré,
-  gants2cadrés,
+  kitsCadré
 } from "../assets/images";
 
 import Aos from "aos";
@@ -38,7 +37,7 @@ const FirstPart = () => {
           <img
             src={gantsCadré}
             alt="Gants gommage"
-            className=" h-full w-full cursor-pointer rounded-[20px] object-cover object-bottom"
+            className=" h-full w-full cursor-pointer rounded-[20px] object-fill"
             data-aos="zoom-in"
           />
         </Link>
@@ -49,7 +48,7 @@ const FirstPart = () => {
           <img
             src={kitsCadré}
             alt="Kit Visage et Frotte-dos"
-            className="h-full w-full cursor-pointer rounded-[20px] object-cover "
+            className="h-full w-full cursor-pointer rounded-[20px] object-fill "
             style={{ objectPosition: "center bottom" }}
             data-aos="zoom-in"
           />
@@ -61,7 +60,7 @@ const FirstPart = () => {
           <img
             src={newSandales}
             alt="sandales Hammam"
-            className="w-full cursor-pointer rounded-[20px] object-cover max-md:h-[200px] md:h-[500px] lg:h-full"
+            className="w-full cursor-pointer rounded-[20px] object-fill max-md:h-[200px] md:h-[500px] lg:h-full"
             data-aos="zoom-in"
           />
         </Link>

@@ -1,5 +1,5 @@
 import fisatexLogo from './logo-fisatex.jpg'
-import peauMorte from './peau-morte.png'
+import peauMorte from './peau-morte.jpg'
 import fisatexNoBg from './fisatex-no-bg.png'
 import sandalesJet from './sandale-jetable.jpg'
 import newSandales from './new-sandales.jpg'
