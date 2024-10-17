@@ -1,11 +1,10 @@
+import { Link } from "react-router-dom";
 import {
   frotteDos,
   frotteDosOpen,
   kitGommage,
   kitSavonnage,
 } from "../assets/images";
-
-
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -15,7 +14,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const KitEtFrotte = () => {
-  
   useEffect(() => {
     Aos.init({
       once: true,
@@ -25,6 +23,14 @@ const KitEtFrotte = () => {
       // delay: 100,
     });
   });
+
+  //To go instantly to the top of the page, when redirecting to it
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
 
   return (
     <div>
@@ -55,7 +61,7 @@ const KitEtFrotte = () => {
               <li>
                 Fait avec le tissus du gant de gommage pour
                 <span className="text-blue-600"> peaux sensible </span>
-                <br/> afin de respecter la peau du visage
+                <br /> afin de respecter la peau du visage
               </li>
               <li>
                 Dispose aussi d'une{" "}
@@ -63,12 +69,17 @@ const KitEtFrotte = () => {
                 <br />
                 Tourner l'élastique pour l'utiliser
               </li>
-              <li style={{ color: "#ff0921" }}>
-                Disponible dans une large variété de couleurs
-              </li>
+              <li className="font-mono">Composition: 100% Viscose</li>
               <li style={{ color: "#ff0921" }}>
                 Possibilité d'ajouter votre logo sur l'élastique
               </li>
+            </div>
+            <div className="ml-16 mt-10">
+              <Link to="/couleursMiami" onClick={scrollToTop}>
+                <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
+                  Voir les Couleurs Disponibles
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -111,16 +122,21 @@ const KitEtFrotte = () => {
                 <span className="text-blue-600"> face pour le Savonnage</span>
               </li>
 
-              <li style={{ color: "#ff0921" }}>
-                Disponible dans une large variété de couleurs
-              </li>
+              <li className="font-mono">Composition: 100% Viscose</li>
               <li style={{ color: "#ff0921" }}>
                 Possibilité d'ajouter votre logo sur l'élastique
               </li>
             </div>
+            <div className="ml-16 mt-10">
+              <Link to="/couleursMiami" onClick={scrollToTop}>
+                <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
+                  Voir les Couleurs Disponibles
+                </button>
+              </Link>
+            </div>
           </div>
 
-          <div >
+          <div>
             <img
               src={frotteDosOpen}
               alt="frotte-dos-ouvert"

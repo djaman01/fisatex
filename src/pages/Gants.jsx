@@ -116,7 +116,7 @@ const Gants = () => {
             </div>
 
             <div className="">
-              <Link to="/couleursMiami" onClick={scrollToTop}>
+              <Link to="/couleurs28" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#A67C52] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#8A5E3B]">
                   Voir les Couleurs Disponibles
                 </button>
@@ -154,7 +154,7 @@ const Gants = () => {
             </div>
 
             <div className="">
-              <Link to="/couleursMiami" onClick={scrollToTop}>
+              <Link to="/couleursGH" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
                   Voir les Couleurs Disponibles
                 </button>

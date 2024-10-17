@@ -3,22 +3,19 @@ import Header from "../components/Header";
 
 import Slider from "react-slick";
 
-import { IoArrowBackOutline } from "react-icons/io5";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {
-  bleu1,
-  bleu2,
-  divers1,
-  marron1,
-  orange1,
-  pourpre1,
-  rose1,
-  vert1,
-} from "../assets/images/index-couleurs";
 
+import {
+  bleu28,
+  divers28,
+  marron28,
+  orange28,
+  rose28,
+  vert28,
+} from "../assets/images/index-28";
 import { Link } from "react-router-dom";
+import { IoArrowBackOutline } from "react-icons/io5";
 
 function Arrow(props) {
   const { className, style, onClick } = props;
@@ -38,7 +35,7 @@ function Arrow(props) {
   );
 }
 
-const CouleursMiami = () => {
+const CouleursGh = () => {
   const settings = {
     nextArrow: <Arrow />,
     prevArrow: <Arrow />,
@@ -101,7 +98,7 @@ const CouleursMiami = () => {
         >
           <div className="px-2 lg:h-[700px]">
             <img
-              src={vert1}
+              src={marron28}
               alt="bleu 1"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
@@ -109,7 +106,7 @@ const CouleursMiami = () => {
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={bleu1}
+              src={orange28}
               alt="vert 1"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
@@ -117,7 +114,7 @@ const CouleursMiami = () => {
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={orange1}
+              src={bleu28}
               alt="bleu 2"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
@@ -125,7 +122,7 @@ const CouleursMiami = () => {
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={bleu2}
+              src={rose28}
               alt="orange 1"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
@@ -133,7 +130,7 @@ const CouleursMiami = () => {
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={rose1}
+              src={vert28}
               alt="rose 1"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
@@ -141,24 +138,8 @@ const CouleursMiami = () => {
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={marron1}
+              src={divers28}
               alt="maaron 1"
-              className="h-full w-full rounded-2xl border-4 border-black object-fill "
-            />
-          </div>
-
-          <div className="px-2 lg:h-[700px]">
-            <img
-              src={divers1}
-              alt="divers 1"
-              className="h-full w-full rounded-2xl border-4 border-black object-fill "
-            />
-          </div>
-
-          <div className="px-2 lg:h-[700px]">
-            <img
-              src={pourpre1}
-              alt="pourpre 1"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
@@ -167,8 +148,10 @@ const CouleursMiami = () => {
 
       <div className="mb-20 mt-[-90px] flex justify-center">
         <Link to="/gants" onClick={scrollToBottom}>
-          <button className=" flex justify-center mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
-            <div className="my-auto mr-2">< IoArrowBackOutline size={25} /></div>
+          <button className=" mt-2 flex h-[34px] w-80 justify-center rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
+            <div className="my-auto mr-2">
+              <IoArrowBackOutline size={25} />
+            </div>
             <div className=" my-auto">Retour</div>
           </button>
         </Link>
@@ -181,4 +164,4 @@ const CouleursMiami = () => {
   );
 };
 
-export default CouleursMiami;
+export default CouleursGh;
