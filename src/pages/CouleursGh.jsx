@@ -7,13 +7,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import {
-  bleu28,
-  divers28,
-  marron28,
-  orange28,
-  rose28,
-  vert28,
-} from "../assets/images/index-28";
+  bleuGH,
+  diversGH,
+  grisGH,
+  marronGH,
+  roseGH,
+  vertGH,
+} from "../assets/images/indexGH";
+
 import { Link } from "react-router-dom";
 import { IoArrowBackOutline } from "react-icons/io5";
 
@@ -98,48 +99,48 @@ const CouleursGh = () => {
         >
           <div className="px-2 lg:h-[700px]">
             <img
-              src={marron28}
-              alt="bleu 1"
+              src={bleuGH}
+              alt="bleu GH"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={orange28}
-              alt="vert 1"
+              src={roseGH}
+              alt="rose GH"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={bleu28}
-              alt="bleu 2"
+              src={vertGH}
+              alt="vert GH"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={rose28}
-              alt="orange 1"
+              src={marronGH}
+              alt="marron GH"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={vert28}
-              alt="rose 1"
+              src={grisGH}
+              alt="gris GH"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={divers28}
-              alt="maaron 1"
+              src={diversGH}
+              alt="divers GH"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>

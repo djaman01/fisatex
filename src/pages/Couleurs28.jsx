@@ -10,10 +10,11 @@ import {
   bleu28,
   divers28,
   marron28,
-  orange28,
+  violet28,
   rose28,
   vert28,
 } from "../assets/images/index-28";
+
 import { Link } from "react-router-dom";
 import { IoArrowBackOutline } from "react-icons/io5";
 
@@ -36,7 +37,6 @@ function Arrow(props) {
 }
 
 const couleurs28 = () => {
-  
   const settings = {
     nextArrow: <Arrow />,
     prevArrow: <Arrow />,
@@ -100,15 +100,15 @@ const couleurs28 = () => {
           <div className="px-2 lg:h-[700px]">
             <img
               src={marron28}
-              alt="bleu 1"
+              alt="marron 28"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
 
           <div className="px-2 lg:h-[700px]">
             <img
-              src={orange28}
-              alt="vert 1"
+              src={violet28}
+              alt="violet 28"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
@@ -116,7 +116,7 @@ const couleurs28 = () => {
           <div className="px-2 lg:h-[700px]">
             <img
               src={bleu28}
-              alt="bleu 2"
+              alt="bleu 28"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
@@ -124,7 +124,7 @@ const couleurs28 = () => {
           <div className="px-2 lg:h-[700px]">
             <img
               src={rose28}
-              alt="orange 1"
+              alt="rose 28"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
@@ -132,7 +132,7 @@ const couleurs28 = () => {
           <div className="px-2 lg:h-[700px]">
             <img
               src={vert28}
-              alt="rose 1"
+              alt="vert 28"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>
@@ -140,7 +140,7 @@ const couleurs28 = () => {
           <div className="px-2 lg:h-[700px]">
             <img
               src={divers28}
-              alt="maaron 1"
+              alt="divers 28"
               className="h-full w-full rounded-2xl border-4 border-black object-fill "
             />
           </div>

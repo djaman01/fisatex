@@ -9,7 +9,7 @@ const Header = () => {
   const { openSidebar, setOpenSidebar } = useMyContext();
 
   return (
-    <header className="padding-x w-full py-1">
+    <header className="padding-x w-full pt-1 mb-[-10px]">
       {/* items-center et max-container à supprimer */}
       <nav className="max-container flex items-center justify-between">
         <Link to="/">
