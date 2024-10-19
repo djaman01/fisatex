@@ -4,9 +4,6 @@ import Header from "../components/Header";
 
 import { IoMailOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
-import { IoShareSocialOutline } from "react-icons/io5";
-import { FaFacebook } from "react-icons/fa";
-import { BiLogoInstagramAlt } from "react-icons/bi";
 import { GiPositionMarker } from "react-icons/gi";
 
 import Aos from "aos";
@@ -45,7 +42,7 @@ const ContactUs = () => {
             <div className=" flex-1 bg-orange-600"></div>
           </div>
 
-          <div className="my-16 flex justify-center gap-20 max-lg:flex-col max-lg:items-center">
+          <div className=" mb-16 flex justify-center gap-20 max-lg:gap-12 max-lg:flex-col max-lg:items-center">
             <div
               data-aos="flip-left"
               className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100"

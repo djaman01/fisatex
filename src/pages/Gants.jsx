@@ -45,7 +45,7 @@ const Gants = () => {
 
         <div
           data-aos="zoom-in"
-          className=" mx-auto mb-20 mt-10 h-[550px] w-[1150px] max-lg:mx-auto max-lg:h-[320px] max-lg:w-full "
+          className="mx-auto mb-20 mt-10 h-[550px] w-[1150px] max-lg:mx-auto max-lg:mb-16 max-lg:h-[320px] max-lg:w-full "
         >
           <img
             src={gants2Largeur}
@@ -54,7 +54,7 @@ const Gants = () => {
           />
         </div>
 
-        <div className=" mx-14 mb-20 grid h-96 grid-cols-3 gap-x-5 text-center max-lg:mx-auto max-lg:mb-[1000px] max-lg:flex max-lg:w-[375px] max-lg:flex-col max-lg:gap-5">
+        <div className=" mx-14 mb-20 grid h-96 grid-cols-3 gap-x-5 text-center max-lg:mx-auto max-lg:mb-[1000px] max-lg:flex max-lg:w-[375px] max-lg:flex-col max-lg:gap-10">
           <div
             data-aos="fade-right"
             className="prose rounded-3xl border-green-800 bg-[#E9F7EF] hover:border-2"
@@ -81,7 +81,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="">
+            <div className="max-lg:mb-5 max-lg:mt-[65px]">
               <Link to="/couleursMiami" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
                   Voir les Couleurs Disponibles
@@ -116,7 +116,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="">
+            <div className="max-lg:mb-5 max-lg:mt-[-40px]">
               <Link to="/couleurs28" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#A67C52] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#8A5E3B]">
                   Voir les Couleurs Disponibles
@@ -154,7 +154,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="">
+            <div className="max-lg:mb-5 max-lg:mt-[-14px]">
               <Link to="/couleursGH" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
                   Voir les Couleurs Disponibles
@@ -164,7 +164,7 @@ const Gants = () => {
           </div>
         </div>
 
-        <div className="mx-auto mt-[-30px] w-max max-lg:mt-[-350px] padding-b">
+        <div className="padding-b mx-auto mt-[-30px] w-max max-lg:mt-[-100px]">
           <Link to="/contactus" onClick={scrollToTop}>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </Link>

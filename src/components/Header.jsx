@@ -1,4 +1,3 @@
-import { cross, hamburger } from "../assets/icons";
 import { fisatexLogo } from "../assets/images";
 import SideHeader from "./SideHeader";
 
@@ -14,7 +13,7 @@ const Header = () => {
       <nav className="flex justify-between">
         <Link to="/">
           <img
-            className="cursor-pointer"
+            className="cursor-pointer max-lg:pt-1"
             src={fisatexLogo}
             alt="Fisatex Logo"
             width={130}

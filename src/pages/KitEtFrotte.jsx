@@ -51,7 +51,7 @@ const KitEtFrotte = () => {
 
           <div
             data-aos="fade-left"
-            className="prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 sm:w-[600px] lg:ml-9 lg:w-auto lg:rounded-r-full lg:border lg:border-slate-300 "
+            className=" prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:w-auto lg:rounded-r-full lg:border lg:border-slate-300 "
           >
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Kit Visage
@@ -74,9 +74,10 @@ const KitEtFrotte = () => {
                 Possibilité d'ajouter votre logo sur l'élastique
               </li>
             </div>
-            <div className="ml-16 mt-10">
+
+            <div className="ml-16 mt-10 max-lg:ml-12 max-lg:mt-1">
               <Link to="/couleursKit" onClick={scrollToTop}>
-                <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
+                <button className="mt-2 h-[34px] rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600 max-lg:w-60 lg:w-80">
                   Voir les Couleurs Disponibles
                 </button>
               </Link>
@@ -127,9 +128,10 @@ const KitEtFrotte = () => {
                 Possibilité d'ajouter votre logo sur l'élastique
               </li>
             </div>
-            <div className="ml-16 mt-10">
+
+            <div className="ml-16 mt-10 max-lg:ml-12 max-lg:mt-1">
               <Link to="/couleursKit" onClick={scrollToTop}>
-                <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
+                <button className="mt-2 h-[34px] rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600 max-lg:w-60 lg:w-80">
                   Voir les Couleurs Disponibles
                 </button>
               </Link>

@@ -5,13 +5,11 @@ import { kitVisage, peauMorte } from "../assets/images";
 import MyButton from "../components/MyButton";
 import { Link } from "react-router-dom";
 
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Bienfaits = () => {
-
   const bienfaitSection = useRef(null);
 
   const scrollToBienfait = () => {
@@ -38,23 +36,23 @@ const Bienfaits = () => {
   });
 
   return (
-    <section>
-      <h2 className="text-center font-palanquin text-3xl font-bold lg:text-[40px] ">
+    <section className="mt-10 mx-2">
+      <h2 className="pb-7 text-center font-palanquin text-3xl font-bold lg:text-[40px] ">
         Les <span className="text-coral-red">Bienfaits</span> de notre{" "}
         <span className="text-coral-red">Gant</span> de gommage
       </h2>
-      <div className=" mt-[35px] grid grid-cols-[1fr,1fr] lg:grid lg:grid-cols-[350px,250px,500px] lg:grid-rows-[500px] lg:gap-10 lg:border-none lg:justify-center">
+      <div className="mt-5 grid grid-cols-[1fr,1fr] grid-rows-[350px] lg:grid lg:grid-cols-[350px,250px,500px] lg:grid-rows-[500px] lg:justify-center lg:gap-10 lg:border-none">
         <img
-          className="h-full w-full cursor-pointer lg:h-full "
+          className="h-full w-full cursor-pointer lg:h-full rounded-xl"
           src={peauMorte}
-          alt="hammam"
+          alt="peau morte"
           onClick={scrollToBienfait}
           data-aos="fade-up"
         />
         <img
-          className=" lg:object-contain h-full w-full cursor-pointer border object-cover lg:h-full "
+          className=" h-full w-full cursor-pointer object-cover lg:h-full lg:object-contain rounded-xl "
           src={kitVisage}
-          alt="hammam"
+          alt="kit visage"
           onClick={scrollToBienfait}
           data-aos="fade-down"
         />
