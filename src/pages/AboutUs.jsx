@@ -33,8 +33,8 @@ const AboutUs = () => {
     <>
       <Header />
 
-      <main className="overflow-hidden">
-        <div className=" my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] max-lg:mx-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-16 lg:gap-x-14 lg:gap-y-20 ">
+      <main className="overflow-hidden padding-b">
+        <div className="my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] max-lg:mx-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-16 lg:gap-x-14 lg:gap-y-20 ">
           <div
             data-aos="fade-right"
             className="max-lg:order-1 max-lg:rounded-lg max-lg:border max-lg:border-slate-400 max-lg:px-5 max-lg:py-2 max-lg:shadow-xl "

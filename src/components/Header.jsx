@@ -9,9 +9,9 @@ const Header = () => {
   const { openSidebar, setOpenSidebar } = useMyContext();
 
   return (
-    <header className="padding-x w-full pt-1 mb-[-10px]">
-      {/* items-center et max-container à supprimer */}
-      <nav className="max-container flex items-center justify-between">
+    <header className="padding-x w-full">
+      
+      <nav className="flex justify-between">
         <Link to="/">
           <img
             className="cursor-pointer"
@@ -22,7 +22,7 @@ const Header = () => {
           />
         </Link>
 
-        <div className="mr-28 flex flex-1 items-center justify-center gap-16 font-montserrat text-lg leading-normal text-slate-gray max-lg:hidden">
+        <div className="mr-32 flex flex-1 items-center justify-center gap-16 font-montserrat text-lg leading-normal text-slate-gray max-lg:hidden">
           <Link to="/">
             <p className="cursor-pointer hover:text-green-500">Accueil</p>
           </Link>

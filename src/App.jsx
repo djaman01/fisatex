@@ -8,6 +8,7 @@ import AboutUs from "./pages/AboutUs";
 import CouleursMiami from "./pages/CouleursMiami";
 import Couleurs28 from "./pages/Couleurs28";
 import CouleursGh from "./pages/CouleursGh";
+import CouleursMiamiKit from "./pages/CouleursMiamiKit";
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="couleursMiami" element={<CouleursMiami />} />
         <Route path="couleurs28" element={<Couleurs28 />} />
         <Route path="couleursGH" element={<CouleursGh />} />
+        <Route path="couleursKit" element={<CouleursMiamiKit />} />
     
         
       </Routes>

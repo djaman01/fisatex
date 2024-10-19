@@ -1,3 +1,5 @@
+//Je fais une nouvelle page couleurs Miami pour kit et frotte pour que le bouton retour emm_ne vers la page kit et frotte et non la page gant
+
 import {
   bleu1,
   bleu2,
@@ -11,7 +13,7 @@ import {
 
 import ColorComp from "../components/ColorComp";
 
-const CouleursMiami = () => {
+const CouleursMiamiKit = () => {
   return (
     <>
       <ColorComp
@@ -32,13 +34,13 @@ const CouleursMiami = () => {
         color8={vert1}
         alt8={vert1}
 
-        bgColor='bg-green-500'
-        hoverBgColor='hover:bg-green-600'
+        bgColor="bg-green-500"
+        hoverBgColor="hover:bg-green-600"
 
-         link="/gants"
+        link="/KitEtFrotte"
       />
     </>
   );
 };
 
-export default CouleursMiami;
+export default CouleursMiamiKit;

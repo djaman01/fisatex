@@ -11,10 +11,10 @@ const AllSite = () => {
         <Header />
       </header>
 
-      <section className="padding-b">
+      <section>
         <FirstPart />
       </section>
-      <section className="padding padding-b">
+      <section className="padding-b">
         <Bienfaits />
       </section>
       <section className="padding-b">

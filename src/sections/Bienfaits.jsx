@@ -39,7 +39,7 @@ const Bienfaits = () => {
 
   return (
     <section>
-      <h2 className="mt-[-80px] text-center font-palanquin text-3xl font-bold lg:text-[40px] ">
+      <h2 className="text-center font-palanquin text-3xl font-bold lg:text-[40px] ">
         Les <span className="text-coral-red">Bienfaits</span> de notre{" "}
         <span className="text-coral-red">Gant</span> de gommage
       </h2>

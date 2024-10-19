@@ -29,9 +29,10 @@ const ContactUs = () => {
       <header>
         <Header />
       </header>
-      <main>
+
+      <main className="">
         <div>
-          <div className="mx-auto ">
+          <div className="mx-auto my-3">
             <h1 className="text-center font-montserrat text-[45px] text-coral-red max-lg:mt-4">
               Contactez-nous
             </h1>
@@ -114,9 +115,9 @@ const ContactUs = () => {
                 width="600"
                 height="450"
                 style={{ border: "0" }} // Notice the use of curly braces to pass a JavaScript object
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 className="h-full w-full max-lg:h-96 "
               ></iframe>
             </div>

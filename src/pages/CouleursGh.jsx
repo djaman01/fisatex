@@ -28,6 +28,8 @@ const CouleursGh = () => {
 
         bgColor='bg-[#1D77C3]'
         hoverBgColor='hover:bg-[#00539C]'
+
+         link="/gants"
       />
     </>
   );

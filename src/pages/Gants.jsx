@@ -35,7 +35,8 @@ const Gants = () => {
         <Header />
       </header>
 
-      <main className="overflow-hidden">
+      {/* je fais my-4 au lieu de my-5 comme dans page ki, car le texte est entouré d'une bordure invisible qui le descend un peu plus bas*/}
+      <main className="my-3 overflow-hidden ">
         <div className="prose mx-auto w-max text-center max-lg:mt-5 max-lg:w-full">
           <h1 className="font-roboto text-4xl text-[#4A4A4A] max-lg:text-3xl">
             Nos Gants de Gommage Personnalisables
@@ -163,7 +164,7 @@ const Gants = () => {
           </div>
         </div>
 
-        <div className="mx-auto mb-20 mt-[-30px] w-max max-lg:mt-[-350px]">
+        <div className="mx-auto mt-[-30px] w-max max-lg:mt-[-350px] padding-b">
           <Link to="/contactus" onClick={scrollToTop}>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </Link>

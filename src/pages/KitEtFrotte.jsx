@@ -38,8 +38,8 @@ const KitEtFrotte = () => {
         <Header />
       </header>
 
-      <main>
-        <div className="my-10 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
+      <main className="padding-b">
+        <div className="my-5 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
               src={kitGommage}
@@ -75,7 +75,7 @@ const KitEtFrotte = () => {
               </li>
             </div>
             <div className="ml-16 mt-10">
-              <Link to="/couleursMiami" onClick={scrollToTop}>
+              <Link to="/couleursKit" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
                   Voir les Couleurs Disponibles
                 </button>
@@ -128,7 +128,7 @@ const KitEtFrotte = () => {
               </li>
             </div>
             <div className="ml-16 mt-10">
-              <Link to="/couleursMiami" onClick={scrollToTop}>
+              <Link to="/couleursKit" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
                   Voir les Couleurs Disponibles
                 </button>

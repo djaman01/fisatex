@@ -25,10 +25,11 @@ const couleurs28 = () => {
         alt5={rose28}
         color6={vert28}
         alt6={vert28}
-
         
         bgColor='bg-[#A67C52]'
         hoverBgColor='hover:bg-[#8A5E3B]'
+
+        link="/gants"
       />
     </>
   );

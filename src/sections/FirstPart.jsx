@@ -31,7 +31,7 @@ const FirstPart = () => {
 
 
   return (
-    <section className="mx-5 my-10 flex flex-col gap-5 lg:mx-10 lg:my-5 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[445px,200px] lg:gap-3">
+    <section className="mx-5 my-10 flex flex-col gap-5 lg:mx-10 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[395px,200px] lg:gap-3 lg:mt-2">
       <div className="max-lg:h-[340px] lg:row-span-2 ">
         <Link to="/gants" onClick={scrollToTop}>
           <img

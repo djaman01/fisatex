@@ -48,6 +48,8 @@ const ColorComp = ({
 
   bgColor,
   hoverBgColor,
+
+  link
 }) => {
   const settings = {
     nextArrow: <Arrow />,
@@ -181,7 +183,7 @@ const ColorComp = ({
       </div>
 
       <div className="mb-20 mt-[-90px] flex justify-center">
-        <Link to="/gants" onClick={scrollToBottom}>
+        <Link to={link} onClick={scrollToBottom}>
           <button className={`mt-2 flex h-[34px] w-80 justify-center rounded-full ${bgColor} bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out ${hoverBgColor}`}>
             <div className="my-auto mr-2">
               <IoArrowBackOutline size={25} />
