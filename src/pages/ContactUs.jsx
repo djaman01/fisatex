@@ -35,14 +35,14 @@ const ContactUs = () => {
             </h1>
           </div>
 
-          <div className="mx-auto mb-10 flex h-2 w-24 overflow-hidden rounded">
+          <div className="mx-auto mb-16 flex h-2 w-24 overflow-hidden rounded">
             <div className=" flex-1 bg-orange-200"></div>
             {/* flex-1 = the element will grow to fill available space along the main axis */}
             <div className=" flex-1 bg-orange-400"></div>
             <div className=" flex-1 bg-orange-600"></div>
           </div>
 
-          <div className=" mb-16 flex justify-center gap-20 max-lg:gap-12 max-lg:flex-col max-lg:items-center">
+          <div className=" mb-20 flex justify-center gap-20 max-lg:gap-12 max-lg:flex-col max-lg:items-center">
             <div
               data-aos="flip-left"
               className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100"

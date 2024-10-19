@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className="max-container">
-      <div className="flex flex-wrap items-start justify-between gap-20 ">
+      <div className="flex flex-wrap items-start justify-between gap-20 max-lg:gap-10 ">
         <div className="flex flex-col items-start">
           <Link to="/">
             <img
@@ -31,25 +31,7 @@ const Footer = () => {
             <b>F</b>abric <b>I</b>ndustrielle de <b>S</b>oie <b>A</b>cétate{" "}
             <b>T</b>extiles
           </p>
-          <div className=" mt-8 flex items-center justify-center gap-5 max-sm:flex max-sm:w-full max-sm:justify-around">
-            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white">
-              <img
-                src={facebook}
-                alt="Facebook Logo"
-                width={24}
-                height={24}
-                className="" //je fais ça, même si vide, pour que prettier le formate verticalement
-              />
-            </div>
-            <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white">
-              <img
-                src={instagram}
-                alt="Instagram Logo"
-                width={24}
-                height={24}
-              />
-            </div>
-          </div>
+       
         </div>
 
         <div className=" flex flex-1 flex-wrap justify-between gap-20 max-sm:justify-center lg:gap-10">
