@@ -3,6 +3,7 @@ import {
   diversGH,
   grisGH,
   marronGH,
+  noirBlanc,
   roseGH,
   vertGH,
 } from "../assets/images/indexGH";
@@ -13,18 +14,20 @@ const CouleursGh = () => {
   return (
     <>
       <ColorComp
-        color1={bleuGH}
-        alt1={bleuGH}
-        color2={diversGH}
-        alt2={diversGH}
-        color3={grisGH}
-        alt3={grisGH}
+        color1={diversGH}
+        alt1="Divers couleurs 1"
+        color2={bleuGH}
+        alt2="Divers couleurs 2"
+        color3={roseGH}
+        alt3="Divers couleurs 3"
         color4={marronGH}
-        alt4={marronGH}
-        color5={roseGH}
-        alt5={roseGH}
-        color6={vertGH}
-        alt6={vertGH}
+        alt4="Divers Marron"
+        color5={vertGH}
+        alt5="Divers couleurs 4"
+        color6={grisGH}
+        alt6="Divers couleurs 5"
+        color7={noirBlanc}
+        alt7="Blanc et Noir"
 
         bgColor='bg-[#1D77C3]'
         hoverBgColor='hover:bg-[#00539C]'

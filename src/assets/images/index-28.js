@@ -4,6 +4,7 @@ import marron28 from "./couleurs-28/marron-28.jpg"
 import violet28 from "./couleurs-28/violet-28.jpg"
 import rose28 from "./couleurs-28/rose-28.jpg"
 import vert28 from "./couleurs-28/vert-28.jpg"
+import blackWhite from "./couleurs-28/noir-blanc28.jpg"
 
 
 
@@ -13,5 +14,6 @@ export {
   marron28,
   violet28,
   rose28,
-  vert28
+  vert28,
+  blackWhite
 }

@@ -62,7 +62,7 @@ const Bienfaits = () => {
           ref={bienfaitSection}
         >
           <h2 className="pt-4 text-center font-palanquin font-bold lg:pt-5 lg:text-3xl">
-            Refaite vous une <span className="text-coral-red">Nouvelle</span>{" "}
+            Refaites vous une <span className="text-coral-red">Nouvelle</span>{" "}
             peau !
           </h2>
           <ul className="font-palanquin text-xl lg:text-[22px]">

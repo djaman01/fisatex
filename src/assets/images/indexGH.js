@@ -4,6 +4,7 @@ import grisGH from "./couleurs-GH/grisGH.jpg"
 import marronGH from "./couleurs-GH/marronGH.jpg"
 import roseGH from "./couleurs-GH/roseGH.jpg"
 import vertGH from "./couleurs-GH/vertGH.jpg"
+import noirBlanc from "./couleurs-GH/noirBlanc.jpg"
 
 
 
@@ -14,5 +15,6 @@ diversGH,
 grisGH,
 marronGH,
 roseGH,
-vertGH
+vertGH,
+noirBlanc
 }
