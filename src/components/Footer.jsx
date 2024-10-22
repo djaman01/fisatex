@@ -46,7 +46,13 @@ const Footer = () => {
                 Mail: fisatex@fisatex.com
               </li>
               <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
-                Tel: +212 5 22 30 33 67
+                Tel 1: +212 5 22 30 33 67
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Tel 2: +212 5 22 31 70 07
+              </li>
+              <li className="mt-3 cursor-pointer text-base leading-normal text-white-400 hover:text-slate-gray">
+                Tel 3: +212 5 22 44 51 96
               </li>
             </ul>
           </div>
