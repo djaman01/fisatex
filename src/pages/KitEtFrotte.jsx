@@ -38,7 +38,7 @@ const KitEtFrotte = () => {
         <Header />
       </header>
 
-      <main className="padding-b">
+      <main className="padding-b overflow-hidden">
         <div className="my-5 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
@@ -58,10 +58,9 @@ const KitEtFrotte = () => {
             </h2>
             <div className=" pt-12 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
               <li> Notre gant de gommage spécial Visage</li>
-              <li>
+              <li className=" w-96">
                 Fait avec le tissus du gant de gommage pour
-                <span className="text-blue-600"> peaux sensible </span>
-                <br /> afin de respecter la peau du visage
+                <span className="text-blue-600"> peaux sensible </span> afin de respecter la peau du visage
               </li>
               <li>
                 Dispose aussi d'une{" "}

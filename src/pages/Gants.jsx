@@ -154,7 +154,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5 max-lg:mt-[-14px]">
+            <div className="max-lg:mb-5">
               <Link to="/couleursGH" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
                   Voir les Couleurs Disponibles

@@ -24,7 +24,7 @@ const Sandales = () => {
         <Header />
       </header>
 
-      <main className="padding-b">
+      <main className="padding-b overflow-hidden">
         <div className="my-5 rounded-3xl bg-[#f0f0f0] p-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-y-5 lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-y-5">
           <div>
             <img
