@@ -154,7 +154,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5">
+            <div className="max-lg:mb-5 max-lg:mt-2">
               <Link to="/couleursGH" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
                   Voir les Couleurs Disponibles
@@ -164,7 +164,7 @@ const Gants = () => {
           </div>
         </div>
 
-        <div className="padding-b mx-auto mt-[-30px] w-max max-lg:mt-[-100px]">
+        <div className="padding-b mx-auto mt-[-30px] w-max max-lg:mt-[-80px]">
           <Link to="/contactus" onClick={scrollToTop}>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </Link>

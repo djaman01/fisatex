@@ -51,23 +51,23 @@ const KitEtFrotte = () => {
 
           <div
             data-aos="fade-left"
-            className=" prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 lg:ml-9 lg:w-auto lg:rounded-r-full lg:border lg:border-slate-300 "
+            className=" prose row-span-2 shadow-2xl max-lg:order-last max-lg:rounded-3xl max-lg:border max-lg:border-slate-400 max-lg:py-5 sm:w-[600px] lg:ml-9 lg:w-auto lg:rounded-r-full lg:border lg:border-slate-300 "
           >
             <h2 className=" text-blue-600 max-lg:text-center lg:pl-20 lg:pt-5">
               Kit Visage
             </h2>
             <div className=" pt-12 font-bold max-lg:pl-5 max-lg:pt-0 lg:pl-5 ">
               <li> Notre gant de gommage spécial Visage</li>
-              <li className=" w-96">
-                Fait avec le tissus du gant de gommage pour
-                <span className="text-blue-600"> peaux sensible </span> afin de respecter la peau du visage
+              <li>
+                Fait avec le tissus du gant de gommage pour{" "}
+                <span className="text-blue-600">peaux sensible </span> afin de respecter la peau du visage
               </li>
+
               <li>
                 Dispose aussi d'une{" "}
-                <span className="text-blue-600"> face pour le Savonnage</span>:
-                <br />
-                Tourner l'élastique pour l'utiliser
+                <span className="text-blue-600"> face pour le Savonnage</span>: Tourner l'élastique pour l'utiliser
               </li>
+
               <li className="font-mono">Composition: 100% Viscose</li>
               <li style={{ color: "#ff0921" }}>
                 Possibilité d'ajouter votre logo sur l'élastique
