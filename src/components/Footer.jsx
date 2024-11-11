@@ -27,11 +27,9 @@ const Footer = () => {
               onClick={scrollToTop}
             />
           </Link>
-          <p className="mt-6 font-mono text-base leading-7 text-white-400 sm:max-w-sm">
-            <b>F</b>abric <b>I</b>ndustrielle de <b>S</b>oie <b>A</b>cétate{" "}
-            <b>T</b>extiles
+          <p className=" lg:ml-[-30px] mt-6 font-mono text-base leading-7 text-white-400 sm:max-w-sm">
+            <b>Fabricant de gant de gommage Marocain</b>
           </p>
-       
         </div>
 
         <div className=" flex flex-1 flex-wrap justify-between gap-20 max-sm:justify-center lg:gap-10">
@@ -72,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=" max-sm:w-48">
+          <div className=" mr-5 max-sm:w-48">
             <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
               Produits
             </h4>
@@ -100,9 +98,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mb-[-25px] gap-2 font-montserrat text-sm text-white-400 max-lg:mt-8">
+      <div className="mb-[-25px] flex justify-center gap-2 font-montserrat text-sm text-white-400 max-lg:mt-8">
         <p>
-          Copyright<CopyrightUpdate /> - Fisatex
+          Copyright
+          <CopyrightUpdate /> - Fisatex
         </p>
       </div>
     </footer>

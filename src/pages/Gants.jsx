@@ -81,7 +81,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5 max-lg:mt-[65px]">
+            <div className="max-lg:mb-5 max-lg:mt-[50px]">
               <Link to="/couleursMiami" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
                   Voir les Couleurs Disponibles
@@ -96,7 +96,7 @@ const Gants = () => {
           >
             <div className="h-80 border border-transparent">
               <p className="mt-5 text-center text-3xl font-bold text-[#b27538]">
-                Gant 28
+                Gant Kessel 28
               </p>
 
               <p className="mt-[-15px] font-bold text-gray-700">
@@ -154,7 +154,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5 max-lg:mt-2">
+            <div className="max-lg:mb-5 max-lg:mt-5">
               <Link to="/couleursGH" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
                   Voir les Couleurs Disponibles
