@@ -9,8 +9,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+import { Helmet } from "react-helmet-async";
+
 const AboutUs = () => {
-  
   useEffect(() => {
     Aos.init({
       once: true,
@@ -31,9 +32,30 @@ const AboutUs = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Titre de la page pour onglet navigateur quand on est sur la page et pour amélioréer le SEO: entre 50 et 60 caractères */}
+        <title>À propos | Fisatex</title>
+
+        {/*Résumé qui va apparaitre dans les moteurs de recherche: 150 à 160 caractères*/}
+        <meta
+          name="description"
+          content="Fisatex est une société leader dans la fabrication de gants de gommage marocains pour le Hammam"
+        />
+
+
+        {/* Lors du partage de lien sur les réseaux sociaux: facebook, linkedin...etc. permet d'avoir un meilleur présentation visuelle du lien */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.fisatex.com/about" />
+        <meta property="og:title" content="À propos | Fisatex - Fabricant de gants de gommage pour le Hammam"/> {/*Titre de la page lorsqu'elle est partagée sur les réseaux sociaux */}
+        <meta property="og:description" content="Fisatex est une société leader dans la fabrication de gants de gommage marocains pour le Hammam"/>
+        <meta property="og:image" content="https://www.fisatex.com/assets/gants-fond2-K51BcB7N.jpg" />{/*Image qui apparaitra quand on partagera le lien sur les réseaux sociaux: Il faut mettre l'URL absolue de l'image sur le site */}
+
+
+      </Helmet>
+
       <Header />
 
-      <main className="overflow-hidden padding-b mt-1">
+      <main className="padding-b mt-1 overflow-hidden">
         <div className="my-10 grid grid-cols-2 grid-rows-[400px,400px,400px] max-lg:mx-5 max-lg:flex max-lg:flex-col max-lg:gap-y-5 lg:mx-16 lg:gap-x-14 lg:gap-y-20 ">
           <div
             data-aos="fade-right"
@@ -43,9 +65,9 @@ const AboutUs = () => {
               Qui sommes-nous ?
             </h1>
             <p className="font-roboto text-lg leading-7">
-              Basée au Maroc, Fisatex est une entreprise leader dans
-              la fabrication de gants de gommage Marocain de haute qualité, incarnant
-              l'authenticité et la tradition du rituel du Hammam.
+              Basée au Maroc, Fisatex est une entreprise leader dans la
+              fabrication de gants de gommage Marocain de haute qualité,
+              incarnant l'authenticité et la tradition du rituel du Hammam.
             </p>
             <br />
             <p className="font-roboto text-lg leading-7">
@@ -60,16 +82,12 @@ const AboutUs = () => {
             <img
               className="h-full w-full rounded-xl"
               src={gantsFond2}
-              alt="usine"
+              alt="Gants de gommage pour Hammam"
             />
           </div>
 
           <div data-aos="fade-right" className="max-lg:order-4">
-            <img
-              className="h-full w-full rounded-xl"
-              src={deal}
-              alt="bureau"
-            />
+            <img className="h-full w-full rounded-xl" src={deal} alt="Faire Affaire avec nous" />
           </div>
 
           <div
@@ -132,7 +150,7 @@ const AboutUs = () => {
             <img
               className="h-full w-full rounded-xl"
               src={carte4}
-              alt="carte"
+              alt="carte du monde"
             />
           </div>
         </div>

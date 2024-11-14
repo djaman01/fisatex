@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import { useMyContext } from "../ContextComp";
-import { cross } from "../assets/icons";
 import { IoHomeOutline } from "react-icons/io5";
 import { RiProductHuntLine } from "react-icons/ri";
 import { BsInfoSquare } from "react-icons/bs";
@@ -11,7 +9,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 
 const SideHeader = () => {
-  const { openSidebar, setOpenSidebar } = useMyContext();
 
   const [toggled, setToggled] = useState(false);
 

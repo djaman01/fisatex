@@ -1,11 +1,9 @@
 import { fisatexLogo } from "../assets/images";
 import SideHeader from "./SideHeader";
 
-import { useMyContext } from "../ContextComp";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const { openSidebar, setOpenSidebar } = useMyContext();
 
   return (
     <header className="padding-x w-full">
