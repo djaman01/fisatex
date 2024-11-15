@@ -33,24 +33,36 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        {/* Titre de la page pour onglet navigateur quand on est sur la page et pour amélioréer le SEO: entre 50 et 60 caractères */}
+        {/* Titre de la page pour les onglets et le SEO:  entre 50 et 60 caractères  */}
+        {/* Les moteurs de recherches utilise cetet balise pour l'indexation */}
         <title>À propos | Fisatex</title>
 
         {/*Résumé qui va apparaitre dans les moteurs de recherche: 150 à 160 caractères*/}
         <meta
           name="description"
-          content="Fisatex est une société leader dans la fabrication de gants de gommage marocains pour le Hammam"
+          content="Basée à Casablanca, au Maroc, Fisatex est spécialisée dans la fabrication de gants de gommage pour le Hammam et exporte à l'international"
         />
-
-
         {/* Lors du partage de lien sur les réseaux sociaux: facebook, linkedin...etc. permet d'avoir un meilleur présentation visuelle du lien */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.fisatex.com/about" />
-        <meta property="og:title" content="À propos | Fisatex - Fabricant de gants de gommage pour le Hammam"/> {/*Titre de la page lorsqu'elle est partagée sur les réseaux sociaux */}
-        <meta property="og:description" content="Fisatex est une société leader dans la fabrication de gants de gommage marocains pour le Hammam"/>
-        <meta property="og:image" content="https://www.fisatex.com/assets/gants-fond2-K51BcB7N.jpg" />{/*Image qui apparaitra quand on partagera le lien sur les réseaux sociaux: Il faut mettre l'URL absolue de l'image sur le site */}
 
+        {/*Titre de la page lorsqu'elle est partagée sur les réseaux sociaux */}
+        <meta
+          property="og:title"
+          content="À propos | Fisatex "
+        />
 
+        {/*Texte qui va s'afficher en-dessous du titre*/}
+        <meta
+          property="og:description"
+          content="Basée à Casablanca, au Maroc, Fisatex est spécialisée dans la fabrication de gants de gommage pour le Hammam et exporte à l'international"
+        />
+
+        {/* Image lors du partage sur les réseaux sociaux: mettre l'url absolue de l'image sur le site*/}
+        <meta
+          property="og:image"
+          content="https://www.fisatex.com/assets/gants-fond2-K51BcB7N.jpg"
+        />
       </Helmet>
 
       <Header />
@@ -65,7 +77,7 @@ const AboutUs = () => {
               Qui sommes-nous ?
             </h1>
             <p className="font-roboto text-lg leading-7">
-              Basée au Maroc, Fisatex est une entreprise leader dans la
+              Basée à Casablanca, au Maroc, Fisatex est une entreprise leader dans la
               fabrication de gants de gommage Marocain de haute qualité,
               incarnant l'authenticité et la tradition du rituel du Hammam.
             </p>
@@ -87,7 +99,11 @@ const AboutUs = () => {
           </div>
 
           <div data-aos="fade-right" className="max-lg:order-4">
-            <img className="h-full w-full rounded-xl" src={deal} alt="Faire Affaire avec nous" />
+            <img
+              className="h-full w-full rounded-xl"
+              src={deal}
+              alt="Faire Affaire avec nous"
+            />
           </div>
 
           <div
