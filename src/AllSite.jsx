@@ -16,14 +16,14 @@ const AllSite = () => {
         {/*Résumé qui va apparaitre dans les moteurs de recherche: 150 à 160 caractères*/}
         <meta
           name="description"
-          content="Fisatex est une Société marocaine, leader dans la fabrication de gants de gommage pour Hammam, disponibles en version Visage et Corps"
+          content="Fisatex est le leader de la fabrication de gants de gommage Marocains pour Hammam et offre des modèles pour le Visage et le Corps"
         />
 
         {/* Open Graph pour les réseaux sociaux */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.fisatex.com/" />
 
-        {/*Titre de la page lorsqu'elle est partagée sur les réseaux sociaux: mettre le même titre qsue l'onglet */}
+        {/*Titre de la page lorsqu'elle est partagée sur les réseaux sociaux: mettre le même titre que l'onglet */}
         <meta
           property="og:title"
           content="Fisatex | Fabricant de gants de gommage pour Hammam"
@@ -32,7 +32,7 @@ const AllSite = () => {
         {/*Texte qui va s'afficher en-dessous du titre: mettre la même description que celle du moteur de recherche*/}
         <meta
           property="og:description"
-          content="Fisatex est une Société marocaine, leader dans la fabrication de gants de gommage pour Hammam, disponibles en version Visage et Corps"
+          content="Fisatex est le leader de la fabrication de gants de gommage Marocains pour Hammam et offre des modèles pour le Visage et le Corps"
         />
         {/* Image lors du partage sur les réseaux sociaux: mettre l'url absolue de l'image sur le site */}
         <meta
