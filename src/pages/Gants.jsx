@@ -9,6 +9,8 @@ import { useEffect } from "react";
 
 import MyButton from "../components/MyButton";
 import { arrowRight } from "../assets/icons";
+import { Helmet } from "react-helmet-async";
+
 
 const Gants = () => {
   useEffect(() => {
@@ -60,7 +62,7 @@ const Gants = () => {
         {/* Image partagée sur les réseaux sociaux */}
         <meta
           property="og:image"
-          content="https://www.fisatex.com/assets/gants-kits-cadr%C3%A9s-CXujVyO_.jpg"
+          content="https://www.fisatex.com/assets/gants2largeur-CeijV4Im.jpg"
         />
       </Helmet>
 

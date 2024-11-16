@@ -9,6 +9,7 @@ import { GiPositionMarker } from "react-icons/gi";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -23,6 +24,36 @@ const ContactUs = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Titre de la page pour l'onglet et le SEO: entre 50 et 60 caractères */}
+        <title> Contact | Fisatex</title>
+
+        {/* Description pour le moteur de recherche: 150 à 160 caractères */}
+        <meta
+          name="description"
+          content="Contactez-nous par téléphone ou par mail, ou rendez-vous à notre bureau à Casablanca pour découvrir nos différents gants de gommage pour Hammam"
+        />
+
+        {/* Open Graph pour les réseaux sociaux */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.fisatex.com/contactUs" />
+
+        {/* Titre de la page lorsqu'elle est partagée sur les réseaux sociaux */}
+        <meta property="og:title" content="Contact | Fisatex" />
+
+        {/* Description qui apparaît en-dessous du titre sur les réseaux sociaux */}
+        <meta
+          property="og:description"
+          content="Contactez-nous par téléphone ou par mail, ou rendez-vous à notre bureau à Casablanca pour découvrir nos différents gants de gommage pour Hammam"
+        />
+
+        {/* Image partagée sur les réseaux sociaux */}
+        <meta
+          property="og:image"
+          content="https://lh3.googleusercontent.com/p/AF1QipOI6gWyi6KGjn2HBk3_sISsNK-LT2ilHuS_N4i0=s1360-w1360-h1020"
+        />
+      </Helmet>
+
       <header>
         <Header />
       </header>
@@ -42,7 +73,7 @@ const ContactUs = () => {
             <div className=" flex-1 bg-orange-600"></div>
           </div>
 
-          <div className=" mb-20 flex justify-center gap-20 max-lg:gap-12 max-lg:flex-col max-lg:items-center">
+          <div className=" mb-20 flex justify-center gap-20 max-lg:flex-col max-lg:items-center max-lg:gap-12">
             <div
               data-aos="flip-left"
               className="flex h-60 w-72 flex-col items-center justify-center rounded-lg border border-gray-400 bg-gray-100"
