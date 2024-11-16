@@ -31,6 +31,39 @@ const Gants = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Titre de la page pour l'onglet et le SEO: entre 50 et 60 caractères */}
+        <title>Gants de gommage personnalisables | Fisatex</title>
+
+        {/* Description pour le moteur de recherche: 150 à 160 caractères */}
+        <meta
+          name="description"
+          content="Découvrez nos modèles de gants de gommage pour Hammam, personnalisables et adaptés à tout type de peau, de la plus sensible à la plus résistante"
+        />
+
+        {/* Open Graph pour les réseaux sociaux */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.fisatex.com/gants" />
+
+        {/* Titre de la page lorsqu'elle est partagée sur les réseaux sociaux */}
+        <meta
+          property="og:title"
+          content="Gants de gommage personnalisables | Fisatex"
+        />
+
+        {/* Description qui apparaît en-dessous du titre sur les réseaux sociaux */}
+        <meta
+          property="og:description"
+          content="Découvrez nos modèles de gants de gommage pour Hammam, personnalisables et adaptés à tout type de peau, de la plus sensible à la plus résistante"
+        />
+
+        {/* Image partagée sur les réseaux sociaux */}
+        <meta
+          property="og:image"
+          content="https://www.fisatex.com/assets/gants-kits-cadr%C3%A9s-CXujVyO_.jpg"
+        />
+      </Helmet>
+
       <header>
         <Header />
       </header>
@@ -49,7 +82,7 @@ const Gants = () => {
         >
           <img
             src={gants2Largeur}
-            alt="3 types de gants personnalisables"
+            alt="Nos gants personnalisables"
             className="h-full w-full rounded-full"
           />
         </div>
@@ -154,7 +187,7 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5 max-lg:mt-5">
+            <div className="max-lg:mb-5 max-lg:mt-16">
               <Link to="/couleursGH" onClick={scrollToTop}>
                 <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
                   Voir les Couleurs Disponibles
