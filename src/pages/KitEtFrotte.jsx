@@ -74,7 +74,7 @@ const KitEtFrotte = () => {
               </li>
             </div>
 
-            <div className="ml-16 mt-10 max-lg:ml-12 max-lg:mt-5">
+            <div className="lg:ml-16 mt-10 w-max max-lg:mx-auto max-lg:mt-5">
               <Link to="/couleursKit" onClick={scrollToTop}>
                 <button className="mt-2 h-[34px] rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600 max-lg:w-60 lg:w-80">
                   Voir les Couleurs Disponibles
@@ -128,7 +128,7 @@ const KitEtFrotte = () => {
               </li>
             </div>
 
-            <div className="ml-16 mt-10 max-lg:ml-12 max-lg:mt-5">
+            <div className="lg:ml-16 mt-10 w-max max-lg:mx-auto max-lg:mt-5">
               <Link to="/couleursKit" onClick={scrollToTop}>
                 <button className="mt-2 h-[34px] rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600 max-lg:w-60 lg:w-80">
                   Voir les Couleurs Disponibles
