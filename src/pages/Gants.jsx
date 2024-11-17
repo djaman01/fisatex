@@ -94,7 +94,7 @@ const Gants = () => {
             data-aos="fade-right"
             className="prose rounded-3xl border-green-800 bg-[#E9F7EF] hover:border-2"
           >
-            <div className=" border border-transparent mb-2">
+            <div className=" border border-transparent max-lg:mb-2">
               <p className="mt-5 text-center text-3xl font-bold text-[#007F56]">
                 Gant Miami Haut de Gamme
               </p>
@@ -129,7 +129,7 @@ const Gants = () => {
             data-aos="fade-down"
             className="prose rounded-3xl border-orange-800 bg-[#F5F5DC] hover:border-2 hover:shadow-2xl"
           >
-            <div className="border border-transparent mb-2">
+            <div className="border border-transparent max-lg:mb-2">
               <p className="mt-5 text-center text-3xl font-bold text-[#b27538]">
                 Gant Kessel 28
               </p>
@@ -164,7 +164,7 @@ const Gants = () => {
             data-aos="fade-left"
             className="prose rounded-3xl border-blue-800 bg-[#f1f2f3] hover:border-2 hover:shadow-2xl "
           >
-            <div className="border border-transparent mb-2">
+            <div className="border border-transparent max-lg:mb-2">
               <p className="mt-5 text-center text-3xl font-bold text-[#446e98]">
                 Gant Gamme Hôtel
               </p>
