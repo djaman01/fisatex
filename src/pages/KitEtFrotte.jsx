@@ -13,6 +13,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+import { Helmet } from "react-helmet-async";
+
 const KitEtFrotte = () => {
   useEffect(() => {
     Aos.init({
@@ -34,6 +36,39 @@ const KitEtFrotte = () => {
 
   return (
     <div>
+      <Helmet>
+        {/* Titre de la page pour l'onglet et le SEO: entre 50 et 60 caractères */}
+        <title>Kit-Visage et Frotte-Dos | Fisatex</title>
+
+        {/* Description pour le moteur de recherche: 150 à 160 caractères */}
+        <meta
+          name="description"
+          content="Découvrez nos Kit-visage et Frotte-dos, faits avec le tissus pour peaux sensibles"
+        />
+
+        {/* Open Graph pour les réseaux sociaux */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.fisatex.com/KitEtFrotte" />
+
+        {/* Titre de la page lorsqu'elle est partagée sur les réseaux sociaux */}
+        <meta
+          property="og:title"
+          content="Kit-visage et Frotte-dos | Fisatex"
+        />
+
+        {/* Description qui apparaît en-dessous du titre sur les réseaux sociaux */}
+        <meta
+          property="og:description"
+          content="Découvrez nos Kit-visage et Frotte-dos, faits avec le tissus pour peaux sensibles"
+        />
+
+        {/* Image partagée sur les réseaux sociaux */}
+        <meta
+          property="og:image"
+          content="https://www.fisatex.com/assets/kit-gommage-C4Cnna8Z.jpg"
+        />
+      </Helmet>
+
       <header>
         <Header />
       </header>
@@ -60,12 +95,14 @@ const KitEtFrotte = () => {
               <li> Notre gant de gommage spécial Visage</li>
               <li className="lg:w-[500px]">
                 Fait avec le tissus du gant de gommage pour{" "}
-                <span className="text-blue-600">peaux sensible </span> afin de respecter la peau du visage
+                <span className="text-blue-600">peaux sensible </span> afin de
+                respecter la peau du visage
               </li>
 
               <li>
                 Dispose aussi d'une{" "}
-                <span className="text-blue-600"> face pour le Savonnage</span>: Tourner l'élastique pour l'utiliser
+                <span className="text-blue-600"> face pour le Savonnage</span>:
+                Tourner l'élastique pour l'utiliser
               </li>
 
               <li className="font-mono">Composition: 100% Viscose</li>
@@ -74,7 +111,7 @@ const KitEtFrotte = () => {
               </li>
             </div>
 
-            <div className="lg:ml-16 mt-10 w-max max-lg:mx-auto max-lg:mt-5">
+            <div className="mt-10 w-max max-lg:mx-auto max-lg:mt-5 lg:ml-16">
               <Link to="/couleursKit" onClick={scrollToTop}>
                 <button className="mt-2 h-[34px] rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600 max-lg:w-60 lg:w-80">
                   Voir les Couleurs Disponibles
@@ -128,7 +165,7 @@ const KitEtFrotte = () => {
               </li>
             </div>
 
-            <div className="lg:ml-16 mt-10 w-max max-lg:mx-auto max-lg:mt-5">
+            <div className="mt-10 w-max max-lg:mx-auto max-lg:mt-5 lg:ml-16">
               <Link to="/couleursKit" onClick={scrollToTop}>
                 <button className="mt-2 h-[34px] rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600 max-lg:w-60 lg:w-80">
                   Voir les Couleurs Disponibles
