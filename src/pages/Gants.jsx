@@ -89,12 +89,12 @@ const Gants = () => {
           />
         </div>
 
-        <div className=" mx-14 mb-20 grid h-96 grid-cols-3 gap-x-5 text-center max-lg:mx-auto max-lg:mb-[1000px] max-lg:flex max-lg:w-[375px] max-lg:flex-col max-lg:gap-10">
+        <div className="lg:h-[380px] mx-14 mb-20 grid grid-cols-3 gap-x-5 text-center max-lg:mx-auto max-lg:flex max-lg:w-[375px] max-lg:flex-col max-lg:gap-10">
           <div
             data-aos="fade-right"
             className="prose rounded-3xl border-green-800 bg-[#E9F7EF] hover:border-2"
           >
-            <div className="h-80 border border-transparent">
+            <div className=" border border-transparent mb-2">
               <p className="mt-5 text-center text-3xl font-bold text-[#007F56]">
                 Gant Miami Haut de Gamme
               </p>
@@ -103,7 +103,7 @@ const Gants = () => {
                 Notre gant de gommage pour les peaux sensibles
               </p>
 
-              <ul className="mx-auto w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
+              <ul className="lg:h-[165px] mx-auto w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
                 <li>
                   Associe un gommage{" "}
                   <span className="underline">performant</span> tout en étant
@@ -116,9 +116,9 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5 max-lg:mt-[50px]">
+            <div className="w-max mx-auto max-lg:mb-5 ">
               <Link to="/couleursMiami" onClick={scrollToTop}>
-                <button className=" mt-2 h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
+                <button className="h-[34px] w-80 rounded-full bg-green-500 bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-green-600">
                   Voir les Couleurs Disponibles
                 </button>
               </Link>
@@ -129,7 +129,7 @@ const Gants = () => {
             data-aos="fade-down"
             className="prose rounded-3xl border-orange-800 bg-[#F5F5DC] hover:border-2 hover:shadow-2xl"
           >
-            <div className="h-80 border border-transparent">
+            <div className="border border-transparent mb-2">
               <p className="mt-5 text-center text-3xl font-bold text-[#b27538]">
                 Gant Kessel 28
               </p>
@@ -138,7 +138,7 @@ const Gants = () => {
                 Notre gant de gommage pour les peaux résistantes
               </p>
 
-              <ul className="mx-auto  w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
+              <ul className="lg:h-[165px] mx-auto w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px] ">
                 <li>
                   Un gant dur pour un gommage{" "}
                   <span className="underline">profond</span>
@@ -151,9 +151,9 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5 max-lg:mt-[-40px]">
+            <div className="w-max mx-auto max-lg:mb-5">
               <Link to="/couleurs28" onClick={scrollToTop}>
-                <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#A67C52] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#8A5E3B]">
+                <button className="h-[34px] w-80 rounded-full bg-[#A67C52] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#8A5E3B]">
                   Voir les Couleurs Disponibles
                 </button>
               </Link>
@@ -164,16 +164,16 @@ const Gants = () => {
             data-aos="fade-left"
             className="prose rounded-3xl border-blue-800 bg-[#f1f2f3] hover:border-2 hover:shadow-2xl "
           >
-            <div className="h-80 border border-transparent">
+            <div className="border border-transparent mb-2">
               <p className="mt-5 text-center text-3xl font-bold text-[#446e98]">
                 Gant Gamme Hôtel
               </p>
 
               <p className="mt-[-15px] font-bold text-gray-700 ">
-                Notre gant de gommage doté d'une innovation textile avancée
+                Notre gant de gommage doté d'une innovation textile
               </p>
 
-              <ul className="mx-auto  w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px]">
+              <ul className="lg:h-[165px] mx-auto w-[415px] text-left font-semibold marker:text-black max-lg:w-[370px]">
                 <li>
                   Convient à{" "}
                   <span className="underline">tout type de peaux</span> et offre
@@ -189,9 +189,9 @@ const Gants = () => {
               </ul>
             </div>
 
-            <div className="max-lg:mb-5 max-lg:mt-16">
+            <div className="w-max mx-auto max-lg:mb-5">
               <Link to="/couleursGH" onClick={scrollToTop}>
-                <button className=" mt-2 h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
+                <button className="h-[34px] w-80 rounded-full bg-[#1D77C3] bg-gradient-to-r font-bold text-white transition duration-150 ease-in-out hover:bg-[#00539C]">
                   Voir les Couleurs Disponibles
                 </button>
               </Link>
@@ -199,7 +199,7 @@ const Gants = () => {
           </div>
         </div>
 
-        <div className="padding-b mx-auto mt-[-30px] w-max max-lg:mt-[-80px]">
+        <div className="padding-b mx-auto mt-[-30px] w-max ">
           <Link to="/contactus" onClick={scrollToTop}>
             <MyButton label="Contactez-nous" iconURL={arrowRight} />
           </Link>
