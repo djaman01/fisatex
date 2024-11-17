@@ -6,8 +6,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Sandales = () => {
+import { Helmet } from "react-helmet-async";
 
+const Sandales = () => {
   useEffect(() => {
     Aos.init({
       once: true,
@@ -19,7 +20,37 @@ const Sandales = () => {
   });
 
   return (
-    <div>
+    <>
+      <Helmet>
+        {/* Titre de la page pour l'onglet et le SEO: entre 50 et 60 caractères */}
+        <title>Sandales Hammam | Fisatex</title>
+
+        {/* Description pour le moteur de recherche: 150 à 160 caractères */}
+        <meta
+          name="description"
+          content="Découvrez nos sandales jetables pour Hammam, idéales pour une utilisation hygiénique et pratique"
+        />
+
+        {/* Open Graph pour les réseaux sociaux */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.fisatex.com/sandales" />
+
+        {/* Titre de la page lorsqu'elle est partagée sur les réseaux sociaux */}
+        <meta property="og:title" content="Sandales Hammam | Fisatex" />
+
+        {/* Description qui apparaît en-dessous du titre sur les réseaux sociaux */}
+        <meta
+          property="og:description"
+          content="Découvrez nos sandales jetables pour Hammam, idéales pour une utilisation hygiénique et pratique"
+        />
+
+        {/* Image partagée sur les réseaux sociaux */}
+        <meta
+          property="og:image"
+          content="https://www.fisatex.com/assets/new-sandales-BZ-iEbma.jpg"
+        />
+      </Helmet>
+
       <header>
         <Header />
       </header>
@@ -67,7 +98,7 @@ const Sandales = () => {
       <footer className="padding-x bg-gray-800 pb-8 pt-8">
         <Footer />
       </footer>
-    </div>
+    </>
   );
 };
 
