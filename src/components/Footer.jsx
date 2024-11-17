@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="max-container">
+    <footer className="max-container lg:h-52">
       <div className="flex flex-wrap items-start justify-between gap-20 max-lg:gap-10 ">
         <div className="flex flex-col items-start">
           <Link to="/">
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mb-[-25px] flex justify-center gap-2 font-montserrat text-sm text-white-400 max-lg:mt-8">
+      <div className="max-lg:mb-[-25px] lg:mt-5 flex justify-center gap-2 font-montserrat text-sm text-white-400 max-lg:mt-8">
         <p>
           Copyright
           <CopyrightUpdate /> - Fisatex
