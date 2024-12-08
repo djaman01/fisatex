@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  newSandales,
-  gantsCadré,
-  kitsCadré
-} from "../assets/images";
+import { newSandales, gantsCadré, kitsCadré } from "../assets/images";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -21,17 +17,15 @@ const FirstPart = () => {
   });
 
   //To go instantly to the top of the page, when redirecting to it
-   const scrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "instant",
     });
   };
 
-
-
   return (
-    <section className="mx-5 mt-7 flex flex-col gap-5 lg:mx-10 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[395px,200px] lg:gap-3 lg:mt-2">
+    <section className="mx-5 mt-7 flex flex-col gap-5 lg:mx-10 lg:mt-2 lg:grid lg:grid-cols-[1.7fr,1fr] lg:grid-rows-[395px,200px] lg:gap-3">
       <div className="max-lg:h-[340px] lg:row-span-2 ">
         <Link to="/gants" onClick={scrollToTop}>
           <img
