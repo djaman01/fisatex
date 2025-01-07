@@ -34,6 +34,7 @@ const AllSite = () => {
           property="og:description"
           content="Fisatex est le leader de la fabrication de gants de gommage Marocains pour Hammam et offre des modèles pour le Visage et le Corps"
         />
+        
         {/* Image lors du partage sur les réseaux sociaux: mettre l'url absolue de l'image sur le site */}
         <meta
           property="og:image"
